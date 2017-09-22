@@ -1,12 +1,148 @@
 <!DOCTYPE html>
-<html lang="ru">
-  <head>
-    <meta charset="utf-8">
-    <title>HTML Academy: Пинк</title>
-  </head>
-  <body>
-
-    <p>Репозиторий создан для обучения на интенсивном онлайн‑курсе «<a href="https://htmlacademy.ru/intensive/adaptive">Продвинутый HTML и CSS</a>».</p>
-
-  </body>
+<html lang="en">
+<head>
+  <title>Pink site</title>
+  <meta charset="UTF-8">
+  <script src="js/script.min.js"></script>
+  <link rel="stylesheet" type="text/css" href="css/style.css">
+  <link rel="stylesheet" href="img/sprite.svg" type="image/svg+xml">
+</head>
+<body>
+  <header class="page-header">
+    <div class="page-header__logo-wrap">
+      <a href="/" class="page-header__logo-link">
+       <img src="img/logo.svg" alt="Pink logo">
+      </a>
+    </div>
+    <div class="page-header__nav-wrap">
+      <nav class="main-nav">
+           <div class="main-nav wrapper">
+              <ul class="main-nav__list site-list">
+                  <li class="main-nav__item main-nav__item--active"><a href="#">Главная</a></li>
+                  <li class="main-nav__items"><a href="#">Фотографии</a></li>
+                  <li class="main-nav__items"><a href="#">Конкурс</a></li>
+                  <li class="main-nav__items"><a href="#">HTML ACADEMY</a></li>
+              </ul>
+             <a href="#" class="main-nav__toggle main-nav__toggle--close"></a>
+            </div>
+      </nav>
+    </div>
+  </header>
+    <main class="container">
+        <section class="promo-section">
+        </section>
+        <section class="promo-download">
+          <div class="promo-download__button">
+            <a href="#">Скачать приложение</a>
+          </div>
+          <div class="promo-download__links">
+          <ul class="os-nav os-list">
+            <li class="os-list__item"></li>
+            <li class="os-list__item"></li>
+            <li class="os-list__item">></li>
+          </ul>
+          <h2 class="os-nav__title">Доступно для iPhone, iPad, Android,
+          <span>Windows Phone, OS X, Windows 8</span></h2>
+        </div>
+      </section>
+      <div class="features">
+        <div class="features__title">Устали от серости <span>мегаполиса?</span><br><span>Нам есть, что вам</span><span>предложить!</span></div>
+        <div class="features__image-wrap">
+        </div>
+        <div class="features-items">
+        <section class="features-items__block">
+          <h2 class="features-items__title">Поднимает настроение</h2>
+          <p class="features-items__descr">Приложение позволит вам победить <span>осеннюю хандру и деперессию</span> <span> буквально в несколько кликов!</span></p>
+        </section>
+        <section class="features-items__block">
+          <h2 class="features-items__title">Меняем мир вокруг</h2>
+          <p class="features-items__descr">Сделайте снимок и украсьте его <span>смайликом или текстовой подписью,</span> <span>чтобы усилить эффект</span></p>
+        </section>
+        <section class="features-items__block">
+          <h2 class="features-items__title">Заводит новых друзей</h2>
+          <p class="features-items__descr">Ставьте лайки, комментируте, делитесь <span>фотографиями с друзьями и заводите</span> <span>новых</span></p>
+        </section>
+      </div>
+      </div>
+      <section class="features-block">
+        <div class="features-block__image-wrap">
+        </div>
+      </section>
+      <section class="reviews">
+        <article class="slider-reviews">
+          <div class="slider-reviews__text">&laquo;Это приложение перевернуло мой мир и позволило по-новому <span>взглянуть на привычные серые вещи! А еще я познакомился со своей</span> <span>будущей женой в комментариях к выложенной фотографии!&raquo;</span></div>
+          <h2 class="slider-reviews__header">Николай Петров <br><span>25 лет, водитель трамвая</span></h2>
+        </article>
+        <div class="slider-reviews__pagination">
+            <span class="slider-reviews__pagination-item--active"></span>
+            <span>
+            </span>
+            <span>
+            </span>
+        </div>
+      </section>
+      <section class="price-block">
+        <article class="price-table">
+          <table class="traffic-table">
+            <tr class="traffic-table__tr--shown">
+              <td>Стандарт<span class="traffic-table__prices">3.99 USD</span></td>
+            </tr>
+            <tr>
+              <td>Розовый фильтр</td>
+            </tr>
+            <tr>
+              <td>Смайлики</td>
+            </tr>
+            <tr>
+              <td>Комментарий</td>
+            </tr>
+          </table>
+        </article>
+         <div class="slider-reviews__pagination">
+            <span class="slider-reviews__pagination-item--active"></span>
+            <span>
+            </span>
+            <span>
+            </span>
+          </div>
+      </section>
+      <section class="info-block">
+        <h2 class="info-block__text">Остались вопросы?<br><span>Свяжитесь с нами!</span></h2>
+        <div class="info-block__contacts">
+            <div class="info-block__call-block">
+              <p class="phone__text">Звоните:</p>
+              <a class="phone" href="tel:+7(812)555-66-66">+7(812)555-66-66</a>
+            </div>
+            <div class="info-block__mail-block">
+              <p class="mail__text">Пишите:</p>
+              <a class="mail" href="mailto:mail@htmlacademy.ru">mail@htmlacademy.ru</a>
+            </div>
+        </div>
+      <div class="map-block">
+          <p class="map-block__text">Приезжайте в гости:</p>
+          <address><a class="map-block__link" href="#">ул.Большая<br><span>Конюшенная, 19/8</span></a></address>
+          <div class="map-block_map-item">
+          </div>
+      </div>
+      </section>
+    </main>
+    <footer class="page-footer">
+      <div class="container clearfix">
+        <section class="page-footer__img-wrap">
+          <img src="img/logo.jpg" alt="Pink logo">
+        </section>
+          <div class="page-footer__social">
+            <ul class="social-links">
+              <li><a class="social-links__item-twitter" href="">Твиттер</a></li>
+              <li><a class="social-links__item-facebook" href="">Фейсбук</a></li>
+              <li><a class="social-links__item-youtube" href="">Ютуб</a></li>
+            </ul>
+        </div>
+          <section class="page-footer__copyright">
+              <p class="page-footer__copyright-text">Разработано:</p>
+              <a href="#"><img src="img/htmllogo" alt="HTML academy logo"></a>
+        </section>
+      </div>
+    </footer>
+</body>
 </html>
