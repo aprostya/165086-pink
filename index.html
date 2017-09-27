@@ -6,9 +6,11 @@
 <script src="js/script.min.js"></script>
 <link rel="stylesheet" type="text/css" href="css/style.css">
 <link rel="stylesheet" href="img/sprite.svg" type="image/svg+xml">
+<link href="https://fonts.googleapis.com/css?family=Open+Sans" rel="stylesheet">
+<link href="https://fonts.googleapis.com/css?family=Open+Sans:300" rel="stylesheet">
 </head>
 <body>
-    <header class="page-header">
+    <header class="page-header page-header--active">
         <div class="page-header__logo-wrap">
           <a href="/" class="page-header__logo-link">
             <img src="img/logo.svg" alt="Pink logo">
@@ -18,7 +20,7 @@
             <nav class="main-nav">
                 <div class="main-nav wrapper">
                     <ul class="main-nav__list site-list">
-                        <li class="main-nav__item main-nav__item--active"><a href="#">Главная</a></li>
+                        <li class="main-nav__items main-nav__items--active"><a href="#">Главная</a></li>
                         <li class="main-nav__items"><a href="#">Фотографии</a></li>
                         <li class="main-nav__items"><a href="#">Конкурс</a></li>
                         <li class="main-nav__items"><a href="#">HTML ACADEMY</a></li>
@@ -30,7 +32,9 @@
     </header>
     <main class="container">
         <section class="promo-section">
-            <h2 class="promo-section__header--visually_hidden">Выбор операционной системы для скачивания приложения Pink</h2>
+            <div class="promo-section wrapper">
+              <h2 class="promo-section__header--visually_hidden">Выбор операционной системы для скачивания приложения Pink</h2>
+            </div>
         </section>
         <section class="promo-download">
             <h2 class="promo-download__header--visually_hidden">Выбор операционной системы для скачивания приложения PInk</h2>
@@ -52,10 +56,12 @@
         <div class="features">
             <h2 class="features_header--visually_hidden">Причины скачать приложение Pink</h2>
             <div class="features__wrapper">
-                <div class="features__title">Устали от серости мегаполиса?Нам есть, что вам предложить!</div>
+                <div class="features__title">Устали от серости мегаполиса?</div>
+                <div class="features__title">Нам есть, что вам предложить!</div>
                 <div class="features__image-wrap">
                 </div>
                 <div class="features-items">
+                  <div class="features-items__wrapper">
                     <section class="features-items__block">
                         <h2 class="features-items__title">Поднимает настроение</h2>
                         <p class="features-items__descr">Приложение позволит вам победить осеннюю хандру и деперессию буквально в несколько кликов!</p>
@@ -69,12 +75,14 @@
                         <p class="features-items__descr">Ставьте лайки, комментируте, делитесь фотографиями с друзьями и заводите новых </p>
                     </section>
                 </div>
-            </div>
-        </div>
-        <section class="features-block">
-            <h2 class="features-block__header--vidually_hidden">Блок с отзывами</h2>
-            <div class="features-block__image-wrap">
-            </div>
+                </div>
+              <section class="features-block">
+               <h2 class="features-block__header--visually_hidden">Блок с отзывами</h2>
+                <div class="features-block__image-wrap">
+
+                </div>
+                </div>
+                </div>
         </section>
         <section class="reviews">
             <h2 class="slider-reviews__header--visually_hidden">Блок отзывов о приложении Pink</h2>
@@ -82,7 +90,7 @@
                 <article class="slider-reviews">
                     <h2 class="slider-reviews__header--visually_hidden">Блок отзывов о приложении Pink</h2>
                     <div class="slider-reviews__text">&laquo;Это приложение перевернуло мой мир и позволило по-новому взглянуть на привычные серые вещи! А еще я познакомился со своей будущей женой в комментариях к выложенной фотографии!&raquo;</div>
-                    <h2 class="slider-reviews__header">Николай Петров 25 лет, водитель трамвая</h2>
+                    <h2 class="slider-reviews__header">Николай Петров <span>25 лет, водитель трамвая</span></h2>
                 </article>
                 <div class="slider-reviews__pagination">
                     <span class="slider-reviews__pagination-item--active"></span>

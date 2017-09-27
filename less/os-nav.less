@@ -1,0 +1,22 @@
+.os-nav.os-list {
+  display: flex;
+  justify-content: space-around;
+  min-width: 280px;
+  flex-wrap: wrap;
+  margin: 0 auto;
+  padding-top: 108px;
+}
+.os-nav {
+  &__item {
+    flex-grow:1;
+  }
+  &__title {
+    display: block;
+    .font-mixin(24px; @content-font; 14px; normal);
+    text-shadow:-3px -1px 15px #000000;
+    width: 231px;
+    text-indent: -7px;
+    margin-left: 63px;
+    margin-top: 56px;
+  }
+}

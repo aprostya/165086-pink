@@ -1,0 +1,3 @@
+.features_header--visually_hidden {
+  display:none; 
+}
