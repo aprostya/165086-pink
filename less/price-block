@@ -1,7 +1,0 @@
-.price-block {
-min-width:320px;
-}
-
-.price-block__header--visually_hidden {
-  display:none;
-}
