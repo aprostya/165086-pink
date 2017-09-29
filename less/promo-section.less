@@ -1,8 +1,20 @@
-.promo-section {
+.promo-section  {
   max-width: 320px;
   padding-bottom: 198px;
   display: flex;
+  position: relative;
   .wrapper {
     margin: 0 auto;
+
   }
 }
+.promo-section.wrapper::before {
+    content: "";
+    background-image: url('../img/iphone-hand-mobile@1x.png');
+    position: absolute;
+    width: 262px;
+    height: 308px;
+    left: -163px;
+    top:112px;
+    background-repeat: no-repeat;
+  }

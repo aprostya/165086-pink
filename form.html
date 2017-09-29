@@ -8,33 +8,40 @@
 <link rel="stylesheet" href="img/sprite.svg" type="image/svg+xml">
 </head>
 <body>
-  <header class="page-header">
-    <div class="page-header__logo-wrap">
-      <a href="/" class="page-header__logo-link">
-        <img src="img/logo.svg" alt="Pink logo">
-      </a>
-    </div>
+  <header class="page-header page-header--active">
     <div class="page-header__nav-wrap">
-      <nav class="main-nav">
-        <div class="main-nav__wrapper">
-          <ul class="main-nav__list">
-            <li class="main-nav__item main-nav__item--active"><a href="#">Главная</a></li>
-            <li class="main-nav__items"><a href="#">Фотографии</a></li>
-            <li class="main-nav__items"><a href="#">Конкурс</a></li>
-            <li class="main-nav__items"><a href="#">HTML ACADEMY</a></li>
-          </ul>
-          <a href="#" class="main-nav__toggle main-nav__toggle--close"></a>
-        </div>
-      </nav>
-    </div>
+        <div class="menu-header">
+            <div class="page-header__logo-wrap">
+                <a href="/" class="page-header__logo-link">
+                    <img src="img/logo.svg" alt="Pink logo">
+                </a>
+            </div>
+              <nav class="main-nav">
+                  <div class="main-nav wrapper">
+                      <ul class="main-nav__list site-list">
+                          <li class="main-nav__items main-nav__items--active"><a href="#">Главная</a></li>
+                          <li class="main-nav__items"><a href="#">Фотографии</a></li>
+                          <li class="main-nav__items"><a href="#">Конкурс</a></li>
+                          <li class="main-nav__items"><a href="#">HTML ACADEMY</a></li>
+                      </ul>
+                      <a href="#" class="main-nav__toggle main-nav__toggle--close"></a>
+                  </div>
+              </nav>
+         </div>
+              <section class="contest-page">
+                <h2 class="contest-page__header visually_hidden">Приложение pink для путешествий</h2>
+                <section class="contest-page wrapper">
+                  <h2 class="contest-page__text">Конкурс на самое безбашеное путешествие с Пинк</h2>
+               </section>
+              </section>
+      </div>
+        <section class="promo-section">
+          <div class="promo-section wrapper">
+            <h2 class="promo-section__header visually_hidden">Выбор операционной системы для скачивания приложения Pink</h2>
+          </div>
+       </section>
   </header>
   <main class="container">
-    <section class="contest-page">
-      <h2 class="contest-page__header--visually_hidden">Приложение pink для путешествий</h2>
-      <section class="contest-page__wrapper">
-        <h2 class="contest-page__text">Конкурс на самое безбашеное путешествие с Пинк</h2>
-      </section>
-    </section>
     <section class="info-user">
       <h2 class="info-user__header--visually-hidden">Условия конкурса приложения Pink</h2>
       <p class="info-user__text">Поделитесь своей историей и получите шанс выиграть ценный приз&nbsp;1000 миль на вашу бонусную карту!</p>
