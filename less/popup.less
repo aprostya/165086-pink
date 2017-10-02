@@ -1,0 +1,33 @@
+.popup {
+  width:100%;
+  background-color:@white;
+  position: relative;
+  display: none;
+  &__header {
+    .font-mixin(24px;@header-font;18px;bold);
+    text-align: center;
+  }
+  &__text {
+    .font-mixin(24px;@header-font;14px;normal);
+    padding-bottom: 22px;
+    padding-left: 20px;
+  }
+  &__button-submit {
+    padding: 10px;
+    width: 92%;
+    height: 100%;
+    display: block;
+    padding: 0;
+    display: block;
+    background-color: #2aab6d;
+    width: 91%;
+    height: 59px;
+    border: none;
+    cursor: pointer;
+    .font-mixin(30px;@content-font;18px;bold);
+    text-transform: uppercase;
+    color:@white;
+    text-align: center;
+    margin-left: 20px;
+  }
+}

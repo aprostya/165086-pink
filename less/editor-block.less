@@ -1,0 +1,41 @@
+.editor-block {
+  width:100%;
+  display:flex;
+  flex-direction: column;
+  background-color: #f2f2f2;
+  position: relative;
+  width: 100%;
+  padding-bottom: 39px;
+  &__button, &__button--disable {
+  display: block;
+  width: 78%;
+  padding-left: 20px;
+  text-decoration: none;
+  .font-mixin(18px;@header-font;18px;bold);
+  color: #d22856;
+  border: 3px solid #d22856;
+  text-align: center;
+  margin-left: 18px;
+  padding-top: 16px;
+  margin-top: 26px;
+  padding-right: 14px;
+  border-radius: 25px;
+  padding-bottom: 16px;
+  }
+  &__button--disable {
+  background: transparent;
+  color: #e3e3e4;
+  border: 3px solid #e3e3e4;
+}
+}
+.image-editor {
+  width: 100%;
+  padding-bottom: 34px;
+  &__image-block {
+    padding-left: 20px;
+    padding-top: 18px;
+  }
+  &__tools {
+    padding-top: 88px;
+  }
+}
