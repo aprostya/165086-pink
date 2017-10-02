@@ -9,7 +9,7 @@
   flex-direction: row;
   justify-content: space-between;
   padding-top: 190px;
-  min-width: 320px;
+  width: 100%;
   .font-mixin(20px; @header-font; 18px; bold);
   background-color: @white;
   &__wrapper {
@@ -36,7 +36,7 @@
   &__call-block {
     margin: 0 auto;
     flex:2;
-    min-width: 320px;
+    width: 100%;
     text-align: center;
   }
   &__mail-block {
@@ -64,7 +64,7 @@
   display: block;
   text-decoration: none;
   font-size: 24px;
-  min-width: 320px;
+  width: 100%;
   text-align: center;
    &__text {
   font-weight: bold;
@@ -75,7 +75,7 @@
 }
 .map-block {
   margin: 0 auto;
-  min-width: 320px;
+  width: 100%;
   &__text {
     line-height: 0px;
     font-weight: bold;
@@ -89,12 +89,12 @@
   text-decoration: none;
   margin-left: 12px;
   .font-mixin(24px;@content-font;24px;normal);
-  width: 292px;
+  width: 90%;
   text-align: center;
   }
   address{
     font-style:normal;
-    min-width: 320px;
+    width: 90%;
   }
 }
 .page-footer {
@@ -102,7 +102,6 @@
 }
 
 .map-block_map-item {
-  background-image: url('../img/bg-map-mobile@1x.png');
-  min-width: 210px;
-  min-height:245px;
+  margin: 0 auto;
+  width: 100%;
 }

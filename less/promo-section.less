@@ -1,5 +1,5 @@
 .promo-section  {
-  max-width: 320px;
+  width: 100%;
   padding-bottom: 198px;
   display: flex;
   position: relative;
@@ -8,13 +8,16 @@
 
   }
 }
-.promo-section.wrapper::before {
+.index {
+  min-height: 391px;
+  padding-bottom: 0px;
+}
+.promo-section::before {
     content: "";
     background-image: url('../img/iphone-hand-mobile@1x.png');
     position: absolute;
     width: 262px;
     height: 308px;
-    left: -163px;
     top:112px;
     background-repeat: no-repeat;
   }
