@@ -6,11 +6,14 @@
   position: relative;
   width: 100%;
   padding-bottom: 39px;
-  &__button, &__button--disable {
+}
+
+.editor-block__button, .editor-block__button--disable {
   display: block;
   width: 78%;
   padding-left: 20px;
   text-decoration: none;
+
   .font-mixin(18px;@header-font;18px;bold);
   color: #d22856;
   border: 3px solid #d22856;
@@ -21,21 +24,22 @@
   padding-right: 14px;
   border-radius: 25px;
   padding-bottom: 16px;
-  }
-  &__button--disable {
+}
+
+.editor-block__button--disable {
   background: transparent;
   color: #e3e3e4;
   border: 3px solid #e3e3e4;
 }
-}
+
 .image-editor {
   width: 100%;
   padding-bottom: 34px;
-  &__image-block {
+}
+.image-editor__image-block {
     padding-left: 20px;
     padding-top: 18px;
-  }
-  &__tools {
+}
+  .image-editor__tools {
     padding-top: 88px;
-  }
 }

@@ -1,54 +1,59 @@
 .blog-post {
-  width:100%;
+  width: 100%;
   display: flex;
   align-items: center;
-  flex-direction:column;
+  flex-direction: column;
   background-color: #f2f2f2;
-  &__item {
-    display: flex;
-    flex-direction:column;
-    flex-grow:1;
-    width: 100%;
-    padding-bottom: 38px;
-  }
-  &__image {
-    margin: 0 auto;
-    padding-left: 20px;
-    padding-right: 20px;
-    width: 86%;
-  }
-  &__body {
-    padding-left: 20px;
-    .font-mixin(24px;@header-font;14px;normal);
-  }
 }
-  .blog-post {
-  &__header {
-    font-weight: bold;
-    font-size: 14px;
-    display: inline-block;
-    margin: 0px;
-    padding: 0px;
-    margin-top: 11px;
+.blog-post__item {
+  display: flex;
+  flex-direction: column;
+  flex-grow: 1;
+  width: 100%;
+  padding-bottom: 38px;
   }
-  &__text {
+.blog-post__image {
+  margin: 0 auto;
+  padding-left: 20px;
+  padding-right: 20px;
+  width: 86%;
+}
+
+.blog-post__body {
+  padding-left: 20px;
+
+  .font-mixin(24px;@header-font;14px;normal);
+}
+
+.blog-post__header {
+  font-weight: bold;
+  font-size: 14px;
+  display: inline-block;
+  margin: 0px;
+  padding: 0px;
+  margin-top: 11px;
+}
+.blog-post__text {
     padding: 0;
     margin: 0;
   }
-  &__info {
+
+.blog-post__info {
     padding-top: 11px;
     padding-left: 26px;
   }
-}
+
 img {
   max-width: 100%;
 }
 .like-text, .like-counts {
+
   .font-mixin(24px;@header-font;12px;normal);
   color:#d22856;
   text-transform: uppercase;
 }
 .time-tamp {
+
   .font-mixin(24px;@content-font;12px;normal);
   text-transform: uppercase;
   display: inline-block;
@@ -63,14 +68,14 @@ img {
 .special-icon {
   position: absolute;
   width: 43.75%;
+
   .font-mixin(24px;@header-font;12px;bold);
   background-color: #d22856;
-  text-transform:uppercase;
+  text-transform: uppercase;
   color:@white;
   text-align: center;
-  top:0px;
+  top: 0px;
   right: 27px;
   padding-bottom: 7px;
   padding-top: 4px;
-
 }
