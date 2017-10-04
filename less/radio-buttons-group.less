@@ -1,5 +1,5 @@
 .radio-buttons-group {
-  padding-left:20px;
+  padding-left: 20px;
 }
 
 .radio-buttons-group__label {
@@ -12,7 +12,8 @@
   transition: all 0.25s linear;
 
   .font-mixin(30px;@header-font;18px;normal);
-  &__::before {
+
+  &::before {
     content: "";
     display: block;
     width: 30px;
@@ -35,15 +36,16 @@
   position: relative;
   margin-bottom: 10px;
   font-size: 18px;
+
   &:checked {
     display: none;
   }
 }
 
 .radio-buttons-group__check::before {
-  content: "";
+  content: " ";
   border-radius: 100%;
-  top:10px;
+  top: 10px;
   left: 10px;
   margin:auto;
   background: green;
