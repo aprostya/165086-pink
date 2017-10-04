@@ -1,0 +1,68 @@
+.filter-range {
+  width: 87%;
+  position: relative;
+  padding-left: 20px;
+}
+
+.filter-controls__min-range,
+.filter-controls__max-range {
+  font-size: 14px;
+  vertical-align: top;
+  cursor: pointer;
+  line-height: 38px;
+  max-width: 100px;
+  padding-left: 31px;
+  color: #ffffff;
+  display: none;
+}
+
+.filter-controls input {
+  width: 50px;
+  margin: 0;
+  color: inherit;
+  font: inherit;
+  background: none;
+  border: none;
+  display: none;
+}
+
+.filter-controls {
+  position: relative;
+  margin-bottom: 32px;
+}
+
+.range-controls {
+  background-color: #000000;
+  padding-left: 20px;
+
+  .scale {
+    height: 3px;
+    background: rgba(0, 0, 0, 0.3);
+  }
+}
+
+.range-controls .bar {
+  width: 80%;
+  height: 2px;
+  background: #000000;
+}
+
+.range-toggle {
+  width: 9px;
+  height: 9px;
+  position: absolute;
+  top: -5px;
+  background: #f2f2f2;
+  border: 3px solid #d22856;
+  border-radius: 100%;
+  cursor: pointer;
+}
+
+.range-toggle-min {
+  left: 0;
+  display: none;
+}
+
+.range-toggle-max {
+  left: 77%;
+}

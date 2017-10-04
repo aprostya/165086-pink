@@ -8,49 +8,49 @@
 <link rel="stylesheet" href="img/sprite.svg" type="image/svg+xml">
 </head>
 <body>
-  <header class="page-header">
-    <div class="page-header__logo-wrap">
-      <a href="/" class="page-header__logo-link">
-        <img src="img/logo.svg" alt="Pink logo">
-      </a>
-    </div>
-    <div class="page-header__nav-wrap">
-      <nav class="main-nav">
-        <div class="main-nav__wrapper">
-          <ul class="main-nav__list">
-            <li class="main-nav__item main-nav__item--active"><a href="#">Главная</a></li>
-            <li class="main-nav__items"><a href="#">Фотографии</a></li>
-            <li class="main-nav__items"><a href="#">Конкурс</a></li>
-            <li class="main-nav__items"><a href="#">HTML ACADEMY</a></li>
-          </ul>
-          <a href="#" class="main-nav__toggle main-nav__toggle--close"></a>
-        </div>
-      </nav>
-    </div>
+    <header class="page-header page-header--active">
+        <div class="menu-header">
+                <div class="page-header__logo-wrap">
+                    <a href="/" class="page-header__logo-link">
+                        <img src="img/logo.svg" alt="Pink logo">
+                    </a>
+                </div>
+                  <nav class="main-nav">
+                      <div class="wrapper">
+                          <ul class="main-nav__list site-list">
+                              <li class="main-nav__items main-nav__items--active"><a href="#">Главная</a></li>
+                              <li class="main-nav__items"><a href="#">Фотографии</a></li>
+                              <li class="main-nav__items"><a href="#">Конкурс</a></li>
+                              <li class="main-nav__items"><a href="#">HTML ACADEMY</a></li>
+                          </ul>
+                          <a href="#" class="main-nav__toggle main-nav__toggle--close"></a>
+                      </div>
+                  </nav>
+              </div>
+              <section class="contest-page">
+                <h2 class="visually_hidden">Приложение pink для путешествий</h2>
+                <section class="wrapper">
+                  <h2 class="contest-page__text">Фотографии пользователей</h2>
+                </section>
+              </section>
   </header>
   <main class="container">
-    <section class="page-info">
-      <h2 class="page-info__header--visually_hidden">Информация о фотографиях пользователей</h2>
-      <div class="page-info__wrapper">
-        <h1 class="page-info__text">Фотографии пользователей</h1>
-      </div>
-    </section>
     <section class="user-blogs">
-      <div class="user-blogs__wrapper-text">
+      <div class="wrapper-flex">
         <h2 class="user-blogs__text">Взгляните на фотографии, которые выкладывают пользователи! Видите, как не хватает ваших?</h2>
       </div>
     </section>
     <div class="blog-post">
-      <div class="blog-post__wrapper">
+      <div class="wrapper-flex">
         <article class="blog-post__item">
-          <h2 class="blog-post__header--visually_hidden">Фотографии пользователей социальной сети</h2>
-          <figure class="blog-post__image">
-            <img src="img/panorama-mobile.jpg" width="300" height="137" alt="Фотография пользователя из социальной сети">
+          <h2 class="visually_hidden">Фотографии пользователей социальной сети</h2>
+          <figure class="blog-post__image panorama">
+            <img src="img/panorama-mobile.jpg" width="320" height="137" alt="Фотография пользователя из социальной сети">
             <span class="special-icon">Панорама дня</span>
           </figure>
           <div class="blog-post__body">
             <h2 class="blog-post__header">Анна</h2>
-            <span>5 минут назад</span>
+            <span class="time-tamp">5 минут назад</span>
             <p class="blog-post__text">Прыгать или нет?Напишите в комментарии свой совет и смотрите прямую трансляцию в перископе, задавайте свои вопросы!</p>
             <footer class="blog-post__info">
               <span class="heart-icon"></span>
@@ -62,15 +62,15 @@
       </div>
     </div>
     <div class="blog-post">
-      <div class="blog-post__wrapper">
+      <div class="wrapper-flex">
         <article class="blog-post__item">
-          <h2 class="blog-post__header--visually_hidden">Фотографии пользователей социальной сети</h2>
+          <h2 class="visually_hidden">Фотографии пользователей социальной сети</h2>
           <figure class="blog-post__image">
-            <img src="img/photo-1-mobile.jpg" width="300" height="137" alt="Фотография пользователя из социальной сети">
+            <img src="img/photo-car-mobile.jpg" width="289" height="182" alt="Фотография пользователя из социальной сети">
           </figure>
           <div class="blog-post__body">
             <h2 class="blog-post__header">Левон</h2>
-            <span>5 часов назад</span>
+            <span class="time-tamp">5 часов назад</span>
             <p class="blog-post__text">Вчера он на луну летал, сегодня в руки к нам попал</p>
             <footer class="blog-post__info">
               <span class="heart-icon"></span>
@@ -82,15 +82,15 @@
       </div>
     </div>
     <div class="blog-post">
-      <div class="blog-post__wrapper">
+      <div class="wrapper-flex">
         <article class="blog-post__item">
-          <h2 class="blog-post__header--visually_hidden">Фотографии пользователей социальной сети</h2>
+          <h2 class="visually_hidden">Фотографии пользователей социальной сети</h2>
           <figure class="blog-post__image">
-            <img src="img/photo-2-mobile.jpg" width="300" height="137" alt="Фотография пользователя из социальной сети">
+            <img src="img/photo-drumset-mobile.jpg" width="289" height="182" alt="Фотография пользователя из социальной сети">
           </figure>
           <div class="blog-post__body">
             <h2 class="blog-post__header">Антон</h2>
-            <span>12 часов назад</span>
+            <span class="time-tamp">12 часов назад</span>
             <p class="blog-post__text">Соседи будут рады!</p>
             <footer class="blog-post__info">
               <span class="heart-icon"></span>
@@ -102,15 +102,15 @@
       </div>
     </div>
     <div class="blog-post">
-      <div class="blog-post__wrapper">
+      <div class="wrapper-flex">
         <article class="blog-post__item">
-          <h2 class="blog-post__header--visually_hidden">Фотографии пользователей социальной сети</h2>
+          <h2 class="visually_hidden">Фотографии пользователей социальной сети</h2>
           <figure class="blog-post__image">
-            <img src="img/photo-3-mobile.jpg" width="300" height="137" alt="Фотография пользователя из социальной сети">
+            <img src="img/photo-window-mobile.jpg" width="289" height="182" alt="Фотография пользователя из социальной сети">
           </figure>
           <div class="blog-post__body">
             <h2 class="blog-post__header">Борис</h2>
-            <span>20 часов назад</span>
+            <span class="time-tamp">20 часов назад</span>
             <p class="blog-post__text">Здесь могла бы быть ваша цитата о высоком и вечном</p>
             <footer class="blog-post__info">
               <span class="heart-icon"></span>
@@ -122,11 +122,12 @@
       </div>
     </div>
     <div class="blog-post">
-      <div class="blog-post__wrapper">
+      <div class="wrapper-flex">
         <article class="blog-post__item">
-          <h2 class="blog-post__header--visually_hidden">Фотографии пользователей социальной сети</h2>
+          <h2 class="visually_hidden">Фотограф
+          ии пользователей социальной сети</h2>
           <figure class="blog-post__image">
-            <img src="img/photo-4-mobile.jpg" width="300" height="137" alt="Фотография пользователя из социальной сети">
+            <img src="img/photo-fair-mobile.jpg" width="289" height="182" alt="Фотография пользователя из социальной сети">
           </figure>
           <div class="blog-post__body">
             <h2 class="blog-post__header">Сергей</h2>
@@ -142,15 +143,15 @@
       </div>
     </div>
     <div class="blog-post">
-      <div class="blog-post__wrapper">
+      <div class="wrapper-flex">
         <article class="blog-post__item">
-          <h2 class="blog-post__header--visually_hidden">Фотографии пользователей социальной сети</h2>
+          <h2 class="visually_hidden">Фотографии пользователей социальной сети</h2>
           <figure class="blog-post__image">
-            <img src="img/photo-5-mobile.jpg" width="300" height="137" alt="Фотография пользователя из социальной сети">
+            <img src="img/photo-pov-mobile.jpg" width="289" height="182" alt="Фотография пользователя из социальной сети">
           </figure>
           <div class="blog-post__body">
             <h2 class="blog-post__header">Максим</h2>
-            <span>40 часов назад</span>
+            <span class="time-tamp">40 часов назад</span>
             <p class="blog-post__text">Где снег-то?</p>
             <footer class="blog-post__info">
               <span class="heart-icon"></span>
@@ -162,16 +163,16 @@
       </div>
     </div>
     <div class="blog-post">
-      <div class="blog-post__wrapper">
+      <div class="wrapper-flex">
         <article class="blog-post__item">
-          <h2 class="blog-post__header--visually_hidden">Фотографии пользователей социальной сети</h2>
+          <h2 class="visually_hidden">Фотографии пользователей социальной сети</h2>
           <div class="blog-post__wrapper">
             <figure class="blog-post__image">
-              <img src="img/photo-6-mobile.jpg" width="300" height="137" alt="Фотография пользователя из социальной сети">
+              <img src="img/photo-wing-mobile.jpg" width="289" height="182" alt="Фотография пользователя из социальной сети">
             </figure>
             <div class="blog-post__body">
               <h2 class="blog-post__header">Надежда</h2>
-              <span>45 часов назад</span>
+              <span class="time-tamp">45 часов назад</span>
               <p class="blog-post__text">Всем GM и взаимные лайки!</p>
               <footer class="blog-post__info">
                 <span class="heart-icon"></span>
@@ -184,18 +185,18 @@
       </div>
     </div>
     <section class="describe-block">
-      <h2 class="describe-block__header--visually_hidden">Промо-текст</h2>
-      <div class="describe-block__wrapper">
+      <h2 class="visually_hidden">Промо-текст</h2>
+      <div class="wrapper-flex">
         <h2 class="describe-block__text">Затмите их всех! Выкладывайте все, что накопилось в телефоне!</h2>
       </div>
     </section>
     <section class="editor-block">
-      <h2 class="editor-block__header--visually_hidden">Редактор фото</h2>
+      <h2 class="visually_hidden">Редактор фото</h2>
       <div class="editor-block__content">
         <article class="image-editor">
-          <h2 class="image-editor__header--visually_hidden">Пример редактора фотографий приложения Pink</h2>
+          <h2 class="visually_hidden">Пример редактора фотографий приложения Pink</h2>
           <div class="image-editor__image-block">
-            <img src="img/photo-7-mobile.jpg" alt="Фотография для редактирования">
+            <img src="img/photo-road-mobile.jpg" width="280" height="375" alt="Фотография для редактирования">
           </div>
           <div class="image-editor__tools">
             <div class="items-blocks">
@@ -203,39 +204,44 @@
               <span></span>
               <span></span>
             </div>
-            <div class="filterline-average">
-              <div class="filter-average-from">
-                <label for="average-from">test</label>
-                <input type="text" name="average-filter" id="average-from" value="0">
-              </div>
-              <div class="filter-average-to">
-                <label for="average-before">test</label>
-                <input type="text" name="average-filter" id="average-before" value="">
-              </div>
+            <div class="filter-range">
+                <h2 class="filter-range__title visually_hidden">Редактор фото</h2>
+                    <div class="filter-controls">
+                        <form action="https://echo.htmlacademy.ru" method="GET">
+                        <label class="filter-controls__min-range">от<input type="text" name="min-price" value="0"></label>
+                        <label class="filter-controls__max-range">до<input type="text" name="max-price" value="3000"></label>
+                        </form>
+                    </div>
+                    <div class="range-controls">
+                        <div class="scale">
+                          <div class="bar"></div>
+                          </div>
+                        <div class="range-toggle range-toggle-min"></div>
+                        <div class="range-toggle range-toggle-max"><div class="range-toggle__inside"></div>
+                    </div>
             </div>
-          </div>
         </article>
         <a href="#" class="editor-block__button">Запостить</a>
-        <a href="#" class="editor-block__button --disable">Отмена</a>
+        <a href="#" class="editor-block__button--disable">Отмена</a>
       </div>
     </section>
   </main>
-  <footer class="page-footer">
-    <div class="container">
-      <section class="page-footer__img-wrap">
-        <h2 class="page-footer__header--visually_hidden">Логотип пинк</h2>
+    <footer class="page-shown-footer">
+    <div class="wrapper">
+      <section class="page-shown-footer__img-wrap">
+        <h2 class="visually_hidden">Свяжитесь с нами</h2>
         <img src="img/logo.jpg" alt="Pink logo">
       </section>
-      <div class="page-footer__social social">
+      <div class="page-shown-footer__social social">
         <ul class="social__list">
           <li class="social__item"><a class="social__link--twitter" href="#">Твиттер</a></li>
           <li class="social__item"><a class="social__link--facebook" href="#">Фейсбук</a></li>
           <li class="social__item"><a class="social__link--youtube" href="#">Ютуб</a></li>
         </ul>
       </div>
-      <section class="page-footer__copyright">
-        <h2 class="page-footer__header--visually_hidden">Копирайт</h2>
-        <p class="page-footer__copyright-text">Разработано:</p>
+      <section class="page-shown-footer__copyright">
+        <h2 class="visually_hidden">Копирайт</h2>
+        <p class="page-shown-footer__copyright-text">Разработано:</p>
         <a href="#"><img src="img/htmllogo" alt="HTML academy logo"></a>
       </section>
     </div>
