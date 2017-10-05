@@ -8,18 +8,60 @@
     margin: 0 auto;
   }
 }
+.promo-section__text {
+  display: none;
+  @media(min-width: @tablet-width) {
+    display: block;
+     .font-mixin(44px;@content-font;40px;normal);
+     margin-left: 95px;
+     width: 30%;
+     margin-top: 151px;
+     text-align: center;
+     margin-top: 103px;
+     color: @white;
+   }
+
+  @media(min-width: @desktop-width) {
+    background: #1d2632;
+    background-size: 100% auto;
+    background-size: cover;
+    background-color: red;
+    .font-mixin(70px;@content-font;50px;normal);
+    color: #ffffff;
+    width: 26%;
+  }
+}
 
 .index {
-  min-height: 391px;
-  padding-bottom: 0;
+  padding-bottom: 391px;
+
+  @media (min-width: @desktop-width) {
+    padding-bottom: 0;
+    width: 100%;
+  }
+
+  @media (min-width: @tablet-width) {
+    padding-bottom: 0;
+  }
 }
 
 .promo-section::before {
   content: " ";
-  background-image: url("../img/iphone-hand-mobile@1x.png");
+  background-image: url('../img/iphone-hand-mobile@1x.png');
   position: absolute;
   width: 262px;
   height: 308px;
   top: 112px;
   background-repeat: no-repeat;
+
+   @media (min-width: @desktop-width) {
+      content: "";
+      background-image: url('');
+    }
+
+    @media (min-width: @tablet-width) {
+    padding-bottom: 0px;
+    content: "";
+    background-image: url('');
+  }
 }

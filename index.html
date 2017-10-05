@@ -5,16 +5,17 @@
 <meta charset="UTF-8">
 <script src="js/script.min.js"></script>
 <link rel="stylesheet" type="text/css" href="css/style.css">
+<meta name="viewport" content="width=device-width, initial-scale=1">
 </head>
 <body>
     <header class="page-header page-header--active">
         <div class="page-header__nav-wrap">
             <div class="menu-header">
-                <div class="page-header__logo-wrap">
+               <div class="page-header__logo-wrap">
                   <a href="/" class="page-header__logo-link">
                     <img src="img/logo.svg" alt="Pink logo">
                   </a>
-                </div>
+               </div>
               <nav class="main-nav">
                   <div class="wrapper-flex">
                       <ul class="main-nav__list site-list">
@@ -29,12 +30,11 @@
         </div>
         </div>
         <section class="promo-section index">
-          <div class="wrapper">
+          <div class="wrapper-flex">
             <h2 class="visually_hidden">Выбор операционной системы для скачивания приложения Pink</h2>
+            <h2 class="promo-section__text">Взгляните на жизнь иначе</h2>
           </div>
         </section>
-    </header>
-    <main class="container">
         <section class="promo-download">
             <h2 class="visually_hidden">Выбор операционной системы для скачивания приложения PInk</h2>
             <div class="wrapper-flex">
@@ -52,12 +52,16 @@
                 </div>
             </div>
         </section>
+    </header>
+    <main class="container">
         <div class="features">
             <div class="wrapper-flex">
             <h2 class="visually_hidden">Причины скачать приложение Pink</h2>
             <div class="features-headers">
                 <h2 class="features__title">Устали от серости мегаполиса?</h2>
-                <h2 class="features__title">Нам есть, что вам предложить!</h2>
+                <br class="br-separator">
+                <h2 class="features__title">Нам есть, что вам
+                <br class="br-separator__tablet">предложить!</h2>
             </div>
                 <div class="features-items">
                   <div class="wrapper-flex">
@@ -76,6 +80,11 @@
                     <div class="features-items__image-wrap">
                       <img src="img/iphone-screen-mobile.png" width="140" height="289">
                     </div>
+                    <section class="features-items__block mobile_hidden">
+                      <h2 class="features-items__title--custom_size">Эффект<br class="separator"> на 24 часа!</h2>
+                      <p class="features-items__descr">Британские ученые провели исследования и доказали, что положительный эффект от использования приложения длится целые сутки!</p>
+                      <a class="features-items__link">Узнать больше об исследовании</a>
+                    </section>
                 </div>
                 </div>
           </div>
@@ -86,7 +95,7 @@
                 <article class="slider-reviews">
                     <h2 class="slider-reviews__header visually_hidden">Блок отзывов о приложении Pink</h2>
                     <div class="slider-reviews__text">&laquo;Это приложение перевернуло мой мир и позволило по-новому взглянуть на привычные серые вещи! А еще я познакомился со своей будущей женой в комментариях к выложенной фотографии!&raquo;</div>
-                    <h2 class="slider-reviews__header">Николай Петров <span>25 лет, водитель трамвая</span></h2>
+                    <h2 class="slider-reviews__header">Николай Петров <br class="separator"><span>25 лет, водитель трамвая</span></h2>
                 </article>
                 <div class="slider-reviews__pagination">
                     <span class="slider-reviews__pagination-item--active"></span>
@@ -125,7 +134,7 @@
         <section class="info-block">
             <h2 class="visually_hidden">Контактные данные</h2>
             <div class="wrapper-flex">
-                <h2 class="info-block__text">Остались вопросы?Свяжитесь с нами!</h2>
+                <h2 class="info-block__text">Остались вопросы?<br class="separator">Свяжитесь с нами!</h2>
                 <div class="info-block__contacts">
                     <div class="info-block__call-block">
                         <p class="phone__text">Звоните:</p>
@@ -140,7 +149,7 @@
             <div class="map-block">
                 <div class="wrapper-flex">
                     <p class="map-block__text">Приезжайте в гости:</p>
-                    <address><a class="map-block__link" href="#">ул.Большая Конюшенная, 19/8</a></address>
+                    <address><a class="map-block__link" href="#">ул.Большая <br class="separator">Конюшенная, 19/8</a></address>
                     <div class="map-block_map-item">
                       <img src="img/bg-map-mobile@1x.png" width="300" height="300">
                     </div>

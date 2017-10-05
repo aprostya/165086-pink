@@ -11,6 +11,10 @@
   padding-top: 190px;
   width: 100%;
 
+  @media (min-width: @tablet-width) {
+    padding-top: 0;
+  }
+
   .font-mixin(20px; @header-font; 18px; bold);
   background-color: @white;
 }
@@ -27,6 +31,13 @@
   .font-mixin(24px;@content-font; 24px; normal);
   padding-top: 84px;
   text-align: center;
+
+  @media (min-width: @tablet-width) {
+    .font-mixin(40px;@content-font;40px;normal);
+    margin-top: 81px;
+    padding-left: 2%;
+    padding-bottom: 21px;
+    }
 }
 
 .info-block__contacts {
@@ -36,6 +47,11 @@
   flex: 1;
   min-width: 320px;
   .font-mixin(24px;@font-size:18px;@font-weight:normal);
+
+   @media (min-width: @tablet-width) {
+    flex-direction:row;
+    width: 100%;
+   }
 }
 
 .info-block__call-block {
@@ -43,11 +59,17 @@
   flex: 2;
   width: 100%;
   text-align: center;
+  @media (min-width: @tablet-width) {
+    margin-top: 0px;
+  }
 }
 
 .info-block__mail-block {
   margin: 0 auto;
   flex: 2;
+  @media (min-width: @tablet-width) {
+    flex-direction:row;
+  }
 }
 
 .phone {
@@ -62,6 +84,9 @@
 .phone__text {
   font-weight: bold;
   letter-spacing: 1px;
+  @media (min-width: @tablet-width) {
+    margin-top: 0px;
+  }
 }
 
 .mail {
@@ -80,11 +105,17 @@
   letter-spacing: 1px;
   margin-top: 33px;
   text-align: center;
+  @media (min-width: @tablet-width) {
+    margin-top: 0px;
+  }
 }
 
 .map-block {
   margin: 0 auto;
   width: 100%;
+  @media (min-width: @tablet-width) {
+    margin-top: 20px;
+  }
 }
 
 .map-block__text {
@@ -102,13 +133,16 @@
   margin-left: 12px;
 
   .font-mixin(24px;@content-font;24px;normal);
-  width: 90%;
   text-align: center;
 }
 
 address {
   font-style: normal;
   width: 90%;
+  @media (min-width: @tablet-width) {
+    width: auto;
+    margin-left: 3%;
+  }
 }
 
 .page-footer {

@@ -5,7 +5,22 @@
   flex: 1;
   justify-content: space-between;
   background-image: url("../img/bg-back-mobile@1x.jpg");
-  background-position: -190px 0;
+  background-position: center 0;
   background-repeat: no-repeat;
+
+  @media(min-width: @tablet-width) {
+  background: #1d2632;
+  background-size: 700px auto;
   background-size: cover;
+  background-color: red; //вспомогательый класс
+  padding-bottom: 103px;
+  }
+
+  @media(min-width: @desktop-width) {
+  background: #1d2632;
+  background-size: 100% auto;
+  background-size: cover;
+  background-color: red;
+  }
 }
+
