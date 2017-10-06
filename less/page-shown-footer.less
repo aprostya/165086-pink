@@ -1,6 +1,13 @@
 .page-shown-footer {
   width: 100%;
   text-align: center;
+  background-color: @white;
+}
+
+.page-shown-footer__copyright {
+  @media (min-width: @tablet-width) {
+    display: flex;
+  }
 }
 
 .page-shown-footer__copyright-text {
@@ -8,8 +15,29 @@
   .font-mixin(18px;@content-font;14px;normal);
   width: 89%;
   padding-top: 44px;
+
+  @media (min-width: @tablet-width) {
+    padding-top: 0;
+  }
 }
 
 .social__list {
   list-style-type: none;
+  @media (min-width: @tablet-width) {
+    display: flex;
+    flex-direction:row;
+    justify-content: space-between;
+  }
+}
+
+.page-shown-footer__container {
+
+  @media (min-width: @tablet-width) {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-around;
+    padding-left: 20px;
+    padding-right: 20px;
+    align-content: baseline;
+  }
 }
