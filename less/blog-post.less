@@ -10,10 +10,6 @@
   }
 }
 
-.container {
-  max-width: 960px;
-}
-
 .blog-post__item {
   display: flex;
   flex-direction: column;
@@ -74,10 +70,11 @@
   .font-mixin(24px;@header-font;14px;normal);
 
   @media (min-width: @tablet-width) {
+    padding-left: 0;
     background-color: #f2f2f2;
     padding-top: 18px;
-    margin-left: 40px;
-    margin-right: 40px;
+    margin-left: 0;
+    margin-right: 0;
   }
 }
 
@@ -191,7 +188,6 @@ img {
     flex-direction: row;
     justify-content: space-between;
     flex-wrap: wrap;
-    width: 620px;
   }
 }
 
