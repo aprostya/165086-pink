@@ -33,7 +33,7 @@
                   <h2 class="contest-page__text">Фотографии пользователей</h2>
                 </section>
               </section>
-  </header>
+              </header>
   <main class="container">
     <section class="user-blogs">
       <div class="wrapper-flex">
@@ -42,17 +42,20 @@
     </section>
     <div class="blog-post">
       <div class="wrapper-flex">
-        <article class="blog-post__item">
+        <article class="blog-post__item--panorama_item">
           <h2 class="visually_hidden">Фотографии пользователей социальной сети</h2>
-          <figure class="blog-post__image panorama">
-            <img src="img/panorama-mobile.jpg" width="320" height="137" alt="Фотография пользователя из социальной сети">
+          <figure class="blog-post__image--panorama_image">
+            <img src="img/panorama-mobile.jpg" class="temp-image--mobile" width="320" height="137" alt="Фотография пользователя из социальной сети">
+             <img src="img/panorama-mobile.jpg"  class="temp-image" width="700" height="521" alt="Фотография пользователя из социальной сети">
             <span class="special-icon">Панорама дня</span>
           </figure>
-          <div class="blog-post__body">
+          <div class="blog-post__body--panorama__body">
+            <header class="blog-post__header-group">
             <h2 class="blog-post__header">Анна</h2>
             <span class="time-tamp">5 минут назад</span>
-            <p class="blog-post__text">Прыгать или нет?Напишите в комментарии свой совет и смотрите прямую трансляцию в перископе, задавайте свои вопросы!</p>
-            <footer class="blog-post__info">
+            </header>
+            <p class="blog-post__text panorama-text">Прыгать или нет?Напишите в комментарии свой совет и смотрите прямую трансляцию в перископе, задавайте свои вопросы!</p>
+            <footer class="blog-post__info panorama-footer">
               <span class="heart-icon"></span>
               <span class="like-text">Нравится:</span>
               <span class="like-counts">215</span>
@@ -61,8 +64,7 @@
         </article>
       </div>
     </div>
-    <div class="blog-post">
-      <div class="wrapper-flex">
+    <div class="blog-post__group">
         <article class="blog-post__item">
           <h2 class="visually_hidden">Фотографии пользователей социальной сети</h2>
           <figure class="blog-post__image">
@@ -79,10 +81,6 @@
             </footer>
           </div>
         </article>
-      </div>
-    </div>
-    <div class="blog-post">
-      <div class="wrapper-flex">
         <article class="blog-post__item">
           <h2 class="visually_hidden">Фотографии пользователей социальной сети</h2>
           <figure class="blog-post__image">
@@ -99,11 +97,7 @@
             </footer>
           </div>
         </article>
-      </div>
-    </div>
-    <div class="blog-post">
-      <div class="wrapper-flex">
-        <article class="blog-post__item">
+    <article class="blog-post__item">
           <h2 class="visually_hidden">Фотографии пользователей социальной сети</h2>
           <figure class="blog-post__image">
             <img src="img/photo-window-mobile.jpg" width="289" height="182" alt="Фотография пользователя из социальной сети">
@@ -119,11 +113,7 @@
             </footer>
           </div>
         </article>
-      </div>
-    </div>
-    <div class="blog-post">
-      <div class="wrapper-flex">
-        <article class="blog-post__item">
+    <article class="blog-post__item">
           <h2 class="visually_hidden">Фотограф
           ии пользователей социальной сети</h2>
           <figure class="blog-post__image">
@@ -140,11 +130,7 @@
             </footer>
           </div>
         </article>
-      </div>
-    </div>
-    <div class="blog-post">
-      <div class="wrapper-flex">
-        <article class="blog-post__item">
+    <article class="blog-post__item">
           <h2 class="visually_hidden">Фотографии пользователей социальной сети</h2>
           <figure class="blog-post__image">
             <img src="img/photo-pov-mobile.jpg" width="289" height="182" alt="Фотография пользователя из социальной сети">
@@ -160,11 +146,7 @@
             </footer>
           </div>
         </article>
-      </div>
-    </div>
-    <div class="blog-post">
-      <div class="wrapper-flex">
-        <article class="blog-post__item">
+    <article class="blog-post__item">
           <h2 class="visually_hidden">Фотографии пользователей социальной сети</h2>
           <div class="blog-post__wrapper">
             <figure class="blog-post__image">
@@ -183,7 +165,6 @@
           </div>
         </article>
       </div>
-    </div>
     <section class="describe-block">
       <h2 class="visually_hidden">Промо-текст</h2>
       <div class="wrapper-flex">

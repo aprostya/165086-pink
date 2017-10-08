@@ -3,6 +3,12 @@
   text-align: center;
   display: flex;
   flex-direction: column;
+
+  @media (min-width: @tablet-width) {
+    width: 85%;
+    margin: 0 auto;
+    padding-top: 47px;
+  }
 }
 
 .user-blogs__text {
@@ -11,4 +17,9 @@
   padding-top: 33px;
   padding-left: 20px;
   width: 83%;
+
+  @media (min-width: @tablet-width) {
+    font-size: 18px;
+    width: 100%;
+  }
 }
