@@ -19,6 +19,11 @@
     margin: 0 auto;
     padding-top: 106px;
   }
+  @media (min-width: @desktop-width) {
+    padding-top: 297px;
+    padding-left: 0;
+
+  }
 }
 
 .slider-reviews__header {
@@ -31,6 +36,10 @@
     .font-mixin(30px;@header-font;20px;bold);
     order: 1;
     margin-top: 36px;
+  }
+
+  @media (min-width: @desktop-width) {
+    font-size: 24px;
   }
 
   span {
@@ -55,5 +64,13 @@
     order:3;
     padding-left: 20px;
     width: auto;
+  }
+  @media (min-width: @desktop-width) {
+
+    text-align: center;
+    padding-left: 95px;
+    padding-right: 95px;
+    margin: 0 auto;
+    margin: 0 auto;
   }
 }

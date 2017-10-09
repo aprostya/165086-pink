@@ -37,6 +37,7 @@
 
 .promo-section__text {
   display: none;
+
   @media (min-width: @tablet-width) {
     display: block;
      .font-mixin(44px;@content-font;40px;normal);
@@ -45,5 +46,36 @@
      margin-top: 151px;
      text-align: center;
      margin-top: 103px;
+     color: @white;
+
+   @media (min-width: @desktop-width) {
+    font-size: 50px;
+    margin-left: 0;
+    padding-top: 15px;
+    line-height: 60px;
+    width: auto;
+   }
+  }
+}
+
+.index-wrapper {
+
+  @media (min-width: @desktop-width) {
+  margin-left: 0;
+  max-width: 548px;
+  margin-left: 136px;
+  text-align: center;
+  }
+}
+
+.separator-desktop {
+  display: none;
+
+   @media (min-width: @tablet-width) {
+    display: none;
+  }
+
+  @media (min-width: @desktop-width)  {
+    display: inline;
   }
 }

@@ -30,18 +30,23 @@
   cursor: pointer;
   padding-left: 14px;
 
-  @media (min-width: @desktop-width) {
-    background: none;
-    width: 22%;
-    left: 121px;
-    top: 0;
-    padding-left: 1%;
-  }
   @media (min-width: @tablet-width) {
     width: 39%;
     padding-left: 19px;
     left: 47px;
     top: -105px;
+  }
+
+  @media (min-width: @desktop-width) {
+    background: none;
+    width: auto;
+    left: 112px;
+    top: -38px;
+    padding-bottom: 8px;
+    padding-top: 6px;
+    padding-left: 39px;
+    padding-top: 6px;
+    padding-right: 40px;
   }
 
   a {
@@ -53,6 +58,11 @@
     margin-top: 9px;
     letter-spacing: 1px;
   }
+   @media (min-width: @desktop-width) {
+    font-size: 50px;
+    font-family: @content-font;
+    margin-left: 18px;
+   }
 }
 
 .promo-download__links {
@@ -60,4 +70,9 @@
   flex-direction: column;
   align-content: center;
   width: auto;
+
+   @media (min-width: @desktop-width) {
+    max-width: 548px;
+    width: auto;
+   }
 }

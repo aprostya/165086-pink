@@ -32,12 +32,20 @@
   padding-top: 84px;
   text-align: center;
 
-  @media (min-width: @tablet-width) {
+  @media(min-width: @tablet-width) {
     .font-mixin(40px;@content-font;40px;normal);
     margin-top: 81px;
     padding-left: 2%;
     padding-bottom: 21px;
     }
+
+  @media(min-width: @desktop-width) {
+    font-size: 50px;
+    padding-left: 0;
+    line-height: 60px;
+    padding-top: 294px;
+    margin-top: 0;
+  }
 }
 
 .info-block__contacts {
