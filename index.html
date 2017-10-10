@@ -59,7 +59,7 @@
             <div class="features-headers">
                 <h2 class="features__title features-title--first">Устали от серости мегаполиса?</h2>
                 <br class="br-separator">
-                <h2 class="features__title features__title--second">Нам есть, что вам предложить!</h2>
+                <h2 class="features__title features__title--second">Нам есть, что вам <br class="separator"> предложить!</h2>
             </div>
                 <div class="features-items">
                   <div class="wrapper-flex features-items__block--desktop-wrapper">
@@ -110,18 +110,42 @@
             <article class="price-table">
                 <h2 class="visually_hidden">Таблица стоимости тарифов приложения Pink</h2>
                 <table class="traffic-table">
-                    <tr class="traffic-table__tr--shown">
-                        <td>Стандарт<span class="traffic-table__prices">3.99 USD</span></td>
+                   <thead class="traffic-table__head">
+                   <tr>
+                    <th class="traffic-table_headcell traffic-table_headcell--no-borders"></th>
+                    <th class="traffic-table_headcell">
+                    <p class="price-table__headcell-type">База</p>
+                    <p class="price-table__headcell-price">1,99 USD</p>
+                    </th>
+                    <th class="traffic-table_headcell">
+                    <p class="price-table__headcell-type">Стандарт</p>
+                    <p class="price-table__headcell-price">3,99 USD</p>
+                    </th>
+                    <th class="traffic-table_headcell">
+                    <p class="price-table__headcell-type">Анлим</p>
+                    <p class="price-table__headcell-price">9,99 USD</p>
+                    </th>
                     </tr>
-                    <tr>
-                        <td>Розовый фильтр</td>
+                    <tbody class="traffic-table__body">
+                    <tr class="traffic-table__row">
+                    <td class="traffic-table__cell">Розовый фильтр</td>
+                    <td class="traffic-table__cell traffic-table__cell--yes">Розовый фильтр</td>
+                    <td class="traffic-table__cell traffic-table__cell--yes">Розовый фильтр</td>
+                    <td class="traffic-table__cell traffic-table__cell--yes">Розовый фильтр</td>
                     </tr>
-                    <tr>
-                        <td>Смайлики</td>
+                     <tr class="traffic-table__row">
+                    <td class="traffic-table__cell">Смайлики</td>
+                    <td class="traffic-table__cell  traffic-table__cell--no">Розовый фильтр</td>
+                    <td class="traffic-table__cell traffic-table__cell--no">Розовый фильтр</td>
+                    <td class="traffic-table__cell traffic-table__cell--yes">Розовый фильтр</td>
                     </tr>
-                    <tr>
-                        <td>Комментарий</td>
+                     <tr class="traffic-table__row">
+                    <td class="traffic-table__cell">Комментарии</td>
+                    <td class="traffic-table__cell traffic-table__cell--no">Розовый фильтр</td>
+                    <td class="traffic-table__cell traffic-table__cell--no">Розовый фильтр</td>
+                    <td class="traffic-table__cell traffic-table__cell--no">Розовый фильтр</td>
                     </tr>
+                    </thead>
                 </table>
             </article>
             <div class="slider-reviews__pagination">
@@ -148,7 +172,7 @@
             <div class="map-block">
                 <div class="wrapper-flex">
                     <p class="map-block__text">Приезжайте в гости:</p>
-                    <address><a class="map-block__link" href="#">ул.Большая <br class="separator">Конюшенная, 19/8</a></address>
+                    <address><a class="map-block__link" href="#">ул.Большая <br class="separator"><br class="separator-desktop">Конюшенная, 19/8</a></address>
                     <div class="map-block_map-item">
                       <img src="img/bg-map-mobile@1x.png" width="300" height="300">
                     </div>
@@ -156,25 +180,27 @@
             </div>
         </section>
     </main>
-    <footer class="page-footer">
-        <div class="container">
-            <section class="page-footer__img-wrap">
-                <h2 class="page-footer__header visually_hidden">Логотип пинк</h2>
-                <img src="img/logo.jpg" alt="Pink logo">
-            </section>
-            <div class="page-footer__social social">
-                <ul class="social__list">
-                    <li class="social__item"><a class="social__link--twitter" href="#">Твиттер</a></li>
-                    <li class="social__item"><a class="social__link--facebook" href="#">Фейсбук</a></li>
-                    <li class="social__item"><a class="social__link--youtube" href="#">Ютуб</a></li>
-                </ul>
-            </div>
-            <section class="page-footer__copyright">
-                <h2 class="page-footer__header--visually_hidden">Копирайт</h2>
-                <p class="page-footer__copyright-text">Разработано:</p>
-                <a href="#"><img src="img/htmllogo" alt="HTML academy logo"></a>
-            </section>
-        </div>
-    </footer>
+    <footer class="page-shown-footer">
+      <div class="wrapper">
+      <div class="page-shown-footer__container">
+      <section class="page-shown-footer__img-wrap">
+        <h2 class="visually_hidden">Свяжитесь с нами</h2>
+        <img src="img/logo.jpg" alt="Pink logo">
+      </section>
+      <div class="page-shown-footer__social social">
+        <ul class="social__list">
+          <li class="social__item"><a class="social__link--twitter" href="#">Твиттер</a></li>
+          <li class="social__item"><a class="social__link--facebook" href="#">Фейсбук</a></li>
+          <li class="social__item"><a class="social__link--youtube" href="#">Ютуб</a></li>
+        </ul>
+      </div>
+      <section class="page-shown-footer__copyright">
+        <h2 class="visually_hidden">Копирайт</h2>
+        <p class="page-shown-footer__copyright-text">Разработано:</p>
+        <a href="#"><img src="img/htmllogo" alt="HTML academy logo"></a>
+      </section>
+    </div>
+    </div>
+  </footer>
 </body>
 </html>

@@ -2,7 +2,19 @@
   width: 100%;
   text-align: center;
   background-color: @white;
-}
+  display: none;
+
+   @media (min-width: @tablet-width) {
+    display: block;
+   }
+
+   @media (min-width: @desktop-width) {
+     display: block;
+     height: 92px;
+     padding-top: 46px;
+
+   }
+ }
 
 .page-shown-footer__copyright {
   @media (min-width: @tablet-width) {

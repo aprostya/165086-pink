@@ -25,6 +25,7 @@
   max-width: 960px;
   padding: 0 20px;
   box-sizing: border-box;
+  width: 100%;
 
   @media (min-width:@tablet-width) {
     box-sizing: content-box;
@@ -39,6 +40,7 @@
   margin: 0 auto;
   max-width: 960px;
   box-sizing: border-box;
+  width: 100%;
 
   @media (min-width: @tablet-width) {
     display: flex;
@@ -53,14 +55,15 @@
   max-width: 960px;
   margin: 0 auto;
   padding: 0 20px;
+  width: 100%;
   box-sizing: border-box;
 
   @media (min-width:@tablet-width) {
-    box-sizing: content-box;
+    box-sizing: border-box;
   }
 
   @media (min-width:@desktop-width) {
-    box-sizing: content-box;
+    box-sizing: border-box;
   }
 }
 
@@ -98,3 +101,6 @@
 @import "editor-block";
 @import "filter-range";
 @import "form-section";
+@import "form";
+@import "label-block";
+@import "traffic-table";

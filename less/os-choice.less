@@ -29,13 +29,26 @@
     margin-right: auto;
     margin-top: -11px;
   }
+
+  @media (min-width: @desktop-width) {
+    padding-bottom: 27px;
+    padding-right: 0;
+    padding-left: 0;
+  }
 }
 
 .form {
+
   @media (min-width: @tablet-width) {
     width: 75%;
     padding: 6%;
     padding-top: 0;
-    border:2px solid #e5e5e5;
+    border: 2px solid #e5e5e5;
+  }
+
+  @media (min-width: @desktop-width) {
+    width: 434px;
+    margin-left: 45px;
+    padding: 0;
   }
 }

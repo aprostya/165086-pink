@@ -40,14 +40,13 @@
     <section class="info-user">
       <h2 class="visually_hidden">Условия конкурса приложения Pink</h2>
       <div class="wrapper">
-        <p class="info-user__text">Поделитесь своей историей и получите шанс выиграть ценный приз &mdash; 1000 <br class="separator__form-text "> миль на вашу бонусную карту!</p>
-        <p class="info-user__text--mobile-hidden">Пожалуйста, заполните форму ниже:</p>
+        <p class="info-user__text">Поделитесь своей историей и получите шанс выиграть ценный приз &mdash; 1000 <br class="separator__form-text"> миль на вашу бонусную карту!<span class="info-user__text--mobile-hidden"><br class="separator__form-text separator__form-text--desktop">Пожалуйста, заполните форму ниже:</span></p>
       </div>
     </section>
     <form class="user-form" method="get" action="https://echo.htmlacademy.ru/adaptive">
       <section class="input-form">
         <h2 class="visually_hidden">Формы для ввода данных приложения Pink</h2>
-        <section class="wrapper-flex">
+        <section class="wrapper-flex user-forms">
           <h2 class="visually_hidden">Формы для ввода данных приложения Pink</h2>
           <div class="input-block__form">
               <label for="input" class="input-form__input-label">
@@ -59,13 +58,13 @@
               <label for="input_name" class="input-form__input-label">
                 Имя
               </label>
-                <input type="text" class="input-form__input" required placeholder="Введите имя *" id="input_name">
+                <input type="text" class="input-form__input input-form__input-label--short_letters" required placeholder="Введите имя *" id="input_name">
           </div>
           <div class="input-block__form">
               <label for="input_surname" class="input-form__input-label">
                 Отчество
               </label>
-                <input type="text" class="input-form__input" placeholder="Ну и отчество тоже" id="input_surname">
+              <input type="text" class="input-form__input" placeholder="Ну и отчество тоже" id="input_surname">
           </div>
         </section>
       </section>
@@ -74,6 +73,7 @@
         <div class="wrapper-flex form form--achievments-page">
           <p class="achievments-page__text">Ваши безбашенные достижения в путешествии</p>
           <div class="catalog-checkbox">
+          <div class="checkbox-group">
             <input type="checkbox" checked class="catalog-checkbox__input catalog-checkbox__input--active" id="checkbox">
             <label for="checkbox" class="catalog-checkbox__label catalog-checkbox__label--active">
             Сделал селфи с акулой
@@ -83,7 +83,9 @@
             <label for="checkbox_beach" class="catalog-checkbox__label">
             Обгорел на пляже
             </label>
+            </div>
             <br>
+            <div class="checkbox-group">
             <input type="checkbox" class="catalog-checkbox__input" id="checkbox_seen">
             <label for="checkbox_seen" class="catalog-checkbox__label">
             Видел Чака Норриса
@@ -94,6 +96,8 @@
               Накупил сувениров
             </label>
             <br>
+            </div>
+            <div class="checkbox-group">
              <input type="checkbox" checked class="catalog-checkbox__input" id="checkbox_keep-castle">
             <label for = "checkbox_keep-castle" class="catalog-checkbox__label">
                   Удержал башню
@@ -105,21 +109,26 @@
               </label>
           </div>
           </div>
+          </div>
       </section>
       <section class="user-address">
         <h2 class="visually_hidden">Контактные данные приложения Pink</h2>
-          <div class="wrapper-flex form form--user-contacts">
-            <p class="user-contacts__text--mobile_hidden">Контактная информация</p>
+          <div class="wrapper-flex form__user-contacts">
+            <p class="user-contacts__text user-contacts__text--mobile_hidden">Контактная информация</p>
+            <div class="label-block label-block--phone">
             <label for="input_number" class="user-contacts__label phone_number">
               Номер телефона
               </label>
               <input type="text" class="user-contacts__input table_hidden" placeholder ="Номер, пожалуйста" id="input_number">
               <input type="text" placeholder ="+7 ХХХ ХХХ-ХХ-ХХ" class="user-contacts__input--mobile_hidden input_number" id="input_address">
             <br>
+            </div>
+            <div class="label-block label-block--mail">
             <label for="input_address" class="user-contacts__label mail_address">
               Адрес почты
             </label>
               <input type="text" placeholder ="Введите почту *" class="user-contacts__input input_mail" id="input_address">
+          </div>
           </div>
       </section>
       <section class="os-choice">
@@ -149,13 +158,18 @@
       </section>
       <section class="form-describe">
         <h2 class="visually_hidden">Формы для ввода данных приложения Pink</h2>
-        <div class="wrapper-flex form">
+        <div class="wrapper-flex form form--feedback">
           <h2 class="form-describe__text">Опишите свои эмоции</h2>
+          <div class="form-container">
           <textarea name="feedback" cols="30" rows="5" class="form-section__text-area" placeholder="Можно прям в красках, не стесняясь в выражениях"></textarea>
+          </div>
           <br>
+          <div class="button-group">
           <button type="submit" value="1" class="form-describe__button-submit"><span>Отправить форму</span></button>
           <br>
           <small class="form-describe__small-notice"><span>*</span>&mdash;обязательные поля</small>
+          <small class="form-describe__small-notice--only-desktop"><span>*</span>&mdash;обязательные для заполнения поля</small>
+          </div>
         </div>
       </section>
     </form>

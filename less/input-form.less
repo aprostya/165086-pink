@@ -42,6 +42,11 @@
     margin: 0;
     width: 14%;
   }
+
+  @media (min-width: @desktop-width) {
+    padding-left: 0;
+    width: auto;
+  }
 }
 
 .input-form__input {
@@ -53,10 +58,27 @@
   margin-left: 15px;
   width: 76%;
   padding-right: 22px;
+
   @media (min-width: @tablet-width) {
     width: 67%;
     padding-left: 0;
     margin-bottom: 50px;
     margin-top: 0;
   }
+
+  @media (min-width: @desktop-width) {
+    margin-left: 24px;
+    padding-right: 18px;
+    width: 331px;
+    height: 59px;
+    padding: 0;
+    margin-top: 0;
+  }
+}
+
+.input-form__input-label--short_letters {
+
+  @media (min-width: @desktop-width) {
+    width: 377px;
+}
 }

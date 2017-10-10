@@ -1,0 +1,75 @@
+.traffic-table {
+  width: 78%;
+  margin: 0 auto;
+  border-collapse: collapse;
+  display: table;
+  border-color: grey;
+  border-spacing: 0;
+}
+
+.traffic-table__head {
+  display: table-header-group;
+  vertical-align: middle;
+  border-color: inherit;
+}
+
+.traffic-table_headcell {
+  padding-left: 28px;
+  padding-right: 64px;
+  // padding-top: 16px;
+  // padding-bottom: 23px;
+  background-color: #283645;
+  border-top: 2px solid #283645;
+  border-right: 2px solid #e5e5e5;
+  border-left: 2px solid #e5e5e5;
+}
+
+.traffic-table__body {
+  display: table-row-group;
+  vertical-align: middle;
+  border-color: inherit;
+}
+
+.traffic-table__cell {
+  display: table-cell;
+  padding-top: 0px;
+  padding-bottom: 16px;
+  padding-top: 13px;
+  color: #283645;
+  border: 2px solid #e5e5e5;
+  background-color: #fff;
+  background-repeat: no-repeat;
+  padding-right: 69px;
+  padding-left: 10px;
+
+  .font-mixin(30px;@header-font;18px;normal);
+}
+
+.traffic-table__cell--yes {
+  font-size: 0;
+  overflow: hidden;
+  white-space: nowrap;
+  background-position: center center;
+}
+
+.traffic-table__cell--no {
+  font-size: 0;
+  overflow: hidden;
+  white-space: nowrap;
+  background-position: center center;
+}
+
+.price-table__headcell-type {
+
+  .font-mixin(30px;@header-font;18px;bold);
+  color: @white;
+  text-transform: uppercase;
+  margin: 0;
+}
+
+.price-table__headcell-price {
+
+  .font-mixin(30px;@content-font;24px;normal);
+  color: @white;
+  margin: 0;
+}

@@ -13,6 +13,7 @@
   text-align: center;
   padding-bottom: 26px;
   padding-top: 13px;
+  padding-bottom: 0;
 
   .font-mixin(24px;@content-font;24px;normal);
 
@@ -38,3 +39,16 @@
     width: 500px;
   }
 }
+
+ .features-title--first {
+  padding-bottom: 27px;
+  padding-top: 13px;
+  @media (min-width: @tablet-width) {
+    padding-top: 0;
+    padding-bottom: 0;
+  }
+  @media (min-width: @desktop-width) {
+    padding-bottom: 0;
+    padding-top: 0;
+  }
+ }
