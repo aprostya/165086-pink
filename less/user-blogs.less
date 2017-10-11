@@ -3,12 +3,27 @@
   text-align: center;
   display: flex;
   flex-direction: column;
+
+  @media(min-width:@tablet-width) {
+  font-size: 18px;
+  margin: 0 auto;
+  padding-top: 58px;
+  padding-bottom: 32px;
+
+  }
 }
 
 .user-blogs__text {
   padding-bottom: 43px;
+
   .font-mixin(30px;@header-font;14px;normal);
   padding-top: 33px;
   padding-left: 20px;
   width: 83%;
+
+  @media(min-width:@tablet-width) {
+  font-size: 18px;
+  margin: 0 auto;
+
+  }
 }

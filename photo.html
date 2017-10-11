@@ -35,146 +35,142 @@
               </section>
   </header>
   <main class="container">
+  <div class="wrapper-flex">
     <section class="user-blogs">
-      <div class="wrapper-flex">
         <h2 class="user-blogs__text">Взгляните на фотографии, которые выкладывают пользователи! Видите, как не хватает ваших?</h2>
-      </div>
     </section>
-    <div class="blog-post">
-      <div class="wrapper-flex">
-        <article class="blog-post__item">
+    </div>
+   <!--  <div class="blog-post"> -->
+   <div class="panorama-blog">
+    <!-- <article class="blog-post__item"> -->
+    <article class="panorama-blog__item">
           <h2 class="visually_hidden">Фотографии пользователей социальной сети</h2>
-          <figure class="blog-post__image panorama">
-            <img src="img/panorama-mobile.jpg" width="320" height="137" alt="Фотография пользователя из социальной сети">
+          <!-- <figure class="blog-post__image panorama"> -->
+           <figure class="panorama-blog__image">
+            <img src="img/panorama-mobile.jpg" width="320" height="137" class="mobile-img" alt="Фотография пользователя из социальной сети">
+             <img src="img/panorama-mobile.jpg" width="700" height="513" class="temp-img" alt="Фотография пользователя из социальной сети">
             <span class="special-icon">Панорама дня</span>
           </figure>
-          <div class="blog-post__body">
-            <h2 class="blog-post__header">Анна</h2>
+    </article>
+    <div class="wrapper">
+          <div class="blog-post__body panorama-body">
+          <header class="panorama-header">
+            <h2 class="blog-post__header panorama-header__text">Анна</h2>
             <span class="time-tamp">5 минут назад</span>
-            <p class="blog-post__text">Прыгать или нет?Напишите в комментарии свой совет и смотрите прямую трансляцию в перископе, задавайте свои вопросы!</p>
-            <footer class="blog-post__info">
+          </header>
+            <p class="blog-post__text panorama-text">Прыгать или нет?Напишите в комментарии свой совет и смотрите прямую трансляцию в перископе, задавайте свои вопросы!</p>
+            <footer class="blog-post__info panorama-info">
               <span class="heart-icon"></span>
               <span class="like-text">Нравится:</span>
               <span class="like-counts">215</span>
             </footer>
           </div>
-        </article>
-      </div>
     </div>
-    <div class="blog-post">
-      <div class="wrapper-flex">
-        <article class="blog-post__item">
+    </div>
+    <div class="wrapper-flex blog-items">
+        <article class="blog-post">
           <h2 class="visually_hidden">Фотографии пользователей социальной сети</h2>
           <figure class="blog-post__image">
-            <img src="img/photo-car-mobile.jpg" width="289" height="182" alt="Фотография пользователя из социальной сети">
+            <img src="img/photo-car-mobile.jpg" width="289" height="182" alt="Фотография пользователя из социальной сети" class="mobile-photo">
           </figure>
           <div class="blog-post__body">
-            <h2 class="blog-post__header">Левон</h2>
-            <span class="time-tamp">5 часов назад</span>
+            <header class="blog-header">
+              <h2 class="blog-post__header">Левон</h2>
+              <span class="time-tamp">5 часов назад</span>
+            </header>
             <p class="blog-post__text">Вчера он на луну летал, сегодня в руки к нам попал</p>
-            <footer class="blog-post__info">
+            <footer class="blog-post__info blog-post__info--photo">
               <span class="heart-icon"></span>
               <span class="like-text">Нравится:</span>
               <span class="like-counts">356</span>
             </footer>
           </div>
         </article>
-      </div>
-    </div>
-    <div class="blog-post">
-      <div class="wrapper-flex">
-        <article class="blog-post__item">
+        <article class="blog-post">
           <h2 class="visually_hidden">Фотографии пользователей социальной сети</h2>
           <figure class="blog-post__image">
-            <img src="img/photo-drumset-mobile.jpg" width="289" height="182" alt="Фотография пользователя из социальной сети">
+            <img src="img/photo-drumset-mobile.jpg" width="289" height="182" alt="Фотография пользователя из социальной сети" class="mobile-photo">
           </figure>
           <div class="blog-post__body">
+          <header class="blog-header">
             <h2 class="blog-post__header">Антон</h2>
             <span class="time-tamp">12 часов назад</span>
+          </header>
             <p class="blog-post__text">Соседи будут рады!</p>
-            <footer class="blog-post__info">
+            <footer class="blog-post__info blog-post__info--photo">
               <span class="heart-icon"></span>
               <span class="like-text">Нравится:</span>
               <span class="like-counts">356</span>
             </footer>
           </div>
         </article>
-      </div>
-    </div>
-    <div class="blog-post">
-      <div class="wrapper-flex">
-        <article class="blog-post__item">
+    <article class="blog-post">
           <h2 class="visually_hidden">Фотографии пользователей социальной сети</h2>
           <figure class="blog-post__image">
-            <img src="img/photo-window-mobile.jpg" width="289" height="182" alt="Фотография пользователя из социальной сети">
+            <img src="img/photo-window-mobile.jpg" width="289" height="182" alt="Фотография пользователя из социальной сети" class="mobile-photo">
           </figure>
           <div class="blog-post__body">
+          <header class="blog-header">
             <h2 class="blog-post__header">Борис</h2>
             <span class="time-tamp">20 часов назад</span>
+          </header>
             <p class="blog-post__text">Здесь могла бы быть ваша цитата о высоком и вечном</p>
-            <footer class="blog-post__info">
+            <footer class="blog-post__info blog-post__info--photo">
               <span class="heart-icon"></span>
               <span class="like-text">Нравится:</span>
               <span class="like-counts">215</span>
             </footer>
           </div>
         </article>
-      </div>
-    </div>
-    <div class="blog-post">
-      <div class="wrapper-flex">
-        <article class="blog-post__item">
+    <article class="blog-post">
           <h2 class="visually_hidden">Фотограф
           ии пользователей социальной сети</h2>
           <figure class="blog-post__image">
-            <img src="img/photo-fair-mobile.jpg" width="289" height="182" alt="Фотография пользователя из социальной сети">
+            <img src="img/photo-fair-mobile.jpg" width="289" height="182" alt="Фотография пользователя из социальной сети" class="mobile-photo">
           </figure>
           <div class="blog-post__body">
+          <header class="blog-header">
             <h2 class="blog-post__header">Сергей</h2>
-            <span>25 часов назад</span>
+            <span class="time-tamp">25 часов назад</span>
+          </header>
             <p class="blog-post__text">Самая кубанская в мире!</p>
-            <footer class="blog-post__info">
+            <footer class="blog-post__info blog-post__info--photo">
               <span class="heart-icon"></span>
               <span class="like-text">Нравится:</span>
               <span class="like-counts">4</span>
             </footer>
-          </div>
         </article>
-      </div>
-    </div>
-    <div class="blog-post">
-      <div class="wrapper-flex">
-        <article class="blog-post__item">
+        <article class="blog-post">
           <h2 class="visually_hidden">Фотографии пользователей социальной сети</h2>
           <figure class="blog-post__image">
-            <img src="img/photo-pov-mobile.jpg" width="289" height="182" alt="Фотография пользователя из социальной сети">
+            <img src="img/photo-pov-mobile.jpg" width="289" height="182" alt="Фотография пользователя из социальной сети" class="mobile-photo">
           </figure>
           <div class="blog-post__body">
+          <header class="blog-header">
             <h2 class="blog-post__header">Максим</h2>
             <span class="time-tamp">40 часов назад</span>
+          </header>
             <p class="blog-post__text">Где снег-то?</p>
-            <footer class="blog-post__info">
+            <footer class="blog-post__info blog-post__info--photo">
               <span class="heart-icon"></span>
               <span class="like-text">Нравится:</span>
               <span class="like-counts">150</span>
             </footer>
           </div>
         </article>
-      </div>
-    </div>
-    <div class="blog-post">
-      <div class="wrapper-flex">
-        <article class="blog-post__item">
+        <article class="blog-post">
           <h2 class="visually_hidden">Фотографии пользователей социальной сети</h2>
           <div class="blog-post__wrapper">
             <figure class="blog-post__image">
-              <img src="img/photo-wing-mobile.jpg" width="289" height="182" alt="Фотография пользователя из социальной сети">
+              <img src="img/photo-wing-mobile.jpg" width="289" height="182" alt="Фотография пользователя из социальной сети" class="mobile-photo">
             </figure>
             <div class="blog-post__body">
+            <header class="blog-header">
               <h2 class="blog-post__header">Надежда</h2>
               <span class="time-tamp">45 часов назад</span>
+            </header>
               <p class="blog-post__text">Всем GM и взаимные лайки!</p>
-              <footer class="blog-post__info">
+              <footer class="blog-post__info blog-post__info--photo">
                 <span class="heart-icon"></span>
                 <span class="like-text">Нравится:</span>
                 <span class="like-counts">2560</span>
@@ -182,12 +178,10 @@
             </div>
           </div>
         </article>
-      </div>
-    </div>
+   </div>
     <section class="describe-block">
       <h2 class="visually_hidden">Промо-текст</h2>
-      <div class="wrapper-flex">
-        <h2 class="describe-block__text">Затмите их всех! Выкладывайте все, что накопилось в телефоне!</h2>
+        <h2 class="describe-block__text">Затмите их всех!<br class="separator-desktop"><br class="separator-tablet">Выкладывайте все, что накопилось в телефоне!</h2>
       </div>
     </section>
     <section class="editor-block">
@@ -196,7 +190,7 @@
         <article class="image-editor">
           <h2 class="visually_hidden">Пример редактора фотографий приложения Pink</h2>
           <div class="image-editor__image-block">
-            <img src="img/photo-road-mobile.jpg" width="280" height="375" alt="Фотография для редактирования">
+            <img src="img/photo-road-mobile.jpg" width="280" height="375" alt="Фотография для редактирования" class="mobile-photo">
           </div>
           <div class="image-editor__tools">
             <div class="items-blocks">

@@ -5,6 +5,10 @@
   display: flex;
   width: 100%;
   height: 167px;
+
+  @media(min-width:@tablet-width) {
+    padding-bottom: 76px;
+  }
 }
 
 .contest-page__text {
@@ -16,4 +20,12 @@
   padding-left: 20px;
   padding-right: 20px;
   font-weight: normal;
+
+  @media(min-width:@tablet-width) {
+    font-size: 50px;
+    margin-left: auto;
+    margin-right: auto;
+    margin-top: 83px;
+    line-height: 60px;
+  }
 }
