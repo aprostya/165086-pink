@@ -5,6 +5,11 @@
   position: relative;
   width: 100%;
   padding-bottom: 39px;
+
+  @media (min-width:@tablet-width) {
+    padding-top: 36px;
+    padding-bottom: 0;
+  }
 }
 
 .editor-block__button,
@@ -40,8 +45,38 @@
 .image-editor__image-block {
   padding-left: 20px;
   padding-top: 18px;
+
+  @media (min-width:@tablet-width) {
+    width: 300px;
+    height: 394px;
+    overflow: hidden;
+    position: relative;
+    padding-left: 0;
+    padding-top: 0;
+  }
 }
 
 .image-editor__tools {
   padding-top: 88px;
+
+  @media (min-width:@tablet-width) {
+    padding-top: 0;
+  }
+}
+
+.editor-block__button {
+
+  @media (min-width:@tablet-width) {
+    margin-left: 0;
+    margin: 0 auto;
+    margin-bottom: 22px;
+    width: 259px;
+    padding-right: 34px;
+  }
+
+  @media (min-width:@desktop-width) {
+    width: 186px;
+    margin-right: 3px;
+    padding-right: 19px;
+  }
 }

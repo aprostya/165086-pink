@@ -2,6 +2,15 @@
   width: 87%;
   position: relative;
   padding-left: 20px;
+
+  @media(min-width:@tablet-width) {
+    width: 204px;
+    padding-left: 51px;
+  }
+  @media(min-width: @desktop-width) {
+    width: 287px;
+    padding-left: 140px;
+  }
 }
 
 .filter-controls__min-range,
@@ -27,8 +36,11 @@
 }
 
 .filter-controls {
+
+  @media(min-width:@tablet-width) {
   position: relative;
-  margin-bottom: 32px;
+  margin-bottom: 35px;
+  }
 }
 
 .range-controls {
