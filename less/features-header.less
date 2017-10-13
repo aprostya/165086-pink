@@ -32,6 +32,9 @@
 }
   .features__title--second {
 
+    @media(min-width: @tablet-width) {
+      line-height: 46px;
+    }
     @media (min-width: @desktop-width) {
     width: 718px;
     line-height: 60px;
@@ -43,9 +46,11 @@
  .features-title--first {
   padding-bottom: 27px;
   padding-top: 13px;
+
   @media (min-width: @tablet-width) {
     padding-top: 0;
     padding-bottom: 0;
+    line-height: 43px;
   }
   @media (min-width: @desktop-width) {
     padding-bottom: 0;

@@ -13,7 +13,7 @@
   flex-direction: row;
   flex-wrap: wrap;
   padding-top: 9px;
-  padding-left: 20px;
+  padding-left: 28px;
   padding-right: 46px;
   padding-bottom: 26px;
   width: auto;
@@ -21,9 +21,10 @@
   min-height: auto;
 
   @media(min-width: @desktop-width) {
-    padding-left: 28px;
-    padding-right: 21px;
+    padding-left: 21px;
+    padding-right: 29px;
     padding-bottom: 21px;
+    padding-top: 5px;
     width: auto;
     height: auto;
   }
@@ -35,8 +36,12 @@
   @media(min-width: @tablet-width) {
     order: 2;
     padding-left: 0;
-  }
 }
+    @media(min-width: @desktop-width) {
+      padding-left: 0;
+      padding-right: 0;
+    }
+  }
 
 .panorama-info {
   padding-top: 8px;
@@ -44,6 +49,13 @@
 
   @media(min-width: @tablet-width) {
     margin-left: auto;
+    margin-right: 13px;
+    padding-top: 10px;
+  }
+
+  @media(min-width: @desktop-width) {
+    padding-right: 22px;
+    padding-top: 10px;
   }
 }
 
@@ -62,9 +74,13 @@
   background-color: @white;
   margin-bottom: 19px;
 
- @media(min-width:@tablet-width) {
-    padding-bottom: 49px;
+  @media(min-width:@tablet-width) {
+    padding-bottom: 32px;
     background-color: @white;
+  }
+
+  @media(min-width:@desktop-width) {
+    padding-bottom: 33px;
   }
 }
 
