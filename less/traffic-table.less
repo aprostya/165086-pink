@@ -19,6 +19,13 @@
 }
 
 .traffic-table_headcell {
+
+  @media (min-width: @tablet-width) {
+    padding-right: 20px;
+    padding-left: 23px;
+    padding-top: 9px;
+    padding-bottom: 9px;
+  }
   padding-left: 62px;
   padding-right: 64px;
   padding-bottom: 17px;
@@ -44,6 +51,15 @@
 }
 
 .traffic-table__cell {
+
+  @media (min-width: @tablet-width) {
+    padding: 0;
+    font-size: 14px;
+    padding-bottom: 6px;
+    padding-top: 7px;
+    text-indent: 8px;
+  }
+
   display: table-cell;
   padding-top: 0px;
   padding-bottom: 16px;
@@ -74,6 +90,11 @@
 
 .price-table__headcell-type {
 
+
+  @media (min-width: @tablet-width) {
+
+  .font-mixin(30px;@header-font;16px;bold);
+  }
   .font-mixin(30px;@header-font;18px;bold);
   color: @white;
   text-transform: uppercase;
@@ -81,6 +102,11 @@
 }
 
 .price-table__headcell-price {
+
+  @media (min-width: @tablet-width) {
+
+  .font-mixin(30px;@content-font;18px;normal);
+  }
 
   .font-mixin(30px;@content-font;24px;normal);
   color: @white;
