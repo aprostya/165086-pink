@@ -1,0 +1,49 @@
+.image-editor__image-block {
+  padding: 0;
+
+  @media(min-width: @tablet-width) {
+  background-color: aqua;
+  width: 300px;
+  height: 400px;
+  margin-top: 22px;
+
+  @media(min-width: @desktop-width)  {
+    margin-left: 74px;
+  }
+}
+}
+
+.image-editor {
+
+  @media(min-width: @tablet-width) {
+  flex-direction: row;
+  flex-wrap: wrap;
+  }
+}
+
+.image-editor__tools-list {
+  margin-top: 119px;
+  margin-bottom: 70px;
+
+  @media(min-width: @tablet-width) {
+    margin-top: 0;
+    margin-bottom: 0;
+  }
+
+  @media(min-width: @desktop-width)  {
+    display: block;
+  }
+}
+
+.image-editor__tools--contrast,
+.image-editor__tools--fill{
+  display: none;
+
+  @media(min-width: @tablet-width) {
+    display: block;
+  }
+
+  @media(min-width: @desktop-width)  {
+    display: block;
+  }
+}

@@ -7,12 +7,27 @@
   width: 100%;
   position: relative;
   padding-bottom: 155px;
+
+  @media (min-width: @tablet-width) {
+    order: 5;
+  }
 }
 
 .form-describe__text {
 
   .font-mixin(30px;@header-font;14px;normal);
   margin-top: 57px;
+
+  @media (min-width: @tablet-width) {
+    padding-top: 0;
+    text-align: center;
+    margin-top: -14px;
+    margin-bottom: 16px;
+    margin-left: auto;
+    margin-right: auto;
+    background: @white;
+    width: 44%;
+  }
 }
 
 .form-describe__small-notice {
@@ -22,10 +37,41 @@
   .font-mixin(30px;@content-font;14px;normal);
   color: #000000;
 
-  span {
-    color: #d22856;
+  @media (min-width: @tablet-width) {
+    left: 434px;
+    top:385px;
+  }
+
+  @media (min-width: @desktop-width) {
+    display: none;
   }
 }
+
+.form-describe__small-notice span {
+    color: #d22856;
+
+    @media (min-width: @desktop-width) {
+      font-size: 18px;
+    }
+  }
+
+  .form-describe__small-notice--only-desktop {
+      display: none;
+
+       @media (min-width: @desktop-width) {
+        display: inline;
+
+        .font-mixin(30px;@content-font;14px;normal);
+        color: #000000;
+        position: absolute;
+        left: 657px;
+        top: 302px;
+    }
+  }
+
+  .form-describe__small-notice--only-desktop span {
+    color: #d22856;
+  }
 
 .form-describe__button-submit {
   margin: 0;
@@ -39,6 +85,7 @@
   top: 350px;
   left: 17px;
   cursor: pointer;
+
   .font-mixin(30px;@content-font;18px;bold);
   text-transform: uppercase;
   color: @white;
@@ -47,6 +94,21 @@
     box-shadow: 1px 2px 17px 3px #000000;
     transition-property: box-shadow;
     transition-duration: 1s;
+  }
+
+  @media (min-width: @tablet-width) {
+    width: 47%;
+    left: 37px;
+    top: 370px;
+    font-size: 14px;
+  }
+
+  @media (min-width: @desktop-width) {
+    width: 31%;
+    left: 15px;
+    top: 285px;
+    height: 61px;
+    font-size: 18px;
   }
 }
 
@@ -58,4 +120,10 @@
   text-align: left;
   padding-left: 1px;
   padding-top: 10px;
+  @media (min-width: @tablet-width) {
+    padding-bottom: 0;
+    margin-left: auto;
+    margin-right: 61px;
+    width: 74%;
+  }
 }

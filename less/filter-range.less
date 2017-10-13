@@ -1,7 +1,16 @@
 .filter-range {
-  width: 87%;
+  width: 239px;
   position: relative;
-  padding-left: 20px;
+  left: -23px;
+
+  @media(min-width:@tablet-width) {
+    width: 199px;
+    padding-left: 81px;
+  }
+  @media(min-width: @desktop-width) {
+    width: 285px;
+    padding-left: 162px;
+  }
 }
 
 .filter-controls__min-range,
@@ -27,8 +36,11 @@
 }
 
 .filter-controls {
+
+  @media(min-width:@tablet-width) {
   position: relative;
-  margin-bottom: 32px;
+  margin-bottom: 35px;
+  }
 }
 
 .range-controls {

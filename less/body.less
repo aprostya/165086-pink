@@ -2,7 +2,19 @@ body {
   padding: 0;
   margin: 0;
   background-repeat: no-repeat;
-  background-color: @body-color;
+  background-color: @white;
   .font-mixin(24px; @header-font, "Arial",sans-serif; 24px; normal);
   // background-color: @white;
+}
+
+img {
+  max-width: 100%;
+}
+
+@media (min-width: @tablet-width) {
+  background: #1d2632;
+}
+
+@media(min-width: @desktop-width) {
+  background: #1d2632;
 }

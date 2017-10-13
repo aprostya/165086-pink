@@ -1,3 +1,34 @@
 .features-headers {
-  padding-bottom: 115px;
+  padding-top: 32px;
+  margin: 0 auto;
+  text-align: center;
+  padding-bottom: 116px;
+
+   .br-separator {
+    display: none;
+
+    @media (min-width: @tablet-width) {
+     - display: inline;
+    }
+  }
+  @media (min-width: @tablet-width) {
+    padding:0;
+    margin-top: 52px;
+    line-height: 20px;
+    padding-bottom: 125px;
+    margin-left: 0;
+    margin-right: 0;
+    width: auto;
+  }
+
+  @media (min-width: @desktop-width) {
+  background: @white;
+  font-size: 50px;
+  margin-top: 60px;
+  width: 737px;
+  line-height: 0;
+  margin: 0 auto;
+  margin-top: 54px;
+  }
 }
+

@@ -1,0 +1,114 @@
+.traffic-table {
+  width: 99%;
+  margin: 0 auto;
+  border-collapse: collapse;
+  display: table;
+  // border-color: grey;
+  border:none;
+
+  tr {
+    border: none;
+  }
+}
+
+.traffic-table__head {
+  display: table-header-group;
+  vertical-align: middle;
+  border-color: inherit;
+  border:none;
+}
+
+.traffic-table_headcell {
+
+  @media (min-width: @tablet-width) {
+    padding-right: 20px;
+    padding-left: 23px;
+    padding-top: 9px;
+    padding-bottom: 9px;
+  }
+  padding-left: 62px;
+  padding-right: 64px;
+  padding-bottom: 17px;
+  padding-top: 15px;
+  // padding-top: 16px;
+  // padding-bottom: 23px;
+  background-color: #283645;
+  border-top: 2px solid #283645;
+  border-right: 2px solid #e5e5e5;
+  border-left: 2px solid #e5e5e5;
+}
+
+.traffic-table_headcell--no-borders {
+  background-color: transparent;
+  border:none;
+  border-top: none;
+}
+
+.traffic-table__body {
+  display: table-row-group;
+  vertical-align: middle;
+  border-color: inherit;
+}
+
+.traffic-table__cell {
+
+  @media (min-width: @tablet-width) {
+    padding: 0;
+    font-size: 14px;
+    padding-bottom: 6px;
+    padding-top: 7px;
+    text-indent: 8px;
+  }
+
+  display: table-cell;
+  padding-top: 0px;
+  padding-bottom: 16px;
+  padding-top: 13px;
+  color: #283645;
+  border: 2px solid #e5e5e5;
+  background-color: #fff;
+  background-repeat: no-repeat;
+  padding-right: 69px;
+  padding-left: 16px;
+
+  .font-mixin(30px;@header-font;18px;normal);
+}
+
+.traffic-table__cell--yes {
+  font-size: 0;
+  overflow: hidden;
+  white-space: nowrap;
+  background-position: center center;
+}
+
+.traffic-table__cell--no {
+  font-size: 0;
+  overflow: hidden;
+  white-space: nowrap;
+  background-position: center center;
+}
+
+.price-table__headcell-type {
+
+
+  @media (min-width: @tablet-width) {
+
+  .font-mixin(30px;@header-font;16px;bold);
+  }
+  .font-mixin(30px;@header-font;18px;bold);
+  color: @white;
+  text-transform: uppercase;
+  margin: 0;
+}
+
+.price-table__headcell-price {
+
+  @media (min-width: @tablet-width) {
+
+  .font-mixin(30px;@content-font;18px;normal);
+  }
+
+  .font-mixin(30px;@content-font;24px;normal);
+  color: @white;
+  margin: 0;
+}

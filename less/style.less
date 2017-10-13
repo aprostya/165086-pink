@@ -22,18 +22,51 @@
 
 .wrapper {
   margin: 0 auto;
+  max-width: 960px;
+  padding: 0 20px;
+  box-sizing: border-box;
+  width: 100%;
+
+  @media (min-width:@tablet-width) {
+    box-sizing: border-box;
+    padding: 0 20px;
+  }
+
+  @media (min-width:@desktop-width) {
+    box-sizing: border-box;
+  }
 }
 
 .container {
   margin: 0 auto;
+  max-width: 960px;
+  box-sizing: border-box;
   width: 100%;
+
+  @media (min-width: @tablet-width) {
+    display: flex;
+    flex-direction: column;
+  }
 }
 
 .wrapper-flex {
   display: flex;
   flex-direction: column;
   align-content: stretch;
+  max-width: 960px;
+  margin: 0 auto;
+  padding: 0 20px;
   width: 100%;
+  box-sizing: border-box;
+
+  @media (min-width:@tablet-width) {
+    box-sizing: border-box;
+    padding: 0 20px;
+  }
+
+  @media (min-width:@desktop-width) {
+    box-sizing: border-box;
+  }
 }
 
 @import "variables";
@@ -69,3 +102,12 @@
 @import "describe-block";
 @import "editor-block";
 @import "filter-range";
+@import "form-section";
+@import "form";
+@import "label-block";
+@import "traffic-table";
+@import "panorama";
+@import "image-editor__image-block";
+@import "controls";
+@import "buttons-block";
+@import "social-list";

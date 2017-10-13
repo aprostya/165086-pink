@@ -3,4 +3,14 @@
   width: 100%;
   flex-direction: column;
   margin: 0 auto;
+  background-color: @white;
+
+  @media (min-width: @tablet-width) {
+    order:1;
+  }
+  @media (min-width: @desktop-width) {
+    display: flex;
+    flex-direction: row;
+    flex-wrap: wrap;
+  }
 }
