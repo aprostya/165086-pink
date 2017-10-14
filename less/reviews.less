@@ -3,13 +3,18 @@
   .font-mixin(30px, @header-font, 14px, normal);
   background-color: @white;
   width: 100%;
+  padding-bottom: 176px;
+  margin-top: 15px;
 
-   @media (min-width: @tablet-width) {
+    @media (min-width: @tablet-width) {
     font-size: 18px;
+    padding-bottom: 0;
+    margin-top: 0;
   }
   @media (min-width: @desktop-width) {
     padding-top: 163px;
-    padding-bottom: 169px;
+    padding-bottom: 36px;
+    margin-top: 0;
   }
 }
 
@@ -21,7 +26,7 @@
   @media (min-width: @tablet-width) {
     width: 100%;
     margin: 0 auto;
-    padding-top: 106px;
+    padding-top: 99px;
     padding-bottom: 132px;
   }
   @media (min-width: @desktop-width) {
@@ -38,6 +43,7 @@
   letter-spacing: 1px;
 
   @media (min-width: @tablet-width) {
+
     .font-mixin(30px;@header-font;20px;bold);
     order: 1;
     margin-top: 36px;

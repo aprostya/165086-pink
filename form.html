@@ -5,17 +5,18 @@
 <meta charset="UTF-8">
 <script src="js/script.min.js"></script>
 <link rel="stylesheet" type="text/css" href="css/style.css">
+<meta name="viewport" content="width=device-width, initial-scale=1">
 <link rel="stylesheet" href="img/sprite.svg" type="image/svg+xml">
 </head>
 <body>
   <header class="page-header page-header--active">
         <div class="page-header__nav-wrap">
             <div class="menu-header">
-               <div class="page-header__logo-wrap">
+                <div class="page-header__logo-wrap">
                   <a href="/" class="page-header__logo-link">
                     <img src="img/logo.svg" alt="Pink logo">
                   </a>
-               </div>
+                </div>
               <nav class="main-nav">
                   <div class="wrapper-flex">
                       <ul class="main-nav__list site-list">
@@ -49,7 +50,7 @@
         <section class="wrapper-flex user-forms">
           <h2 class="visually_hidden">Формы для ввода данных приложения Pink</h2>
           <div class="input-block__form">
-              <label for="input" class="input-form__input-label">
+              <label for="input_surname" class="input-form__input-label">
                 Фамилия
               </label>
                 <input type="text" class="input-form__input" required placeholder="Укажите фамилию *" id="input_surname">
@@ -61,10 +62,10 @@
                 <input type="text" class="input-form__input input-form__input-label--short_letters" required placeholder="Введите имя *" id="input_name">
           </div>
           <div class="input-block__form">
-              <label for="input_surname" class="input-form__input-label">
+              <label for="input_surname-mobile" class="input-form__input-label">
                 Отчество
               </label>
-              <input type="text" class="input-form__input" placeholder="Ну и отчество тоже" id="input_surname">
+              <input type="text" class="input-form__input" placeholder="Ну и отчество тоже" id="input_surname-mobile">
           </div>
         </section>
       </section>
@@ -98,13 +99,13 @@
             <br>
             </div>
             <div class="checkbox-group">
-             <input type="checkbox" checked class="catalog-checkbox__input" id="checkbox_keep-castle">
+              <input type="checkbox" checked class="catalog-checkbox__input" id="checkbox_keep-castle">
             <label for = "checkbox_keep-castle" class="catalog-checkbox__label">
                   Удержал башню
               </label>
               <br>
               <input type="checkbox" class="catalog-checkbox__input" id="crash_hotel">
-              <label  for="crash_hotel" class="catalog-checkbox__label" for id=" ">
+              <label  for="crash_hotel" class="catalog-checkbox__label">
                   Разгромил отель
               </label>
           </div>
@@ -120,7 +121,7 @@
               Номер телефона
               </label>
               <input type="text" class="user-contacts__input table_hidden" placeholder ="Номер, пожалуйста" id="input_number">
-              <input type="text" placeholder ="+7 ХХХ ХХХ-ХХ-ХХ" class="user-contacts__input--mobile_hidden input_number" id="input_address">
+              <input type="text" placeholder ="+7 ХХХ ХХХ-ХХ-ХХ" class="user-contacts__input--mobile_hidden input_number" id="input_number-mobile">
             <br>
             </div>
             <div class="label-block label-block--mail">
@@ -136,7 +137,7 @@
         <div class="wrapper-flex form">
           <p class="os-choice__text">С каким приложением путешествовали?</p>
           <div class="radio-buttons-group">
-           <input type="radio" id="radio-select" class="radio-button-group__input">
+            <input type="radio" id="radio-select" class="radio-button-group__input">
             <label for="radio-select" class="radio-buttons-group__label">
               Pink для ios
             </label>
