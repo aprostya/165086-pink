@@ -1,5 +1,11 @@
 .radio-buttons-group {
-  padding-left: 20px;
+  padding-left: 0;
+  padding-bottom: 24px;
+
+  @media (min-width: @tablet-width) {
+    padding-left: 47px;
+    padding-bottom: 40px;
+  }
 
   @media (min-width: @desktop-width) {
     padding-left: 77px;
@@ -12,13 +18,17 @@
   margin-bottom: 11px;
   cursor: pointer;
   padding-bottom: 10px;
-  width: 80%;
-  padding-left: 57px;
+  width: auto;
+  padding-left: 71px;
   transition: all 0.25s linear;
   display: block;
   overflow: hidden;
 
   .font-mixin(30px; @header-font; 18px; normal);
+
+  @media (min-width: @desktop-width) {
+    padding-left: 59px;
+  }
 
   &::before {
     content: "";
@@ -34,6 +44,16 @@
     border: 3px solid #e5e5e5;
     border-radius: 100%;
     background-color: @white;
+
+    @media (min-width: @tablet-width) {
+      top: -1px;
+      left: 9px;
+    }
+
+    @media (min-width: @desktop-width) {
+      top: 0;
+      left: 0;
+    }
   }
 }
 

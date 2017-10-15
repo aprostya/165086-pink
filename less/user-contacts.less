@@ -12,13 +12,14 @@
 
   @media (min-width: @desktop-width) {
     margin-left: 17px;
+    margin-top: 5px;
   }
 }
 
 .phone_number {
   @media (min-width: @tablet-width) {
     order: 2;
-    margin-bottom: 41px;
+    margin-bottom: 8px;
 
     @media (min-width: @desktop-width) {
       height: 0;
@@ -51,7 +52,6 @@
     height: 0;
     width: auto;
     padding: 0;
-    margin-top: 11px;
   }
 }
 
@@ -66,9 +66,24 @@
 
   .font-mixin(30px; @header-font; 18px; normal);
   height: 53px;
-  width: 93%;
-  padding-bottom: 0;
-  padding-left: 20px;
+  width: auto;
+  padding-bottom: 11px;
+  padding-left: 21px;
+  padding-top: 2px;
+  padding-right: 37px;
+
+  @media (min-width: @tablet-width) {
+    order: 1;
+    width: 84%;
+    padding-left: 0;
+    padding-right: 0;
+  }
+
+  @media (min-width: @desktop-width) {
+    width: 83%;
+    padding-left: 0;
+    padding-bottom: 4px;
+  }
 }
 
 .user-contacts__text--mobile_hidden {
@@ -82,11 +97,11 @@
     padding-bottom: 0;
     padding-left: 20px;
     margin-top: -16px;
-    margin-bottom: 0;
+    margin-bottom: 29px;
     margin-left: auto;
     margin-right: auto;
     background: @white;
-    width: 47%;
+    width: 58%;
   }
 
   @media (min-width: @desktop-width) {
@@ -95,6 +110,7 @@
     height: auto;
     margin-top: -16px;
     margin-left: 269px;
+    margin-bottom: 30px;
   }
 }
 

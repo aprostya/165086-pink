@@ -1,8 +1,12 @@
 .catalog-checkbox {
 
   .font-mixin(30px; @header-font; 18px; normal);
-  padding-left: 20px;
+  padding-left: 11px;
   padding-top: 33px;
+
+  @media (min-width: @tablet-width) {
+    padding-left: 27px;
+  }
 
   @media (min-width: @desktop-width) {
     display: flex;
@@ -20,6 +24,10 @@
   padding-bottom: 10px;
   width: 80%;
   padding-left: 57px;
+
+  @media (min-width: @desktop-width) {
+    padding-left: 59px;
+  }
 }
 
 .catalog-checkbox__input {
@@ -36,14 +44,21 @@
   width: 30px;
   height: 20px;
   position: absolute;
-  top: -3px;
-  left: -6px;
-  padding-left: 10px;
+  top: -6px;
+  left: -9px;
+  padding-left: 0;
   padding-top: 4px;
   padding-bottom: 10px;
   border: 3px solid #e5e5e5;
   border-radius: 1px;
   background-color: @white;
+
+  @media (min-width: @desktop-width) {
+    width: 32px;
+    top: -6px;
+    left: -3px;
+    padding-left: 6px;
+  }
 }
 
 .catalog-checkbox__input:checked + .catalog-checkbox__label::after {

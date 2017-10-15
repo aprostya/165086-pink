@@ -6,17 +6,18 @@
   text-transform: uppercase;
   width: 100%;
   position: relative;
-  padding-bottom: 155px;
+  padding-bottom: 75px;
 
   @media (min-width: @tablet-width) {
     order: 5;
+    padding-bottom: 10px;
   }
 }
 
 .form-describe__text {
 
   .font-mixin(30px; @header-font; 14px; normal);
-  margin-top: 57px;
+  margin-top: 37px;
 
   @media (min-width: @tablet-width) {
     padding-top: 0;
@@ -28,18 +29,23 @@
     background: @white;
     width: 44%;
   }
+
+  @media (min-width: @desktop-width) {
+    width: 31%;
+    margin-top: -19px;
+  }
 }
 
 .form-describe__small-notice {
-  position: absolute;
-  top: 447px;
-  left: 71px;
+  position: static;
+  order: 2;
+
   .font-mixin(30px; @content-font; 14px; normal);
   color: #000000;
 
   @media (min-width: @tablet-width) {
-    left: 434px;
-    top: 385px;
+    margin-top: 23px;
+    margin-left: 142px;
   }
 
   @media (min-width: @desktop-width) {
@@ -63,9 +69,11 @@
 
     .font-mixin(30px; @content-font; 14px; normal);
     color: #000000;
-    position: absolute;
-    left: 657px;
-    top: 302px;
+    position: static;
+    order: 2;
+    margin-left: auto;
+    margin-right: 24px;
+    margin-top: 23px;
   }
 }
 
@@ -74,17 +82,18 @@
 }
 
 .form-describe__button-submit {
-  margin: 0;
-  padding: 0;
+  margin-bottom: 34px;
+  margin-left: 22px;
+  padding-top: 20px;
+  padding-bottom: 15px;
   display: block;
   border: 1px solid #000000;
-  position: absolute;
+  position: static;
   background-color: #2aab6d;
-  width: 91%;
-  height: 11%;
-  top: 350px;
-  left: 17px;
+  width: 87%;
+  height: auto;
   cursor: pointer;
+  order: 1;
 
   .font-mixin(30px; @content-font; 18px; bold);
   text-transform: uppercase;
@@ -97,18 +106,16 @@
   }
 
   @media (min-width: @tablet-width) {
-    width: 47%;
-    left: 37px;
-    top: 370px;
-    font-size: 14px;
+    width: 46%;
+    font-size: 18px;
+    margin-left: 20px;
   }
 
   @media (min-width: @desktop-width) {
     width: 31%;
-    left: 15px;
-    top: 285px;
-    height: 61px;
+    height: 66px;
     font-size: 18px;
+    margin-left: 10px;
   }
 }
 
