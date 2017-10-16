@@ -1,188 +1,201 @@
 <!DOCTYPE html>
 <html lang="en">
 <head>
-<title>Pink site</title>
-<meta charset="UTF-8">
-<script src="js/script.min.js"></script>
-<link rel="stylesheet" type="text/css" href="css/style.css">
-<meta name="viewport" content="width=device-width, initial-scale=1">
+  <title>Pink site</title>
+  <meta charset="UTF-8">
+  <script src="js/script.min.js"></script>
+  <link rel="stylesheet" type="text/css" href="css/style.css">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <link rel="stylesheet" href="css/normalize.css">
 </head>
 <body>
-    <header class="page-header page-header--active">
-        <div class="page-header__nav-wrap">
-            <div class="menu-header">
-                <div class="page-header__logo-wrap">
-                  <a href="/" class="page-header__logo-link">
-                    <img src="img/logo.svg" alt="Pink logo">
-                  </a>
-                </div>
-              <nav class="main-nav">
-                  <div class="wrapper-flex">
-                      <ul class="main-nav__list site-list">
-                          <li class="main-nav__items main-nav__items--active"><a href="#">Главная</a></li>
-                          <li class="main-nav__items"><a href="#">Фотографии</a></li>
-                          <li class="main-nav__items"><a href="#">Конкурс</a></li>
-                          <li class="main-nav__items"><a href="#">HTML ACADEMY</a></li>
-                      </ul>
-                      <a href="#" class="main-nav__toggle main-nav__toggle--close"></a>
-                  </div>
-              </nav>
-        </div>
-        </div>
-        <section class="promo-section index">
-          <div class="wrapper-flex index-wrapper">
-            <h2 class="visually_hidden">Выбор операционной системы для скачивания приложения Pink</h2>
-            <h2 class="promo-section__text">Взгляните <br class="separator-desktop"> на жизнь <br class="separator-desktop"> иначе!</h2>
+<header class="page-header page-header--active">
+  <div class="wrapper-flex">
+    <nav class="main-nav">
+      <button class="main-nav__toggle">
+      </button>
+      <ul class="main-nav__list site-list">
+        <li class="main-nav__items main-nav__items--active"><a href="#">Главная</a></li>
+        <li class="main-nav__items"><a href="#">Фотографии</a></li>
+        <li class="main-nav__items"><a href="#">Конкурс</a></li>
+        <li class="main-nav__items"><a href="#">HTML Academy</a></li>
+      </ul>
+      <a href="#" class="main-nav__toggle main-nav__toggle--close"></a>
+    </nav>
+  </div>
+  <div class="page-header__nav-wrap">
+    <div class="menu-header">
+      <div class="page-header__logo-wrap">
+        <a href="/" class="page-header__logo-link">
+          <img src="img/logo.svg" alt="Pink logo">
+        </a>
+      </div>
+    </div>
+  </div>
+  <section class="promo-section index">
+    <div class="wrapper-flex index-wrapper">
+      <h2 class="visually_hidden">Выбор операционной системы для скачивания приложения Pink</h2>
+      <h2 class="promo-section__text">Взгляните <br class="separator-desktop"> на жизнь <br class="separator-desktop">
+        иначе!</h2>
+    </div>
+  </section>
+  <section class="promo-download">
+    <h2 class="visually_hidden">Выбор операционной системы для скачивания приложения PInk</h2>
+    <div class="promo-download__button">
+      <a href="#">Скачать приложение</a>
+    </div>
+    <div class="promo-download__links">
+      <ul class="os-nav os-list">
+        <li class="os-list__item"></li>
+        <li class="os-list__item"></li>
+        <li class="os-list__item"></li>
+      </ul>
+      <h2 class="os-nav__title">Доступно для iPhone, iPad, Android,
+        <br class="separator separator--mobile">Windows Phone, OS X, Windows 8</h2>
+    </div>
+  </section>
+</header>
+<main class="container">
+  <div class="features">
+    <div class="wrapper-flex">
+      <h2 class="visually_hidden">Причины скачать приложение Pink</h2>
+      <div class="features-headers">
+        <h2 class="features__title features-title--first">Устали от серости мегаполиса?</h2>
+        <br class="br-separator">
+        <h2 class="features__title features__title--second">Нам есть, что вам <br class="separator"> предложить!</h2>
+      </div>
+      <div class="features-items">
+        <div class="wrapper-flex features-items__block--desktop-wrapper">
+          <div class="features-items-group">
+            <section class="features-items__block">
+              <h2 class="features-items__title">Поднимает настроение</h2>
+              <p class="features-items__descr">Приложение позволит вам победить осеннюю хандру и деперессию буквально в
+                <br class="separator">несколько кликов!</p>
+            </section>
+            <section class="features-items__block">
+              <h2 class="features-items__title">Меняем мир вокруг</h2>
+              <p class="features-items__descr">Сделайте снимок и украсьте его смайликом или текстовой подписью, чтобы
+                усилить эффект</p>
+            </section>
+            <section class="features-items__block">
+              <h2 class="features-items__title">Заводит <br class="separator-desktop"> новых друзей</h2>
+              <p class="features-items__descr">Ставьте лайки, комментируйте, делитесь фотографиями с друзьями и <br
+                class="separator separator--mobile"> заводите новых </p>
+            </section>
           </div>
-        </section>
-        <section class="promo-download">
-            <h2 class="visually_hidden">Выбор операционной системы для скачивания приложения PInk</h2>
-                <div class="promo-download__button">
-                    <a href="#">Скачать приложение</a>
-                </div>
-                <div class="promo-download__links">
-                    <ul class="os-nav os-list">
-                        <li class="os-list__item"></li>
-                        <li class="os-list__item"></li>
-                        <li class="os-list__item"></li>
-                    </ul>
-                    <h2 class="os-nav__title">Доступно для iPhone, iPad, Android,
-              <br class="separator separator--mobile">Windows Phone, OS X, Windows 8</h2>
-                </div>
-        </section>
-    </header>
-    <main class="container">
-        <div class="features">
-            <div class="wrapper-flex">
-            <h2 class="visually_hidden">Причины скачать приложение Pink</h2>
-            <div class="features-headers">
-                <h2 class="features__title features-title--first">Устали от серости мегаполиса?</h2>
-                <br class="br-separator">
-                <h2 class="features__title features__title--second">Нам есть, что вам <br class="separator"> предложить!</h2>
-            </div>
-                <div class="features-items">
-                  <div class="wrapper-flex features-items__block--desktop-wrapper">
-                    <div class="features-items-group">
-                    <section class="features-items__block">
-                        <h2 class="features-items__title">Поднимает настроение</h2>
-                        <p class="features-items__descr">Приложение позволит вам победить осеннюю хандру и деперессию буквально в <br class="separator">несколько кликов!</p>
-                    </section>
-                    <section class="features-items__block">
-                        <h2 class="features-items__title">Меняем мир вокруг</h2>
-                        <p class="features-items__descr">Сделайте снимок и украсьте его смайликом или текстовой подписью, чтобы усилить эффект</p>
-                    </section>
-                    <section class="features-items__block">
-                        <h2 class="features-items__title">Заводит  <br class="separator-desktop"> новых друзей</h2>
-                        <p class="features-items__descr">Ставьте лайки, комментируйте, делитесь фотографиями с друзьями и <br class="separator separator--mobile"> заводите новых </p>
-                    </section>
-                    </div>
-                    <div class="features-items__image-wrap">
-                      <img src="img/iphone-screen-mobile.png" alt="Iphone photo" width="140" height="324">
-                    </div>
-                    <section class="features-items__block mobile_hidden">
-                      <h2 class="features-items__title--custom_size">Эффект<br class="separator separator--mobile separator--tablet"> на 24 часа!</h2>
-                      <p class="features-items__descr features-items__descr--custom_description">Британские ученые провели исследования и доказали,<br class="separator-desktop">что положительный эффект от использования приложения длится <br class="separator separator--tablet">целые сутки!</p>
-                      <a class="features-items__link">Узнать больше об исследовании</a>
-                    </section>
-                </div>
+          <div class="features-items__image-wrap">
+            <img src="img/iphone-screen-mobile.png" alt="Iphone photo" width="140" height="324">
           </div>
+          <section class="features-items__block mobile_hidden">
+            <h2 class="features-items__title--custom_size">Эффект<br
+              class="separator separator--mobile separator--tablet"> на 24 часа!</h2>
+            <p class="features-items__descr features-items__descr--custom_description">Британские ученые провели
+              исследования и доказали,<br class="separator-desktop">что положительный эффект от использования приложения
+              длится <br class="separator separator--tablet">целые сутки!</p>
+            <a class="features-items__link">Узнать больше об исследовании</a>
+          </section>
         </div>
+      </div>
+    </div>
+  </div>
+  <section class="reviews">
+    <h2 class="slider-reviews__header visually_hidden">Блок отзывов о приложении Pink</h2>
+    <div class="wrapper-flex">
+      <article class="slider-reviews">
+        <h2 class="slider-reviews__header visually_hidden">Блок отзывов о приложении Pink</h2>
+        <div class="slider-reviews__text">&laquo;Это приложение перевернуло мой мир и позволило по-новому взглянуть на
+          привычные серые вещи! А еще я познакомился со своей будущей женой в комментариях к выложенной фотографии!&raquo;
         </div>
-        <section class="reviews">
-            <h2 class="slider-reviews__header visually_hidden">Блок отзывов о приложении Pink</h2>
-            <div class="wrapper-flex">
-                <article class="slider-reviews">
-                    <h2 class="slider-reviews__header visually_hidden">Блок отзывов о приложении Pink</h2>
-                    <div class="slider-reviews__text">&laquo;Это приложение перевернуло мой мир и позволило по-новому взглянуть на привычные серые вещи! А еще я познакомился со своей будущей женой в комментариях к выложенной фотографии!&raquo;</div>
-                    <h2 class="slider-reviews__header">Николай Петров <br class="separator"> <span>25 лет, водитель трамвая</span></h2>
-                </article>
-                <div class="slider-reviews__pagination">
-                    <span class="slider-reviews__pagination-item--active"></span>
-                    <span>
+        <h2 class="slider-reviews__header">Николай Петров <br class="separator"> <span>25 лет, водитель трамвая</span>
+        </h2>
+      </article>
+      <div class="slider-reviews__pagination">
+        <span class="slider-reviews__pagination-item--active"></span>
+        <span>
                     </span>
-                    <span>
+        <span>
                     </span>
-                </div>
-            </div>
-        </section>
-        <section class="price-block">
-            <h2 class="visually_hidden">Таблица стоимости тарифов приложения Pink</h2>
-            <div class="wrapper">
-            <table class="traffic-table">
-                <thead class="traffic-table__head">
-                    <tr>
-                    <th class="traffic-table_headcell traffic-table_headcell--no-borders"></th>
-                    <th class="traffic-table_headcell">
-                    <p class="price-table__headcell-type">База</p>
-                    <p class="price-table__headcell-price">1,99 USD</p>
-                    </th>
-                    <th class="traffic-table_headcell">
-                    <p class="price-table__headcell-type">Стандарт</p>
-                    <p class="price-table__headcell-price">3,99 USD</p>
-                    </th>
-                    <th class="traffic-table_headcell">
-                    <p class="price-table__headcell-type">Анлим</p>
-                    <p class="price-table__headcell-price">9,99 USD</p>
-                    </th>
-                    </tr>
-                </thead>
-                    <tbody class="traffic-table__body">
-                    <tr class="traffic-table__row">
-                    <td class="traffic-table__cell">Розовый фильтр</td>
-                    <td class="traffic-table__cell traffic-table__cell--yes">Розовый фильтр</td>
-                    <td class="traffic-table__cell traffic-table__cell--yes  traffic-table__cell--mobile">Розовый фильтр</td>
-                    <td class="traffic-table__cell traffic-table__cell--yes">Розовый фильтр</td>
-                    </tr>
-                      <tr class="traffic-table__row">
-                    <td class="traffic-table__cell">Смайлики</td>
-                    <td class="traffic-table__cell  traffic-table__cell--no">Розовый фильтр</td>
-                    <td class="traffic-table__cell traffic-table__cell--no traffic-table__cell--mobile">Смайлики</td>
-                    <td class="traffic-table__cell traffic-table__cell--yes">Розовый фильтр</td>
-                    </tr>
-                      <tr class="traffic-table__row">
-                    <td class="traffic-table__cell">Комментарии</td>
-                    <td class="traffic-table__cell traffic-table__cell--no">Розовый фильтр</td>
-                    <td class="traffic-table__cell traffic-table__cell--no traffic-table__cell--mobile">Комментарии</td>
-                    <td class="traffic-table__cell traffic-table__cell--no">Розовый фильтр</td>
-                    </tr>
-                    </tbody>
-                </table>
-            <div class="slider-reviews__pagination">
-                <span class="slider-reviews__pagination-item--active"></span>
-                <span></span>
-                <span></span>
-            </div>
-            </div>
-        </section>
-        <section class="info-block">
-            <h2 class="visually_hidden">Контактные данные</h2>
-            <div class="wrapper-flex">
-                <h2 class="info-block__text">Остались вопросы?<br class="separator"> Свяжитесь с нами!</h2>
-                <div class="info-block__contacts">
-                    <div class="info-block__call-block">
-                        <p class="phone__text">Звоните:</p>
-                        <a class="phone" href="tel:+7(812)555-66-66">+7(812)555-66-66</a>
-                    </div>
-                    <div class="info-block__mail-block">
-                        <p class="mail__text">Пишите:</p>
-                        <a class="mail" href="mailto:mail@htmlacademy.ru">mail@htmlacademy.ru</a>
-                    </div>
-                </div>
-            </div>
-            <div class="map-block">
-                <div class="wrapper-flex">
-                    <p class="map-block__text">Приезжайте в гости:</p>
-                    <address><a class="map-block__link" href="#">ул.Большая <br class="separator">Конюшенная, 19/8</a></address>
-                    <div class="map-block_map-item">
-                      <img src="img/bg-map-mobile@1x.png" alt="Карта" width="300" height="300">
-                    </div>
-                </div>
-            </div>
-        </section>
-    </main>
-    <footer class="page-shown-footer">
-      <div class="wrapper">
-      <div class="page-shown-footer__container">
+      </div>
+    </div>
+  </section>
+  <section class="price-block">
+    <h2 class="visually_hidden">Таблица стоимости тарифов приложения Pink</h2>
+    <div class="wrapper">
+      <table class="traffic-table">
+        <thead class="traffic-table__head">
+        <tr>
+          <th class="traffic-table_headcell traffic-table_headcell--no-borders"></th>
+          <th class="traffic-table_headcell">
+            <p class="price-table__headcell-type">База</p>
+            <p class="price-table__headcell-price">1,99 USD</p>
+          </th>
+          <th class="traffic-table_headcell">
+            <p class="price-table__headcell-type">Стандарт</p>
+            <p class="price-table__headcell-price">3,99 USD</p>
+          </th>
+          <th class="traffic-table_headcell">
+            <p class="price-table__headcell-type">Анлим</p>
+            <p class="price-table__headcell-price">9,99 USD</p>
+          </th>
+        </tr>
+        </thead>
+        <tbody class="traffic-table__body">
+        <tr class="traffic-table__row">
+          <td class="traffic-table__cell">Розовый фильтр</td>
+          <td class="traffic-table__cell traffic-table__cell--yes">Розовый фильтр</td>
+          <td class="traffic-table__cell traffic-table__cell--yes  traffic-table__cell--mobile">Розовый фильтр</td>
+          <td class="traffic-table__cell traffic-table__cell--yes">Розовый фильтр</td>
+        </tr>
+        <tr class="traffic-table__row">
+          <td class="traffic-table__cell">Смайлики</td>
+          <td class="traffic-table__cell  traffic-table__cell--no">Розовый фильтр</td>
+          <td class="traffic-table__cell traffic-table__cell--no traffic-table__cell--mobile">Смайлики</td>
+          <td class="traffic-table__cell traffic-table__cell--yes">Розовый фильтр</td>
+        </tr>
+        <tr class="traffic-table__row">
+          <td class="traffic-table__cell">Комментарии</td>
+          <td class="traffic-table__cell traffic-table__cell--no">Розовый фильтр</td>
+          <td class="traffic-table__cell traffic-table__cell--no traffic-table__cell--mobile">Комментарии</td>
+          <td class="traffic-table__cell traffic-table__cell--no">Розовый фильтр</td>
+        </tr>
+        </tbody>
+      </table>
+      <div class="slider-reviews__pagination">
+        <span class="slider-reviews__pagination-item--active"></span>
+        <span></span>
+        <span></span>
+      </div>
+    </div>
+  </section>
+  <section class="info-block">
+    <h2 class="visually_hidden">Контактные данные</h2>
+    <div class="wrapper-flex">
+      <h2 class="info-block__text">Остались вопросы?<br class="separator"> Свяжитесь с нами!</h2>
+      <div class="info-block__contacts">
+        <div class="info-block__call-block">
+          <p class="phone__text">Звоните:</p>
+          <a class="phone" href="tel:+7(812)555-66-66">+7(812)555-66-66</a>
+        </div>
+        <div class="info-block__mail-block">
+          <p class="mail__text">Пишите:</p>
+          <a class="mail" href="mailto:mail@htmlacademy.ru">mail@htmlacademy.ru</a>
+        </div>
+      </div>
+    </div>
+    <div class="map-block">
+      <div class="wrapper-flex">
+        <p class="map-block__text">Приезжайте в гости:</p>
+        <address><a class="map-block__link" href="#">ул.Большая <br class="separator">Конюшенная, 19/8</a></address>
+        <div class="map-block_map-item">
+          <img src="img/bg-map-mobile@1x.png" alt="Карта" width="300" height="300">
+        </div>
+      </div>
+    </div>
+  </section>
+</main>
+<footer class="page-shown-footer">
+  <div class="wrapper">
+    <div class="page-shown-footer__container">
       <section class="page-shown-footer__img-wrap">
         <h2 class="visually_hidden">Свяжитесь с нами</h2>
         <img src="img/logo.jpg" alt="Pink logo">
@@ -200,7 +213,7 @@
         <a href="#"><img src="img/htmllogo" alt="HTML academy logo"></a>
       </section>
     </div>
-    </div>
-  </footer>
+  </div>
+</footer>
 </body>
 </html>

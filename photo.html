@@ -1,301 +1,319 @@
 <!DOCTYPE html>
 <html lang="en">
 <head>
-<title>Pink site</title>
-<meta charset="UTF-8">
-<meta name="viewport" content="width=device-width, initial-scale=1">
-<script src="js/script.min.js"></script>
-<link rel="stylesheet" type="text/css" href="css/style.css">
-<link rel="stylesheet" href="img/sprite.svg" type="image/svg+xml">
+  <title>Pink site</title>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <script src="js/script.min.js"></script>
+  <link rel="stylesheet" type="text/css" href="css/style.css">
+  <link rel="stylesheet" href="img/sprite.svg" type="image/svg+xml">
+  <link rel="stylesheet" href="css/normalize.css">
 </head>
 <body>
-    <header class="page-header page-header--active">
-        <div class="menu-header">
-                <div class="page-header__logo-wrap">
-                    <a href="/" class="page-header__logo-link">
-                        <img src="img/logo.svg" alt="Pink logo">
-                    </a>
-                </div>
-                  <nav class="main-nav">
-                      <div class="wrapper">
-                          <ul class="main-nav__list site-list">
-                              <li class="main-nav__items main-nav__items--active"><a href="#">Главная</a></li>
-                              <li class="main-nav__items"><a href="#">Фотографии</a></li>
-                              <li class="main-nav__items"><a href="#">Конкурс</a></li>
-                              <li class="main-nav__items"><a href="#">HTML ACADEMY</a></li>
-                          </ul>
-                          <a href="#" class="main-nav__toggle main-nav__toggle--close"></a>
-                      </div>
-                  </nav>
-              </div>
-              <section class="contest-page">
-                <h2 class="visually_hidden">Приложение pink для путешествий</h2>
-                <section class="wrapper">
-                  <h2 class="contest-page__text">Фотографии пользователей</h2>
-                </section>
-              </section>
-  </header>
-  <main class="container">
+<header class="page-header page-header--active page-header--photo">
+  <div class="menu-header">
+    <div class="page-header__logo-wrap">
+      <a href="/" class="page-header__logo-link">
+        <img src="img/logo.svg" alt="Pink logo">
+      </a>
+    </div>
+    <div class="wrapper-flex">
+      <nav class="main-nav">
+        <button class="main-nav__toggle">
+        </button>
+        <ul class="main-nav__list site-list">
+          <li class="main-nav__items main-nav__items--active"><a href="#">Главная</a></li>
+          <li class="main-nav__items"><a href="#">Фотографии</a></li>
+          <li class="main-nav__items"><a href="#">Конкурс</a></li>
+          <li class="main-nav__items"><a href="#">HTML Academy</a></li>
+        </ul>
+        <a href="#" class="main-nav__toggle main-nav__toggle--close"></a>
+      </nav>
+    </div>
+  </div>
+  <section class="contest-page">
+    <h2 class="visually_hidden">Приложение pink для путешествий</h2>
+    <section class="wrapper">
+      <h2 class="contest-page__text">Фотографии пользователей</h2>
+    </section>
+  </section>
+</header>
+<main class="container">
   <div class="wrapper-flex">
     <section class="user-blogs">
-        <h2 class="user-blogs__text">Взгляните на фотографии, которые выкладывают пользователи!<br class="mobile-separator mobile-separator--desktop">Видите, как не хватает ваших?</h2>
+      <h2 class="user-blogs__text">Взгляните на фотографии, которые выкладывают пользователи!<br
+        class="mobile-separator mobile-separator--desktop">Видите, как не хватает ваших?</h2>
     </section>
-    </div>
-    <div class="panorama-blog">
+  </div>
+  <div class="panorama-blog">
     <article class="panorama-blog__item">
-          <h2 class="visually_hidden">Фотографии пользователей социальной сети</h2>
-            <figure class="panorama-blog__image">
-            <img src="img/panorama-mobile.jpg" width="320" height="137" class="mobile-img" alt="Фотография пользователя из социальной сети">
-              <img src="img/panorama-mobile.jpg" width="700" height="513" class="temp-img" alt="Фотография пользователя из социальной сети">
-              <span class="special-icon">Панорама дня</span>
-            </figure>
-      </article>
+      <h2 class="visually_hidden">Фотографии пользователей социальной сети</h2>
+      <figure class="panorama-blog__image">
+        <img src="img/panorama-mobile.jpg" width="320" height="137" class="mobile-img"
+             alt="Фотография пользователя из социальной сети">
+        <img src="img/panorama-mobile.jpg" width="700" height="513" class="temp-img"
+             alt="Фотография пользователя из социальной сети">
+        <span class="special-icon">Панорама дня</span>
+      </figure>
+    </article>
     <div class="wrapper">
-          <div class="blog-post__body panorama-body">
-          <header class="panorama-header">
-            <h2 class="blog-post__header panorama-header__text">Анна</h2>
-            <span class="time-tamp">(5 минут назад)</span>
-          </header>
-            <p class="blog-post__text panorama-text">Прыгать или нет?Напишите в комментарии свой совет и смотрите прямую трансляцию в перископе, задавайте свои вопросы!</p>
-            <footer class="blog-post__info panorama-info">
-              <span class="heart-icon"></span>
-              <span class="like-text">Нравится:</span>
-              <span class="like-counts">215</span>
-            </footer>
-          </div>
-    </div>
-    </div>
-    <div class="wrapper-flex blog-items">
-        <article class="blog-post">
-          <h2 class="visually_hidden">Фотографии пользователей социальной сети</h2>
-          <figure class="blog-post__image">
-            <img src="img/photo-car-mobile.jpg" width="280" height="182" alt="Фотография пользователя из социальной сети" class="mobile-photo">
-          </figure>
-          <div class="blog-post__body">
-            <header class="blog-header">
-              <h2 class="blog-post__header">Левон</h2>
-              <span class="time-tamp">(5 часов назад)</span>
-            </header>
-            <p class="blog-post__text">Вчера он на луну летал, сегодня в руки к нам попал</p>
-            <footer class="blog-post__info blog-post__info--photo">
-              <span class="heart-icon"></span>
-              <span class="like-text">Нравится:</span>
-              <span class="like-counts">356</span>
-            </footer>
-          </div>
-        </article>
-        <article class="blog-post">
-          <h2 class="visually_hidden">Фотографии пользователей социальной сети</h2>
-          <figure class="blog-post__image">
-            <img src="img/photo-drumset-mobile.jpg" width="280" height="180" alt="Фотография пользователя из социальной сети" class="mobile-photo">
-          </figure>
-          <div class="blog-post__body">
-          <header class="blog-header">
-            <h2 class="blog-post__header">Антон</h2>
-            <span class="time-tamp">(12 часов назад)</span>
-          </header>
-            <p class="blog-post__text">Соседи будут рады!</p>
-            <footer class="blog-post__info blog-post__info--photo">
-              <span class="heart-icon"></span>
-              <span class="like-text">Нравится:</span>
-              <span class="like-counts">356</span>
-            </footer>
-          </div>
-        </article>
-    <article class="blog-post">
-          <h2 class="visually_hidden">Фотографии пользователей социальной сети</h2>
-          <figure class="blog-post__image">
-            <img src="img/photo-window-mobile.jpg" width="280" height="180" alt="Фотография пользователя из социальной сети" class="mobile-photo">
-          </figure>
-          <div class="blog-post__body">
-          <header class="blog-header">
-            <h2 class="blog-post__header">Борис</h2>
-            <span class="time-tamp">(20 часов назад)</span>
-          </header>
-            <p class="blog-post__text">Здесь могла бы быть ваша цитата о высоком и вечном</p>
-            <footer class="blog-post__info blog-post__info--photo">
-              <span class="heart-icon"></span>
-              <span class="like-text">Нравится:</span>
-              <span class="like-counts">215</span>
-            </footer>
-          </div>
-        </article>
-    <article class="blog-post">
-          <h2 class="visually_hidden">Фотограф
-          ии пользователей социальной сети</h2>
-          <figure class="blog-post__image">
-            <img src="img/photo-fair-mobile.jpg" width="280" height="180" alt="Фотография пользователя из социальной сети" class="mobile-photo">
-          </figure>
-          <div class="blog-post__body">
-          <header class="blog-header">
-            <h2 class="blog-post__header">Сергей</h2>
-            <span class="time-tamp">(25 часов назад)</span>
-          </header>
-            <p class="blog-post__text">Самая кубанская в мире!</p>
-            <footer class="blog-post__info blog-post__info--photo">
-              <span class="heart-icon"></span>
-              <span class="like-text">Нравится:</span>
-              <span class="like-counts">4</span>
-            </footer>
-            </div>
-        </article>
-        <article class="blog-post">
-          <h2 class="visually_hidden">Фотографии пользователей социальной сети</h2>
-          <figure class="blog-post__image">
-            <img src="img/photo-pov-mobile.jpg" width="280" height="180" alt="Фотография пользователя из социальной сети" class="mobile-photo">
-          </figure>
-          <div class="blog-post__body">
-          <header class="blog-header">
-            <h2 class="blog-post__header">Максим</h2>
-            <span class="time-tamp">(40 часов назад)</span>
-          </header>
-            <p class="blog-post__text">Где снег-то?</p>
-            <footer class="blog-post__info blog-post__info--photo">
-              <span class="heart-icon"></span>
-              <span class="like-text">Нравится:</span>
-              <span class="like-counts">150</span>
-            </footer>
-          </div>
-        </article>
-        <article class="blog-post">
-          <h2 class="visually_hidden">Фотографии пользователей социальной сети</h2>
-            <figure class="blog-post__image">
-              <img src="img/photo-wing-mobile.jpg" width="280" height="180" alt="Фотография пользователя из социальной сети" class="mobile-photo">
-            </figure>
-              <div class="blog-post__body">
-            <header class="blog-header">
-              <h2 class="blog-post__header">Надежда</h2>
-                <span class="time-tamp">(45 часов назад)</span>
-            </header>
-            <p class="blog-post__text">Всем GM и взаимные лайки!</p>
-            <footer class="blog-post__info blog-post__info--photo">
-              <span class="heart-icon"></span>
-              <span class="like-text">Нравится:</span>
-              <span class="like-counts">356</span>
-            </footer>
-          </div>
-        </article>
-    </div>
-    <section class="describe-block">
-      <h2 class="visually_hidden">Промо-текст</h2>
-          <h2 class="describe-block__text">Затмите их всех!<br class="separator-desktop"><br class="separator-tablet">Выкладывайте все, что накопилось в телефоне!</h2>
-    </section>
-    <div class="editor-block">
-      <div class="wrapper-flex image-editor">
-      <div class="image-editor__image-block">
-            <img src="img/photo-road-mobile.jpg" width="280" height="375" alt="Фотография для редактирования" class="mobile-photo">
+      <div class="blog-post__body panorama-body">
+        <header class="panorama-header">
+          <h2 class="blog-post__header panorama-header__text">Анна</h2>
+          <span class="time-tamp">(5 минут назад)</span>
+        </header>
+        <p class="blog-post__text panorama-text">Прыгать или нет?Напишите в комментарии свой совет и смотрите прямую
+          трансляцию в перископе, задавайте свои вопросы!</p>
+        <footer class="blog-post__info panorama-info">
+          <span class="heart-icon"></span>
+          <span class="like-text">Нравится:</span>
+          <span class="like-counts">215</span>
+        </footer>
       </div>
-          <div class="image-editor__tools">
-            <dl class="image-editor__tools-list">
-            <dt class="image-editor__tools image-editor__tools--crop">
-            </dt>
-            <dd class="controls controls--crop">
-              <div class="filter-range">
-                <h2 class="filter-range__title visually_hidden">Редактор фото</h2>
-                    <div class="filter-controls">
-                        <form action="https://echo.htmlacademy.ru" method="GET">
-                        <label class="filter-controls__min-range">от<input type="text" name="min-price" value="0"></label>
-                        <label class="filter-controls__max-range">до<input type="text" name="max-price" value="3000"></label>
-                        </form>
-                    </div>
-                    <div class="range-controls">
-                        <div class="scale">
-                          <div class="bar"></div>
-                          </div>
-                        <div class="range-toggle range-toggle-min"></div>
-                        <div class="range-toggle range-toggle-max"><div class="range-toggle__inside"></div>
-                    </div>
-            </div>
-            </div>
-            </dd>
-            <dt class="image-editor__tools image-editor__tools--fill">
-            </dt>
-              <dd class="controls controls--fill">
-              <div class="filter-range">
-                <h2 class="filter-range__title visually_hidden">Редактор фото</h2>
-                      <div class="filter-controls">
-                        <form action="https://echo.htmlacademy.ru" method="GET">
-                        <label class="filter-controls__min-range">от<input type="text" name="min-price" value="0"></label>
-                        <label class="filter-controls__max-range">до<input type="text" name="max-price" value="3000"></label>
-                        </form>
-                    </div>
-                    <div class="range-controls">
-                        <div class="scale">
-                          <div class="bar"></div>
-                          </div>
-                        <div class="range-toggle range-toggle-min"></div>
-                        <div class="range-toggle range-toggle-max"><div class="range-toggle__inside"></div>
-                    </div>
-            </div>
-            </div>
-            </dd>
-            <dt class="image-editor__tools image-editor__tools--contrast">
-            </dt>
-              <dd class="controls controls--contrast">
-              <div class="filter-range">
-                <h2 class="filter-range__title visually_hidden">Редактор фото</h2>
-                    <div class="filter-controls">
-                        <form action="https://echo.htmlacademy.ru" method="GET">
-                        <label class="filter-controls__min-range">от<input type="text" name="min-price" value="0"></label>
-                        <label class="filter-controls__max-range">до<input type="text" name="max-price" value="3000"></label>
-                        </form>
-                    </div>
-                    <div class="range-controls">
-                        <div class="scale">
-                          <div class="bar"></div>
-                          </div>
-                        <div class="range-toggle range-toggle-min"></div>
-                        <div class="range-toggle range-toggle-max"><div class="range-toggle__inside"></div>
-                    </div>
-            </div>
-            </div>
-            </dd>
-            </dl>
-            <div class="buttons-block">
-              <input class="editor-block__button editor-block__button--submit" type="submit" value="Запостить">
-            <input class="editor-block__button  editor-block__button--disable" type="reset" value="Отмена">
-            </div>
+    </div>
+  </div>
+  <div class="wrapper-flex blog-items">
+    <article class="blog-post">
+      <h2 class="visually_hidden">Фотографии пользователей социальной сети</h2>
+      <figure class="blog-post__image">
+        <img src="img/photo-car-mobile.jpg" width="280" height="182" alt="Фотография пользователя из социальной сети"
+             class="mobile-photo">
+      </figure>
+      <div class="blog-post__body">
+        <header class="blog-header">
+          <h2 class="blog-post__header">Левон</h2>
+          <span class="time-tamp">(5 часов назад)</span>
+        </header>
+        <p class="blog-post__text">Вчера он на луну летал, сегодня в руки к нам попал</p>
+        <footer class="blog-post__info blog-post__info--photo">
+          <span class="heart-icon"></span>
+          <span class="like-text">Нравится:</span>
+          <span class="like-counts">356</span>
+        </footer>
+      </div>
+    </article>
+    <article class="blog-post">
+      <h2 class="visually_hidden">Фотографии пользователей социальной сети</h2>
+      <figure class="blog-post__image">
+        <img src="img/photo-drumset-mobile.jpg" width="280" height="180"
+             alt="Фотография пользователя из социальной сети" class="mobile-photo">
+      </figure>
+      <div class="blog-post__body">
+        <header class="blog-header">
+          <h2 class="blog-post__header">Антон</h2>
+          <span class="time-tamp">(12 часов назад)</span>
+        </header>
+        <p class="blog-post__text">Соседи будут рады!</p>
+        <footer class="blog-post__info blog-post__info--photo">
+          <span class="heart-icon"></span>
+          <span class="like-text">Нравится:</span>
+          <span class="like-counts">356</span>
+        </footer>
+      </div>
+    </article>
+    <article class="blog-post">
+      <h2 class="visually_hidden">Фотографии пользователей социальной сети</h2>
+      <figure class="blog-post__image">
+        <img src="img/photo-window-mobile.jpg" width="280" height="180" alt="Фотография пользователя из социальной сети"
+             class="mobile-photo">
+      </figure>
+      <div class="blog-post__body">
+        <header class="blog-header">
+          <h2 class="blog-post__header">Борис</h2>
+          <span class="time-tamp">(20 часов назад)</span>
+        </header>
+        <p class="blog-post__text">Здесь могла бы быть ваша цитата о высоком и вечном</p>
+        <footer class="blog-post__info blog-post__info--photo">
+          <span class="heart-icon"></span>
+          <span class="like-text">Нравится:</span>
+          <span class="like-counts">215</span>
+        </footer>
+      </div>
+    </article>
+    <article class="blog-post">
+      <h2 class="visually_hidden">Фотограф
+        ии пользователей социальной сети</h2>
+      <figure class="blog-post__image">
+        <img src="img/photo-fair-mobile.jpg" width="280" height="180" alt="Фотография пользователя из социальной сети"
+             class="mobile-photo">
+      </figure>
+      <div class="blog-post__body">
+        <header class="blog-header">
+          <h2 class="blog-post__header">Сергей</h2>
+          <span class="time-tamp">(25 часов назад)</span>
+        </header>
+        <p class="blog-post__text">Самая кубанская в мире!</p>
+        <footer class="blog-post__info blog-post__info--photo">
+          <span class="heart-icon"></span>
+          <span class="like-text">Нравится:</span>
+          <span class="like-counts">4</span>
+        </footer>
+      </div>
+    </article>
+    <article class="blog-post">
+      <h2 class="visually_hidden">Фотографии пользователей социальной сети</h2>
+      <figure class="blog-post__image">
+        <img src="img/photo-pov-mobile.jpg" width="280" height="180" alt="Фотография пользователя из социальной сети"
+             class="mobile-photo">
+      </figure>
+      <div class="blog-post__body">
+        <header class="blog-header">
+          <h2 class="blog-post__header">Максим</h2>
+          <span class="time-tamp">(40 часов назад)</span>
+        </header>
+        <p class="blog-post__text">Где снег-то?</p>
+        <footer class="blog-post__info blog-post__info--photo">
+          <span class="heart-icon"></span>
+          <span class="like-text">Нравится:</span>
+          <span class="like-counts">150</span>
+        </footer>
+      </div>
+    </article>
+    <article class="blog-post">
+      <h2 class="visually_hidden">Фотографии пользователей социальной сети</h2>
+      <figure class="blog-post__image">
+        <img src="img/photo-wing-mobile.jpg" width="280" height="180" alt="Фотография пользователя из социальной сети"
+             class="mobile-photo">
+      </figure>
+      <div class="blog-post__body">
+        <header class="blog-header">
+          <h2 class="blog-post__header">Надежда</h2>
+          <span class="time-tamp">(45 часов назад)</span>
+        </header>
+        <p class="blog-post__text">Всем GM и взаимные лайки!</p>
+        <footer class="blog-post__info blog-post__info--photo">
+          <span class="heart-icon"></span>
+          <span class="like-text">Нравится:</span>
+          <span class="like-counts">356</span>
+        </footer>
+      </div>
+    </article>
+  </div>
+  <section class="describe-block">
+    <h2 class="visually_hidden">Промо-текст</h2>
+    <h2 class="describe-block__text">Затмите их всех!<br class="separator-desktop"><br class="separator-tablet">Выкладывайте
+      все, что накопилось в телефоне!</h2>
+  </section>
+  <div class="editor-block">
+    <div class="wrapper-flex image-editor">
+      <div class="image-editor__image-block">
+        <img src="img/photo-road-mobile.jpg" width="280" height="375" alt="Фотография для редактирования"
+             class="mobile-photo">
+      </div>
+      <div class="image-editor__tools">
+        <dl class="image-editor__tools-list">
+          <dt class="image-editor__tools image-editor__tools--crop">
+          </dt>
+          <dd class="controls controls--crop">
+            <div class="filter-range">
+              <h2 class="filter-range__title visually_hidden">Редактор фото</h2>
+              <div class="filter-controls">
+                <form action="https://echo.htmlacademy.ru" method="GET">
+                  <label class="filter-controls__min-range">от<input type="text" name="min-price" value="0"></label>
+                  <label class="filter-controls__max-range">до<input type="text" name="max-price" value="3000"></label>
+                </form>
+              </div>
+              <div class="range-controls">
+                <div class="scale">
+                  <div class="bar"></div>
+                </div>
+                <div class="range-toggle range-toggle-min"></div>
+                <div class="range-toggle range-toggle-max">
+                  <div class="range-toggle__inside"></div>
+                </div>
               </div>
             </div>
-            <!-- <div class="filter-range">
-                <h2 class="filter-range__title visually_hidden">Редактор фото</h2>
-                    <div class="filter-controls">
-                        <form action="https://echo.htmlacademy.ru" method="GET">
-                        <label class="filter-controls__min-range">от<input type="text" name="min-price" value="0"></label>
-                        <label class="filter-controls__max-range">до<input type="text" name="max-price" value="3000"></label>
-                        </form>
-                    </div>
-                    <div class="range-controls">
-                        <div class="scale">
-                          <div class="bar"></div>
-                          </div>
-                        <div class="range-toggle range-toggle-min"></div>
-                        <div class="range-toggle range-toggle-max"><div class="range-toggle__inside"></div>
-                    </div>
+          </dd>
+          <dt class="image-editor__tools image-editor__tools--fill">
+          </dt>
+          <dd class="controls controls--fill">
+            <div class="filter-range">
+              <h2 class="filter-range__title visually_hidden">Редактор фото</h2>
+              <div class="filter-controls">
+                <form action="https://echo.htmlacademy.ru" method="GET">
+                  <label class="filter-controls__min-range">от<input type="text" name="min-price" value="0"></label>
+                  <label class="filter-controls__max-range">до<input type="text" name="max-price" value="3000"></label>
+                </form>
+              </div>
+              <div class="range-controls">
+                <div class="scale">
+                  <div class="bar"></div>
+                </div>
+                <div class="range-toggle range-toggle-min"></div>
+                <div class="range-toggle range-toggle-max">
+                  <div class="range-toggle__inside"></div>
+                </div>
+              </div>
             </div>
+          </dd>
+          <dt class="image-editor__tools image-editor__tools--contrast">
+          </dt>
+          <dd class="controls controls--contrast">
+            <div class="filter-range">
+              <h2 class="filter-range__title visually_hidden">Редактор фото</h2>
+              <div class="filter-controls">
+                <form action="https://echo.htmlacademy.ru" method="GET">
+                  <label class="filter-controls__min-range">от<input type="text" name="min-price" value="0"></label>
+                  <label class="filter-controls__max-range">до<input type="text" name="max-price" value="3000"></label>
+                </form>
+              </div>
+              <div class="range-controls">
+                <div class="scale">
+                  <div class="bar"></div>
+                </div>
+                <div class="range-toggle range-toggle-min"></div>
+                <div class="range-toggle range-toggle-max">
+                  <div class="range-toggle__inside"></div>
+                </div>
+              </div>
             </div>
-        </div> -->
+          </dd>
+        </dl>
+        <div class="buttons-block">
+          <input class="editor-block__button editor-block__button--submit" type="submit" value="Запостить">
+          <input class="editor-block__button  editor-block__button--disable" type="reset" value="Отмена">
+        </div>
       </div>
-  </main>
-    <footer class="page-shown-footer">
-    <div class="wrapper footer">
-      <section class="page-shown-footer__img-wrap">
-        <h2 class="visually_hidden">Свяжитесь с нами</h2>
-        <img src="img/logo.jpg" alt="Pink logo">
-      </section>
-      <div class="page-shown-footer__social social">
-        <ul class="social__list">
-          <li class="social__item"><a class="social__link--twitter" href="#">Твиттер</a></li>
-          <li class="social__item"><a class="social__link--facebook" href="#">Фейсбук</a></li>
-          <li class="social__item"><a class="social__link--youtube" href="#">Ютуб</a></li>
-        </ul>
-      </div>
-      <section class="page-shown-footer__copyright">
-        <h2 class="visually_hidden">Копирайт</h2>
-        <p class="page-shown-footer__copyright-text">Разработано:</p>
-        <a href="#"><img src="img/htmllogo" alt="HTML academy logo"></a>
-      </section>
     </div>
-  </footer>
+    <!-- <div class="filter-range">
+        <h2 class="filter-range__title visually_hidden">Редактор фото</h2>
+            <div class="filter-controls">
+                <form action="https://echo.htmlacademy.ru" method="GET">
+                <label class="filter-controls__min-range">от<input type="text" name="min-price" value="0"></label>
+                <label class="filter-controls__max-range">до<input type="text" name="max-price" value="3000"></label>
+                </form>
+            </div>
+            <div class="range-controls">
+                <div class="scale">
+                  <div class="bar"></div>
+                  </div>
+                <div class="range-toggle range-toggle-min"></div>
+                <div class="range-toggle range-toggle-max"><div class="range-toggle__inside"></div>
+            </div>
+    </div>
+    </div>
+</div> -->
+  </div>
+</main>
+<footer class="page-shown-footer">
+  <div class="wrapper footer">
+    <section class="page-shown-footer__img-wrap">
+      <h2 class="visually_hidden">Свяжитесь с нами</h2>
+      <img src="img/logo.jpg" alt="Pink logo">
+    </section>
+    <div class="page-shown-footer__social social">
+      <ul class="social__list">
+        <li class="social__item"><a class="social__link--twitter" href="#">Твиттер</a></li>
+        <li class="social__item"><a class="social__link--facebook" href="#">Фейсбук</a></li>
+        <li class="social__item"><a class="social__link--youtube" href="#">Ютуб</a></li>
+      </ul>
+    </div>
+    <section class="page-shown-footer__copyright">
+      <h2 class="visually_hidden">Копирайт</h2>
+      <p class="page-shown-footer__copyright-text">Разработано:</p>
+      <a href="#"><img src="img/htmllogo" alt="HTML academy logo"></a>
+    </section>
+  </div>
+</footer>
 </body>
 </html>

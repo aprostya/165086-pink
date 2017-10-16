@@ -7,6 +7,7 @@
   <link rel="stylesheet" type="text/css" href="css/style.css">
   <meta name="viewport" content="width=device-width, initial-scale=1">
   <link rel="stylesheet" href="img/sprite.svg" type="image/svg+xml">
+  <link rel="stylesheet" href="css/normalize.css">
 </head>
 <body>
 <header class="page-header page-header--active page-header--form">
@@ -17,17 +18,19 @@
           <img src="img/logo.svg" alt="Pink logo">
         </a>
       </div>
-      <nav class="main-nav">
-        <div class="wrapper-flex">
+      <div class="wrapper-flex">
+        <nav class="main-nav">
+          <button class="main-nav__toggle">
+          </button>
           <ul class="main-nav__list site-list">
             <li class="main-nav__items main-nav__items--active"><a href="#">Главная</a></li>
             <li class="main-nav__items"><a href="#">Фотографии</a></li>
             <li class="main-nav__items"><a href="#">Конкурс</a></li>
-            <li class="main-nav__items"><a href="#">HTML ACADEMY</a></li>
+            <li class="main-nav__items"><a href="#">HTML Academy</a></li>
           </ul>
           <a href="#" class="main-nav__toggle main-nav__toggle--close"></a>
-        </div>
-      </nav>
+        </nav>
+      </div>
     </div>
   </div>
   <section class="form-section">
@@ -42,10 +45,10 @@
     <h2 class="visually_hidden">Условия конкурса приложения Pink</h2>
     <div class="wrapper">
       <p class="info-user__text">Поделитесь своей историей и получите шанс выиграть <br
-        class="separator__form-text separator__form-text--tablet"> ценный приз
-        &mdash; 1000 <br class="separator__form-text"> миль на вашу бонусную карту!<span
-          class="info-user__text--mobile-hidden"><br
-          class="separator__form-text separator__form-text--desktop separator__form-text--tablet">Пожалуйста, заполните форму ниже:</span>
+        class="separator__form-text separator__form-text--tablet"> ценный приз &mdash; 1000 <br
+        class="separator__form-text"> миль на вашу бонусную карту!<span
+        class="info-user__text--mobile-hidden"><br
+        class="separator__form-text separator__form-text--desktop separator__form-text--tablet">Пожалуйста, заполните форму ниже:</span>
       </p>
     </div>
   </section>
@@ -65,7 +68,7 @@
             Имя
           </label>
           <input type="text" class="input-form__input input-form__input-label--short_letters" required
-                  placeholder="Введите ваше имя *" id="input_name">
+                 placeholder="Введите ваше имя *" id="input_name">
         </div>
         <div class="input-block__form">
           <label for="input_surname-mobile" class="input-form__input-label">
@@ -82,13 +85,13 @@
         <div class="catalog-checkbox">
           <div class="checkbox-group">
             <input type="checkbox" checked class="catalog-checkbox__input catalog-checkbox__input--active"
-                    id="checkbox">
+                   id="checkbox">
             <label for="checkbox" class="catalog-checkbox__label catalog-checkbox__label--active">
               Сделал селфи с акулой
             </label>
             <br>
             <input type="checkbox" checked class="catalog-checkbox__input catalog-checkbox__input--active"
-                    id="checkbox_beach">
+                   id="checkbox_beach">
             <label for="checkbox_beach" class="catalog-checkbox__label">
               Обгорел на пляже
             </label>
@@ -129,7 +132,7 @@
             Номер телефона
           </label>
           <input type="text" class="user-contacts__input phone_number" placeholder="Номер, пожалуйста"
-                  id="input_number">
+                 id="input_number">
           <br>
         </div>
         <div class="label-block label-block--mail">
