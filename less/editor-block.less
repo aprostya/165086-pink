@@ -31,12 +31,6 @@
   padding-bottom: 16px;
 }
 
-.editor-block__button--disable {
-  background: transparent;
-  color: #e3e3e4;
-  border: 3px solid #e3e3e4;
-}
-
 .image-editor {
   width: 100%;
   padding-bottom: 34px;
@@ -83,23 +77,30 @@
 
 .editor-block__button--submit {
   background-color: @white;
+
   &:hover {
     background-color: #d22856;
     color: @white;
   }
+
   &:active {
-    background-color:  #d22856;
-    color: rgba(255,255,255,.3);
+    background-color: #d22856;
+    color: rgba(255, 255, 255, .3);
   }
 }
 
 .editor-block__button--disable {
+  background: transparent;
+  color: #e3e3e4;
+  border: 3px solid #e3e3e4;
+
   &:hover {
     border-color: #b5b9be;
     color: #b5b9be;
+
     &:active {
       background-color: #b5b9be;
-      color: rgba(255,255,255,.3);
+      color: rgba(255, 255, 255, 0.3);
     }
   }
 }
