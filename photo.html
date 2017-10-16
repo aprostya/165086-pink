@@ -10,25 +10,27 @@
   <link rel="stylesheet" href="css/normalize.css">
 </head>
 <body>
-<header class="page-header page-header--active page-header--photo">
-  <div class="menu-header">
-    <div class="page-header__logo-wrap">
-      <a href="/" class="page-header__logo-link">
-        <img src="img/logo.svg" alt="Pink logo">
-      </a>
-    </div>
-    <div class="wrapper-flex">
-      <nav class="main-nav">
-        <button class="main-nav__toggle">
-        </button>
-        <ul class="main-nav__list site-list">
-          <li class="main-nav__items main-nav__items--active"><a href="#">Главная</a></li>
-          <li class="main-nav__items"><a href="#">Фотографии</a></li>
-          <li class="main-nav__items"><a href="#">Конкурс</a></li>
-          <li class="main-nav__items"><a href="#">HTML Academy</a></li>
-        </ul>
-        <a href="#" class="main-nav__toggle main-nav__toggle--close"></a>
-      </nav>
+<header class="page-header">
+  <div class="wrapper-flex">
+    <nav class="main-nav main-nav--opened main-nav--nojs">
+      <button class="main-nav__toggle">
+      </button>
+      <ul class="main-nav__list site-list">
+        <li class="main-nav__items main-nav__items--active"><a>Главная</a></li>
+        <li class="main-nav__items"><a href="#">Фотографии</a></li>
+        <li class="main-nav__items"><a href="#">Конкурс</a></li>
+        <li class="main-nav__items"><a href="#">HTML Academy</a></li>
+      </ul>
+      <a href="#" class="main-nav__toggle main-nav__toggle--close"></a>
+    </nav>
+  </div>
+  <div class="page-header__nav-wrap">
+    <div class="menu-header menu-header--active">
+      <div class="page-header__logo-wrap">
+        <a href="/" class="page-header__logo-link">
+          <img src="img/logo.svg" alt="Pink logo">
+        </a>
+      </div>
     </div>
   </div>
   <section class="contest-page">
@@ -270,8 +272,8 @@
           </dd>
         </dl>
         <div class="buttons-block">
-          <input class="editor-block__button editor-block__button--submit" type="submit" value="Запостить">
-          <input class="editor-block__button  editor-block__button--disable" type="reset" value="Отмена">
+          <button class="editor-block__button editor-block__button--submit" type="submit">Запостить</button>
+          <button class="editor-block__button  editor-block__button--disable" type="reset">Отмена</button>
         </div>
       </div>
     </div>

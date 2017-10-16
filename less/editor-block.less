@@ -80,3 +80,26 @@
     padding-right: 19px;
   }
 }
+
+.editor-block__button--submit {
+  background-color: @white;
+  &:hover {
+    background-color: #d22856;
+    color: @white;
+  }
+  &:active {
+    background-color:  #d22856;
+    color: rgba(255,255,255,.3);
+  }
+}
+
+.editor-block__button--disable {
+  &:hover {
+    border-color: #b5b9be;
+    color: #b5b9be;
+    &:active {
+      background-color: #b5b9be;
+      color: rgba(255,255,255,.3);
+    }
+  }
+}
