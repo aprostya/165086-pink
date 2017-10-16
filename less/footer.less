@@ -122,6 +122,15 @@
   font-size: 24px;
   width: 100%;
   text-align: center;
+
+  &:hover {
+    text-decoration: underline;
+    color: #000000;
+  }
+  &:active {
+    color: rgba(40, 54, 69, 0.3);
+    text-decoration: none;
+  }
 }
 
 .mail__text {
@@ -170,6 +179,7 @@
   display: block;
   text-decoration: none;
   margin-left: 12px;
+  outline: none;
 
   .font-mixin(24px; @content-font; 24px; normal);
   text-align: center;
@@ -183,6 +193,7 @@
 address {
   font-style: normal;
   width: auto;
+  outline: none;
 
   @media (min-width: @tablet-width) {
     width: auto;

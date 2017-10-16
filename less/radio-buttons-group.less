@@ -46,7 +46,7 @@
     background-color: @white;
 
     @media (min-width: @tablet-width) {
-      top: -1px;
+      top: 0;
       left: 9px;
     }
 
@@ -55,6 +55,14 @@
       left: 0;
     }
   }
+}
+
+.radio-buttons-group__label:hover::before {
+  border-color: #283645;
+}
+
+.radio-buttons-group__label:active::before {
+  border-color: #d22856;
 }
 
 .radio-button-group__input {
@@ -81,6 +89,23 @@
   transform: translate(50%, 50%);
   //background: (lighten(#d22856, 10%));
   background-repeat: no-repeat;
+  background-color: #d22856;
   background-size: contain;
   border-radius: 100%;
+
+  @media (min-width: @tablet-width) {
+    left: 10px;
+  }
+
+  @media (min-width: @desktop-width) {
+    left: 2px;
+  }
+}
+
+.catalog-checkbox__label:hover::before {
+  border-color: #283645;
+}
+
+.catalog-checkbox__label:active::before {
+  border-color: #d22856;
 }

@@ -23,8 +23,7 @@
   font-weight: bold;
   width: 79%;
   height: 33px;
-  padding: 7px;
-  top: 33px;
+  top: 31px;
   left: 19px;
   position: absolute;
   border: 3px solid @white;
@@ -32,11 +31,29 @@
   text-align: center;
   cursor: pointer;
   padding-left: 14px;
+  color: #ffffff;
+  text-decoration: none;
+  padding-bottom: 4px;
+  padding-left: 12px;
+  padding-right: 10px;
+  padding-top: 14px;
+  outline: none;
+
+  .font-mixin(18px; @font-size:18px; @font-weight:bold);
+
+  &:hover {
+    background-color: @white;
+    color: #d22856;
+  }
+
+  &:active {
+    color: rgba(210, 40, 86, 0.5);
+  }
 
   @media (min-width: @tablet-width) {
     width: 41%;
     padding-left: 19px;
-    left: 24px;
+    left: 30px;
     top: -112px;
   }
 
@@ -49,22 +66,27 @@
     padding-left: 39px;
     padding-top: 6px;
     padding-right: 40px;
+    font-size: 18px;
   }
 
-  a {
-    text-decoration: none;
-    color: #ffffff;
-
-    .font-mixin(18px; @font-size:18px; @font-weight:bold);
-    display: block;
-    margin-top: 9px;
-    letter-spacing: 1px;
-  }
+  //a {
+  //  text-decoration: none;
+  //  color: #ffffff;
+  //
+  //  .font-mixin(18px; @font-size:18px; @font-weight:bold);
+  //  display: block;
+  //  margin-top: 9px;
+  //  letter-spacing: 1px;
+  //}
 
   @media (min-width: @desktop-width) {
-    font-size: 50px;
-    font-family: @content-font;
+
+    .font-mixin(18px; @header-font;21px;bold);
     margin-left: 18px;
+    padding-right: 29px;
+    padding-left: 39px;
+    padding-bottom: 3px;
+    padding-top: 13px;
   }
 }
 

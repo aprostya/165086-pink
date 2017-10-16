@@ -12,6 +12,10 @@
   display: block;
   z-index:2;
 
+  @media (min-width: @tablet-width) {
+    display: none;
+  }
+
   @media (min-width: @desktop-width) {
     display: flex;
     flex-direction: row;
@@ -19,6 +23,7 @@
     .font-mixin(30px; @header-font; 18px; normal);
     text-transform: none;
     width: 93%;
+    margin-top: -34px;
   }
 }
 
