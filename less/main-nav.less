@@ -23,7 +23,7 @@
     background: transparent;
     .font-mixin(30px; @header-font; 18px; normal);
     text-transform: none;
-    width: 93%;
+    width: 92%;
     margin-top: -34px;
   }
 }
@@ -49,17 +49,17 @@
       color: rgba(210, 40, 86, 0.3);
     }
   }
-}
 
-@media (min-width: @tablet-width) {
-  width: auto;
-}
+  @media (min-width: @tablet-width) {
+    width: auto;
+  }
 
-@media (min-width: @desktop-width) {
-  width: auto;
-  border: none;
-  padding: 0;
-  margin: 0;
+  @media (min-width: @desktop-width) {
+    width: auto;
+    border: none;
+    padding: 0;
+    margin: 0;
+  }
 }
 
 .main-nav__items--active::after {
