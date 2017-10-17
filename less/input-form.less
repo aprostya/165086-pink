@@ -1,46 +1,34 @@
- .input-block__form {
-
+.input-block__form {
   @media (min-width: @tablet-width) {
     display: flex;
-    justify-content:unset;
-    flex-direction:row;
-
-  }
- }
-  .input-block__form:nth-of-type(1) {
-
-    @media (min-width: @tablet-width) {
-      order:2;
-    }
-  }
-
-  .input-block__form:nth-of-type(2) {
-
-    @media (min-width: @tablet-width) {
-      order:1;
+    justify-content: unset;
+    flex-direction: row;
   }
 }
 
-.input-block__form:nth-of-type(3) {
+.input-form {
+  padding-bottom: 13px;
 
-    @media (min-width: @tablet-width) {
-      order:3;
+  @media (min-width: @desktop-width) {
+    width: 50%;
   }
 }
 
 .input-form__input-label {
-  padding-left: 44px;
+  padding-left: 20px;
   text-transform: uppercase;
   color: #d22856;
   width: 75%;
 
-  .font-mixin(30px;@header-font;14px;normal);
+  .font-mixin(30px; @header-font; 14px; normal);
   display: block;
   padding-top: 17px;
 
   @media (min-width: @tablet-width) {
     margin: 0;
-    width: 14%;
+    width: auto;
+    padding-top: 20px;
+    padding-left: 0;
   }
 
   @media (min-width: @desktop-width) {
@@ -50,35 +38,51 @@
 }
 
 .input-form__input {
-  padding-left: 20px;
+  padding-left: 39px;
 
-  .font-mixin(30px;@header-font;18px;normal);
+  .font-mixin(30px; @header-font; 18px; normal);
   padding-bottom: 32px;
   margin-top: 4px;
-  margin-left: 15px;
+  margin-left: 3px;
   width: 76%;
   padding-right: 22px;
+  border: 1px solid #e5e5e5;
+
+  &:hover {
+    border-color: #000000;
+    text-shadow: none;
+    box-shadow: none;
+  }
+
+  &:focus {
+    border-color: #d22856;
+    outline: none;
+    text-shadow: none;
+    box-shadow: none;
+  }
 
   @media (min-width: @tablet-width) {
-    width: 67%;
+    width: 540px;
     padding-left: 0;
     margin-bottom: 50px;
     margin-top: 0;
+    margin-left: 22px;
   }
 
   @media (min-width: @desktop-width) {
-    margin-left: 24px;
+    margin-left: 22px;
     padding-right: 18px;
-    width: 331px;
-    height: 59px;
-    padding: 0;
+    width: 317px;
+    height: 63px;
+    padding-top: 0;
+    padding-left: 0;
+    padding-bottom: 0;
     margin-top: 0;
   }
 }
 
 .input-form__input-label--short_letters {
-
   @media (min-width: @desktop-width) {
-    width: 377px;
-}
+    width: 364px;
+  }
 }

@@ -1,15 +1,18 @@
 .filter-range {
-  width: 239px;
+  width: 242px;
   position: relative;
-  left: -23px;
+  left: -20px;
 
-  @media(min-width:@tablet-width) {
+  @media (min-width: @tablet-width) {
     width: 199px;
     padding-left: 81px;
+    left: -23px;
   }
-  @media(min-width: @desktop-width) {
+
+  @media (min-width: @desktop-width) {
     width: 285px;
     padding-left: 162px;
+    left: -23px;
   }
 }
 
@@ -36,10 +39,13 @@
 }
 
 .filter-controls {
+  @media (min-width: @tablet-width) {
+    position: relative;
+    margin-bottom: 35px;
 
-  @media(min-width:@tablet-width) {
-  position: relative;
-  margin-bottom: 35px;
+    @media (min-width: @desktop-width) {
+      margin-bottom: 32px;
+    }
   }
 }
 
@@ -68,6 +74,11 @@
   border: 3px solid #d22856;
   border-radius: 100%;
   cursor: pointer;
+
+  &:active {
+    background-color: #d22856;
+    border-color: #d22856;
+  }
 }
 
 .range-toggle-min {

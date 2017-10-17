@@ -3,30 +3,50 @@
 }
 
 .form-section__text-area {
+  width: 262px;
+  padding-left: 1px;
+  padding-top: 10px;
+  padding-right: 12px;
+  height: 190px;
+  margin-left: 0;
 
   @media (min-width: @tablet-width) {
-    width: 94%;
+    width: 79%;
+    height: 183px;
     margin-right: 61px;
     margin-top: 13px;
-    margin-left: 15px;
+    margin-left: 54px;
+    padding-left: 0;
 
     @media (min-width: @desktop-width) {
       height: 115px;
       margin-left: 25px;
-      width: 94%;
+      width: 92%;
     }
+  }
+
+  &:hover {
+    border-color: #000000;
+    outline: none;
+  }
+
+  &:focus {
+    border-color: #d22856;
+    outline: none;
   }
 }
 
 .form-section__text {
 
-  .font-mixin(34px;@content-font;24px;normal);
-   color: @white;
-   padding-bottom: 23px;
-   @media (min-width: @tablet-width)  {
-    .font-mixin(60px;@content-font;50px;normal);
+  .font-mixin(34px; @content-font; 24px; normal);
+  color: @white;
+  padding-bottom: 23px;
+
+  @media (min-width: @tablet-width) {
+
+    .font-mixin(60px; @content-font; 50px; normal);
     margin: 0 auto;
     width: 99%;
     margin-top: 78px;
-   }
+  }
 }

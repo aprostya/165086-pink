@@ -1,31 +1,32 @@
 .describe-block {
   width: 100%;
   text-align: center;
-  padding-bottom: 63px;
+  padding-bottom: 42px;
 
-  @media (min-width:@desktop-width) {
-    padding-bottom: 50px;
-  }
+  //@media (min-width: @desktop-width) {
+  //  padding-bottom: 50px;
+  //}
 
-  @media(min-width: @desktop-width) {
+  @media (min-width: @desktop-width) {
     padding-bottom: 67px;
-    padding-top: 12px;
+    padding-top: 0;
   }
 }
 
 .describe-block__text {
 
-  .font-mixin(30px;@header-font;14px;normal);
+  .font-mixin(30px; @header-font; 14px; normal);
   margin: 0 auto;
   padding-top: 27px;
 
-  @media (min-width:@tablet-width) {
+  @media (min-width: @tablet-width) {
     font-size: 18px;
     padding-right: 0;
     padding-left: 0;
     padding-top: 34px;
   }
-  @media (min-width:@desktop-width) {
+
+  @media (min-width: @desktop-width) {
     padding-right: 0;
     padding-left: 0;
     padding-top: 0;
@@ -36,10 +37,11 @@
 .separator-tablet {
   display: inline;
 
-  @media (min-width:@tablet-width) {
+  @media (min-width: @tablet-width) {
     display: inline;
   }
-   @media (min-width:@desktop-width) {
+
+  @media (min-width: @desktop-width) {
     display: none;
   }
 }

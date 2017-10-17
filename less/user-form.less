@@ -6,11 +6,18 @@
   background-color: @white;
 
   @media (min-width: @tablet-width) {
-    order:1;
+    order: 1;
   }
+
   @media (min-width: @desktop-width) {
     display: flex;
     flex-direction: row;
     flex-wrap: wrap;
+  }
+}
+
+.user-forms {
+  @media (min-width: @desktop-width) {
+    padding: 0 9px;
   }
 }

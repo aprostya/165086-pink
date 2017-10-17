@@ -8,8 +8,7 @@
   align-content: center;
   flex-direction: row;
   justify-content: space-between;
-  padding-top: 190px;
-  width: 100%;
+  padding-top: 42px;
 
   @media (min-width: @tablet-width) {
     padding-top: 0;
@@ -32,19 +31,19 @@
 
 .info-block__text {
 
-  .font-mixin(24px;@content-font; 24px; normal);
+  .font-mixin(24px; @content-font; 24px; normal);
   padding-top: 84px;
   text-align: center;
 
-  @media(min-width: @tablet-width) {
+  @media (min-width: @tablet-width) {
 
-    .font-mixin(40px;@content-font;40px;normal);
+    .font-mixin(40px; @content-font; 40px; normal);
     margin-top: 40px;
     padding-left: 0;
     padding-bottom: 17px;
-    }
+  }
 
-  @media(min-width: @desktop-width) {
+  @media (min-width: @desktop-width) {
     font-size: 50px;
     padding-left: 0;
     line-height: 60px;
@@ -61,10 +60,10 @@
   flex: 1;
   .font-mixin(24px;@font-size:18px;@font-weight:normal);
 
-   @media (min-width: @tablet-width) {
-    flex-direction:row;
+  @media (min-width: @tablet-width) {
+    flex-direction: row;
     width: 100%;
-   }
+  }
 }
 
 .info-block__call-block {
@@ -77,16 +76,17 @@
     margin-top: 0;
   }
 
-   @media (min-width: @desktop-width) {
+  @media (min-width: @desktop-width) {
     padding-right: 384px;
-   }
+  }
 }
 
 .info-block__mail-block {
   margin: 0 auto;
   flex: 2;
+
   @media (min-width: @tablet-width) {
-    flex-direction:row;
+    flex-direction: row;
   }
 }
 
@@ -104,7 +104,7 @@
   letter-spacing: 1px;
 
   @media (min-width: @tablet-width) {
-    margin-top: 0px;
+    margin-top: 0;
   }
 
   @media (min-width: @desktop-width) {
@@ -122,6 +122,16 @@
   font-size: 24px;
   width: 100%;
   text-align: center;
+
+  &:hover {
+    text-decoration: underline;
+    color: #000000;
+  }
+
+  &:active {
+    color: rgba(40, 54, 69, 0.3);
+    text-decoration: none;
+  }
 }
 
 .mail__text {
@@ -131,7 +141,7 @@
   text-align: center;
 
   @media (min-width: @tablet-width) {
-    margin-top: 0px;
+    margin-top: 0;
   }
 
   @media (min-width: @desktop-width) {
@@ -147,9 +157,9 @@
     margin-top: 20px;
   }
 
-   @media (min-width: @desktop-width) {
+  @media (min-width: @desktop-width) {
     margin-top: -28px;
-   }
+  }
 }
 
 .map-block__text {
@@ -170,12 +180,13 @@
   display: block;
   text-decoration: none;
   margin-left: 12px;
+  outline: none;
 
-  .font-mixin(24px;@content-font;24px;normal);
+  .font-mixin(24px; @content-font; 24px; normal);
   text-align: center;
 }
 
- @media (min-width: @tablet-width) {
+@media (min-width: @tablet-width) {
   margin-right: 20px;
   line-height: 30px;
 }
@@ -183,6 +194,7 @@
 address {
   font-style: normal;
   width: auto;
+  outline: none;
 
   @media (min-width: @tablet-width) {
     width: auto;
@@ -204,6 +216,6 @@ address {
   width: 100%;
 
   img {
-  min-width: 100%;
+    min-width: 100%;
   }
 }

@@ -26,33 +26,23 @@
 
 .os-nav__title {
   display: block;
-
-  .font-mixin(24px; @content-font; 14px; normal);
-  text-shadow:-3px -1px 15px #000000;
-  width: auto;
-  margin-left: 20px;
-  margin-top: 60px;
-  text-align: center;
-  margin-bottom: 0;
-  padding-bottom: 0;
-
   .font-mixin(24px; @content-font; 14px; normal);
   text-shadow: -3px -1px 15px #000000;
-  width: 91%;
-  margin-left: 20px;
-  margin-top: 70px;
+  width: auto;
+  margin-left: 0;
+  margin-top: 64px;
   text-align: center;
+  padding-bottom: 27px;
 
-   @media (min-width: @tablet-width) {
+  @media (min-width: @tablet-width) {
     font-size: 18px;
     margin-left: 0;
     width: 54%;
     margin-top: 60px;
-    margin-left: 0;
   }
 
- @media (min-width: @desktop-width) {
-  margin-right: auto;
-  margin-left: auto;
+  @media (min-width: @desktop-width) {
+    margin-right: auto;
+    margin-left: auto;
   }
 }

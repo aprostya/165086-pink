@@ -1,7 +1,13 @@
 .radio-buttons-group {
-  padding-left: 20px;
+  padding-left: 0;
+  padding-bottom: 24px;
 
-  @media (min-width:@desktop-width) {
+  @media (min-width: @tablet-width) {
+    padding-left: 47px;
+    padding-bottom: 40px;
+  }
+
+  @media (min-width: @desktop-width) {
     padding-left: 77px;
     padding-bottom: 39px;
   }
@@ -12,13 +18,17 @@
   margin-bottom: 11px;
   cursor: pointer;
   padding-bottom: 10px;
-  width: 80%;
-  padding-left: 57px;
+  width: auto;
+  padding-left: 71px;
   transition: all 0.25s linear;
   display: block;
   overflow: hidden;
 
-  .font-mixin(30px;@header-font;18px;normal);
+  .font-mixin(30px; @header-font; 18px; normal);
+
+  @media (min-width: @desktop-width) {
+    padding-left: 59px;
+  }
 
   &::before {
     content: "";
@@ -34,7 +44,25 @@
     border: 3px solid #e5e5e5;
     border-radius: 100%;
     background-color: @white;
+
+    @media (min-width: @tablet-width) {
+      top: 0;
+      left: 9px;
+    }
+
+    @media (min-width: @desktop-width) {
+      top: 0;
+      left: 0;
+    }
   }
+}
+
+.radio-buttons-group__label:hover::before {
+  border-color: #283645;
+}
+
+.radio-buttons-group__label:active::before {
+  border-color: #d22856;
 }
 
 .radio-button-group__input {
@@ -50,6 +78,7 @@
   margin: auto;
   background: green;
 }
+
 .radio-button-group__input:checked + .radio-buttons-group__label::after {
   content: "";
   width: 19px;
@@ -58,8 +87,25 @@
   top: 1px;
   left: 2px;
   transform: translate(50%, 50%);
+  //background: (lighten(#d22856, 10%));
   background-repeat: no-repeat;
+  background-color: #d22856;
   background-size: contain;
   border-radius: 100%;
-  background:  lighten(#d22856, 10%);
+
+  @media (min-width: @tablet-width) {
+    left: 10px;
+  }
+
+  @media (min-width: @desktop-width) {
+    left: 2px;
+  }
+}
+
+.catalog-checkbox__label:hover::before {
+  border-color: #283645;
+}
+
+.catalog-checkbox__label:active::before {
+  border-color: #d22856;
 }

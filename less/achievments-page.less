@@ -2,28 +2,30 @@
   width: 100%;
   background-color: #f2f2f2;
   margin-top: 32px;
+  padding-bottom: 27px;
 
   @media (min-width: @tablet-width) {
     order: 4;
     background-color: @white;
     margin-top: 0;
-    margin-bottom: 60px;
+    margin-bottom: 40px;
   }
 
   @media (min-width: @desktop-width) {
-    margin-top: 17px;
+    margin-top: 40px;
+    margin-bottom: 34px;
   }
 }
 
 .achievments-page__text {
 
-  .font-mixin(18px;@header-font;14px;normal);
+  .font-mixin(18px; @header-font; 14px; normal);
   color: darken(#db7188, 5%);
   text-align: center;
   text-transform: uppercase;
   padding-left: 20px;
   width: 83%;
-  padding-top: 25px;
+  padding-top: 18px;
 
   @media (min-width: @tablet-width) {
     padding-bottom: 21px;
@@ -33,8 +35,11 @@
     margin-left: auto;
     margin-right: auto;
     background: @white;
-  @media (min-width: @tablet-width) {
-    width: 64%;
-  }
+    width: 100%;
+
+    @media (min-width: @desktop-width) {
+      margin-left: 142px;
+      width: 55%;
+    }
   }
 }

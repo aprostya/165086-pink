@@ -1,13 +1,25 @@
 .traffic-table {
-  width: 99%;
+  width: 984px;
   margin: 0 auto;
   border-collapse: collapse;
   display: table;
   // border-color: grey;
-  border:none;
+  border: none;
+  transform: translateX(-438px);
 
   tr {
     border: none;
+  }
+
+  @media (min-width: @tablet-width) {
+    width: 99%;
+    transform: none;
+  }
+
+  @media (min-width: @desktop-width) {
+    width: 932px;
+    border: none;
+    transform: none;
   }
 }
 
@@ -15,32 +27,39 @@
   display: table-header-group;
   vertical-align: middle;
   border-color: inherit;
-  border:none;
+  border: none;
 }
 
 .traffic-table_headcell {
-
-  @media (min-width: @tablet-width) {
-    padding-right: 20px;
-    padding-left: 23px;
-    padding-top: 9px;
-    padding-bottom: 9px;
-  }
-  padding-left: 62px;
-  padding-right: 64px;
-  padding-bottom: 17px;
-  padding-top: 15px;
   // padding-top: 16px;
   // padding-bottom: 23px;
   background-color: #283645;
   border-top: 2px solid #283645;
   border-right: 2px solid #e5e5e5;
   border-left: 2px solid #e5e5e5;
+  padding-left: 66px;
+  padding-right: 67px;
+  padding-bottom: 11px;
+  padding-top: 14px;
+
+  @media (min-width: @tablet-width) {
+    padding-right: 23px;
+    padding-left: 17px;
+    padding-top: 0;
+    padding-bottom: 0;
+  }
+
+  @media (min-width: @desktop-width) {
+    padding-left: 34px;
+    padding-right: 29px;
+    padding-bottom: 21px;
+    padding-top: 16px;
+  }
 }
 
 .traffic-table_headcell--no-borders {
   background-color: transparent;
-  border:none;
+  border: none;
   border-top: none;
 }
 
@@ -51,6 +70,18 @@
 }
 
 .traffic-table__cell {
+  display: table-cell;
+  color: #283645;
+  border: 2px solid #e5e5e5;
+  background-color: @white;
+  background-repeat: no-repeat;
+  padding-bottom: 16px;
+  padding-top: 12px;
+  padding-right: 0;
+  padding-left: 0;
+  font-size: 18px;
+
+  .font-mixin(30px; @header-font; 18px; normal);
 
   @media (min-width: @tablet-width) {
     padding: 0;
@@ -60,18 +91,13 @@
     text-indent: 8px;
   }
 
-  display: table-cell;
-  padding-top: 0px;
-  padding-bottom: 16px;
-  padding-top: 13px;
-  color: #283645;
-  border: 2px solid #e5e5e5;
-  background-color: #fff;
-  background-repeat: no-repeat;
-  padding-right: 69px;
-  padding-left: 16px;
-
-  .font-mixin(30px;@header-font;18px;normal);
+  @media (min-width: @desktop-width) {
+    padding-bottom: 16px;
+    padding-top: 12px;
+    padding-right: 0;
+    padding-left: 0;
+    font-size: 18px;
+  }
 }
 
 .traffic-table__cell--yes {
@@ -89,26 +115,55 @@
 }
 
 .price-table__headcell-type {
+  color: @white;
+  text-transform: uppercase;
 
+  .font-mixin(4px; @header-font; 18px; bold);
 
   @media (min-width: @tablet-width) {
 
-  .font-mixin(30px;@header-font;16px;bold);
+    .font-mixin(13px; @header-font; 16px; bold);
   }
-  .font-mixin(30px;@header-font;18px;bold);
-  color: @white;
-  text-transform: uppercase;
-  margin: 0;
+
+  @media (min-width: @desktop-width) {
+
+    .font-mixin(30px; @header-font; 18px; bold);
+    margin: 0;
+  }
 }
 
 .price-table__headcell-price {
+  color: @white;
+  text-transform: uppercase;
+  white-space: nowrap;
+
+  .font-mixin(0; @content-font; 24px; normal);
 
   @media (min-width: @tablet-width) {
 
-  .font-mixin(30px;@content-font;18px;normal);
+    .font-mixin(13px; @content-font; 18px; normal);
+    white-space: normal;
   }
 
-  .font-mixin(30px;@content-font;24px;normal);
-  color: @white;
-  margin: 0;
+  @media (min-width: @desktop-width) {
+
+    .font-mixin(30px; @content-font; 24px; normal);
+    color: @white;
+    margin: 0;
+    white-space: normal;
+  }
+}
+
+.traffic-table__cell--mobile {
+  font-size: 14px;
+  text-indent: 17px;
+  text-transform: uppercase;
+
+  @media (min-width: @tablet-width) {
+    font-size: 0;
+  }
+
+  @media (min-width: @desktop-width) {
+    font-size: 0;
+  }
 }
