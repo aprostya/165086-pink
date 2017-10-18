@@ -16,7 +16,7 @@
       <button class="main-nav__toggle">
       </button>
       <ul class="main-nav__list site-list">
-        <li class="main-nav__items main-nav__items--active"><a>Главная</a></li>
+        <li class="main-nav__items"><a>Главная</a></li>
         <li class="main-nav__items"><a href="#">Фотографии</a></li>
         <li class="main-nav__items"><a href="#">Конкурс</a></li>
         <li class="main-nav__items"><a href="#">HTML Academy</a></li>
@@ -28,7 +28,11 @@
     <div class="menu-header menu-header--active">
       <div class="page-header__logo-wrap">
         <a href="/" class="page-header__logo-link">
-          <img src="img/logo.svg" alt="Pink logo">
+          <picture>
+            <source media="(min-width: 1200px" srcset="img/logo-pink-white-desktop.svg">
+            <source media="(min-width:660px)" srcset="img/logo-pink-white-tablet.svg">
+            <img src="img/logo-pink-white-mobile.svg" width="76" height="27" class="logo-pic" alt="Pink logo">
+          </picture>
         </a>
       </div>
     </div>
@@ -68,7 +72,7 @@
             Имя
           </label>
           <input type="text" class="input-form__input input-form__input-label--short_letters" required
-                    placeholder="Введите ваше имя *" id="input_name">
+                 placeholder="Введите ваше имя *" id="input_name">
         </div>
         <div class="input-block__form">
           <label for="input_surname-mobile" class="input-form__input-label">
@@ -85,13 +89,13 @@
         <div class="catalog-checkbox">
           <div class="checkbox-group">
             <input type="checkbox" checked class="catalog-checkbox__input catalog-checkbox__input--active"
-                      id="checkbox">
+                   id="checkbox">
             <label for="checkbox" class="catalog-checkbox__label catalog-checkbox__label--active">
               Сделал селфи с акулой
             </label>
             <br>
             <input type="checkbox" checked class="catalog-checkbox__input catalog-checkbox__input--active"
-                      id="checkbox_beach">
+                   id="checkbox_beach">
             <label for="checkbox_beach" class="catalog-checkbox__label">
               Обгорел на пляже
             </label>
@@ -132,7 +136,7 @@
             Номер телефона
           </label>
           <input type="text" class="user-contacts__input phone_number" placeholder="Номер, пожалуйста"
-                    id="input_number">
+                 id="input_number">
           <br>
         </div>
         <div class="label-block label-block--mail">

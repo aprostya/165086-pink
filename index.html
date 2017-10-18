@@ -15,7 +15,7 @@
       <button class="main-nav__toggle">
       </button>
       <ul class="main-nav__list site-list">
-        <li class="main-nav__items main-nav__items--active"><a>Главная</a></li>
+        <li class="main-nav__items"><a>Главная</a></li>
         <li class="main-nav__items"><a href="#">Фотографии</a></li>
         <li class="main-nav__items"><a href="#">Конкурс</a></li>
         <li class="main-nav__items"><a href="#">HTML Academy</a></li>
@@ -27,7 +27,11 @@
     <div class="menu-header menu-header--active">
       <div class="page-header__logo-wrap">
         <a href="/" class="page-header__logo-link">
-          <img src="img/logo.svg" alt="Pink logo">
+          <picture>
+            <source media="(min-width: 1200px" srcset="img/logo-pink-white-desktop.svg">
+            <source media="(min-width:660px)" srcset="img/logo-pink-white-tablet.svg">
+            <img src="img/logo-pink-white-mobile.svg" width="76" height="27" class="logo-pic" alt="Pink logo">
+          </picture>
         </a>
       </div>
     </div>

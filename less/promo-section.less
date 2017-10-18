@@ -23,15 +23,42 @@
   top: 112px;
   background-repeat: no-repeat;
 
-  @media (min-width: @desktop-width) {
-    content: "";
-    background-image: url("");
+  @media (min-resolution: @retina-dpi), (min-resolution: @retina-dppx) {
+    background-image: url("../img/iphone-hand-mobile@2x.png");
+    position: absolute;
+    width: 262px;
+    height: 308px;
+    top: 112px;
+    left: 10px;
+    background-repeat: no-repeat;
+    background-size: contain;
   }
 
   @media (min-width: @tablet-width) {
     padding-bottom: 0;
     content: "";
-    background-image: url("");
+    background-image: url("../img/iphone-hand-tablet@1x.png");
+    position: absolute;
+    width: 656px;
+    height: 556px;
+    top: 84px;
+    left: -14px;
+  }
+
+  @media (min-width: @tablet-width) and (min-resolution: @retina-dpi), (min-width: @tablet-width) and (min-resolution: @retina-dppx) {
+    background-image: url("../img/iphone-hand-tablet@2x.png");
+    top: 121px;
+    left: 46px;
+  }
+
+  @media (min-width: @desktop-width) {
+    content: "";
+    background-image: url("../img/iphone-hand-desktop@1x.png");
+    position: absolute;
+    width: 1000px;
+    height: 642px;
+    left: 146px;
+    top: 112px;
   }
 }
 
