@@ -3,6 +3,7 @@
 <head>
   <title>Pink site</title>
   <meta charset="UTF-8">
+  <script src="js/picturefill.js"></script>
   <script src="js/script.min.js"></script>
   <link rel="stylesheet" type="text/css" href="css/style.css">
   <meta name="viewport" content="width=device-width, initial-scale=1">
@@ -57,7 +58,7 @@
     </div>
   </section>
 </header>
-<main class="container">
+<main class="main-class">
   <div class="features">
     <div class="wrapper-flex">
       <h2 class="visually_hidden">Причины скачать приложение Pink</h2>
@@ -69,24 +70,25 @@
       <div class="features-items">
         <div class="wrapper-flex features-items__block--desktop-wrapper">
           <div class="features-items-group">
-            <section class="features-items__block">
+            <section class="features-items__block features-items__block--one">
               <h2 class="features-items__title">Поднимает настроение</h2>
               <p class="features-items__descr">Приложение позволит вам победить осеннюю хандру и деперессию буквально в
                 <br class="separator">несколько кликов!</p>
             </section>
-            <section class="features-items__block">
+            <section class="features-items__block features-items__block--two">
               <h2 class="features-items__title">Меняем мир вокруг</h2>
-              <p class="features-items__descr">Сделайте снимок и украсьте его смайликом или текстовой подписью, чтобы
-                усилить эффект</p>
+              <p class="features-items__descr">Сделайте снимок и украсьте его смайликом или текстовой подписью, чтобы <br class="separator separator--tablet"> усилить эффект</p>
             </section>
-            <section class="features-items__block">
+            <section class="features-items__block features-items__block--three">
               <h2 class="features-items__title">Заводит <br class="separator-desktop"> новых друзей</h2>
               <p class="features-items__descr">Ставьте лайки, комментируйте, делитесь фотографиями с друзьями и <br
                 class="separator separator--mobile"> заводите новых </p>
             </section>
           </div>
           <div class="features-items__image-wrap">
-            <img src="img/iphone-screen-mobile.png" alt="Iphone photo" width="140" height="324">
+            <picture>
+              <img src="img/iphone-screen-mobile.png" srcset="img/iphone-screen-mobile.png 1x, img/iphone-screen-mobile@2x.png 2x" width="140" height="324" alt="Pink image">
+            </picture>
           </div>
           <section class="features-items__block mobile_hidden">
             <h2 class="features-items__title--custom_size">Эффект<br
@@ -185,11 +187,10 @@
       </div>
     </div>
     <div class="map-block">
-      <div class="wrapper-flex">
+      <div class="wrapper-flex map">
         <p class="map-block__text">Приезжайте в гости:</p>
-        <address><a class="map-block__link" href="#">ул.Большая <br class="separator">Конюшенная, 19/8</a></address>
+        <address><a class="map-block__link" href="#">ул.Большая <br class="separator separator--mobile separator--tablet separator--desktop">Конюшенная, 19/8</a></address>
         <div class="map-block_map-item">
-          <img src="img/bg-map-mobile@1x.png" alt="Карта" width="300" height="300">
         </div>
       </div>
     </div>
