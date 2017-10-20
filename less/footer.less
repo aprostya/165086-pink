@@ -18,7 +18,7 @@
   background-color: @white;
 
   @media (min-width: @desktop-width) {
-    padding-top: 153px;
+    padding-top: 61px;
   }
 }
 
@@ -38,9 +38,12 @@
   @media (min-width: @tablet-width) {
 
     .font-mixin(40px; @content-font; 40px; normal);
-    margin-top: 40px;
+    margin-top: 0;
     padding-left: 0;
     padding-bottom: 17px;
+    padding-top: 55px;
+    margin-left: auto;
+    margin-right: auto;
   }
 
   @media (min-width: @desktop-width) {
@@ -204,11 +207,13 @@ address {
   @media (min-width: @tablet-width) {
     width: auto;
     margin-left: 0;
+    padding-bottom: 38px;
   }
 
   @media (min-width: @desktop-width) {
     margin-left: 0;
-    margin-bottom: 32px;
+    margin-bottom: 8px;
+    padding-bottom: 0;
   }
 }
 
@@ -220,6 +225,7 @@ address {
   height: 242px;
   margin: 0 auto;
   width: 100%;
+  position: relative;
 
   img {
     min-width: 100%;
@@ -231,7 +237,8 @@ address {
 
   @media (min-width: @tablet-width) {
     background-image: url("../img/bg-map-tablet@1x.jpg");
-    height: 415px;
+    height: 375px;
+    z-index:3;
   }
 
   @media (min-width: @tablet-width) and (min-resolution: @retina-dpi), (min-width: @tablet-width) and (min-resolution: @retina-dppx) {

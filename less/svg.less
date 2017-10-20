@@ -1,0 +1,114 @@
+.svg-pic--timer {
+  margin-top: 26px;
+  margin-left: 45px;
+
+  @media ( min-width: @desktop-width) {
+    transform: scale(1.2, 1.2);
+    margin-left: 26px;
+    margin-top: -66px;
+  }
+}
+
+.svg-pic--circle__tablet {
+  position: absolute;
+  top: 103px;
+  left: 68px;
+  width: 200px;
+  height: 219px;
+  stroke: #d22856;
+  stroke-width: 12px;
+  fill: none;
+
+  @media (min-width: @desktop-width) {
+    display: none;
+  }
+}
+
+.svg-pic--circle__desktop {
+  display: none;
+
+  @media (min-width: @desktop-width) {
+    display: block;
+    position: absolute;
+    top: 111px;
+    left: 18px;
+    width: 245px;
+    height: 240px;
+    stroke: #d22856;
+    stroke-width: 17px;
+    fill: none;
+  }
+}
+
+.svg-pic--background {
+  @media (min-width: @tablet-width) {
+    fill: #f2f2f2;
+    z-index: 1;
+    position: absolute;
+    transform: scale(-1, -1);
+    top: -50px;
+    left: 0;
+    height: auto;
+    width: 100%;
+  }
+  @media (min-width: @desktop-width) {
+    top: -1px;
+    fill: @white;
+    transform: none;
+  }
+}
+
+.svg-pic--background__table {
+  @media (min-width: @tablet-width) {
+    fill: #f2f2f2;
+    z-index: 1;
+    position: absolute;
+    transform: scale(-1, -1);
+    top: -36px;
+    left: 1px;
+    height: 135px;
+    width: 100%;
+
+    @media (min-width: @desktop-width) {
+      fill: @white;
+      transform: none;
+      top: -5px;
+    }
+  }
+}
+
+.svg-pic--footer {
+  @media (min-width: @tablet-width) {
+    fill: #fff;
+    position: absolute;
+    top: -154px;
+
+    @media (min-width: @desktop-width) {
+      top: -189px;
+    }
+  }
+}
+
+.svg-pic--quots__only-desktop {
+  display: none;
+
+  @media (min-width: @desktop-width) {
+    display: block;
+    position: absolute;
+    fill: #efefef;
+    left: 565px;
+    top: 76px;
+  }
+}
+
+.svg-pic--toggle-icon {
+  fill: #c2c6ca;
+
+  &:hover {
+    fill: #969da4;
+  }
+
+  &:active {
+    fill: #e9ebec;
+  }
+}

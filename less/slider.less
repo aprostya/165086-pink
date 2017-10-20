@@ -1,0 +1,62 @@
+.slider {
+  position: relative;
+
+  @media (min-width: @desktop-width) {
+    display: none;
+  }
+}
+
+.slider input[type=radio] {
+  display: none;
+}
+
+.slider__slider-controls {
+  margin-bottom: 10px;
+  text-align: center;
+}
+
+.slider__slider-controls label {
+  display: inline-block;
+  width: 5px;
+  height: 5px;
+  margin-top: 0;
+  margin-left: 0;
+  margin-right: 16px;
+  background-color: #bec2c7;
+  border-radius: 50%;
+  transition: background-color 0.2s;
+  cursor: pointer;
+}
+
+//
+//#radio-slider-1:checked ~ .slider__slider-controls label {
+//  border: 3px solid #000000;
+//  width: 6px;
+//  height: 6px;
+//  background-color: @white;
+//}
+
+.toggle-arrow {
+  display: none;
+
+  @media (min-width: @desktop-width) {
+    display: block;
+    margin: 0;
+    padding: 0;
+    position: absolute;
+    border: 0;
+    width: 10%;
+    background-color: @white;
+    cursor: pointer;
+  }
+}
+
+.toggle-arrow--next {
+  transform: scale(-1, -1);
+  left: 81px;
+  top: 212px;
+}
+.toggle-arrow--prev {
+  right: 67px;
+  top: 214px;
+}

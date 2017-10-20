@@ -2,6 +2,11 @@
   min-width: 100%;
   background-color: @white;
   overflow: hidden;
+  position: relative;
+
+  @media (min-width: @tablet-width) {
+    margin-top: 0;
+  }
 }
 
 .traffic-table {
@@ -14,6 +19,31 @@
   }
 }
 
+.table-background {
+  background-color: #f2f2f2;
+  @media (min-width: @tablet-width) {
+    margin-top: 56px;
+    padding-bottom: 68px;
+    margin-left: 0;
+  }
+  @media (min-width: @desktop-width) {
+    margin-top: 23px;
+    padding-bottom: 90px;
+  }
+}
+
 .price-table {
   padding-top: 200px;
+}
+
+.table-wrapper {
+  @media (min-width: @tablet-width) {
+    padding-top: 34px;
+    margin-left: 10px;
+
+    @media (min-width: @desktop-width) {
+      padding-top: 149px;
+      margin-left: 129px;
+    }
+  }
 }
