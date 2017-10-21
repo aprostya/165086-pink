@@ -5,7 +5,7 @@
   display: table;
   // border-color: grey;
   border: none;
-  transform: translateX(-438px);
+  transform: translateX(-422px);
 
   tr {
     border: none;
@@ -43,6 +43,7 @@
   padding-right: 67px;
   padding-bottom: 11px;
   padding-top: 14px;
+  position: relative;
 
   @media (min-width: @tablet-width) {
     padding-right: 23px;
@@ -168,4 +169,15 @@
   @media (min-width: @desktop-width) {
     font-size: 0;
   }
+}
+
+.traffic-table_headcel--best_price::before {
+  content: "Хит";
+  position: absolute;
+  transform: rotate(-50deg);
+  color: @white;
+  left: 0;
+  top: 15px;
+  z-index: 2;
+  font-weight: normal;
 }

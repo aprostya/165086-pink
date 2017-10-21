@@ -41,6 +41,8 @@
 }
 
 .svg-pic--background {
+  fill: @white;
+
   @media (min-width: @tablet-width) {
     fill: #f2f2f2;
     z-index: 1;
@@ -59,32 +61,42 @@
 }
 
 .svg-pic--background__table {
+  fill: @white;
+  z-index: 1;
+  position: absolute;
+  transform: none;
+  top: -56px;
+  left: 1px;
+  height: 135px;
+  width: 100%;
+
   @media (min-width: @tablet-width) {
     fill: #f2f2f2;
     z-index: 1;
-    position: absolute;
     transform: scale(-1, -1);
     top: -36px;
     left: 1px;
     height: 135px;
-    width: 100%;
 
     @media (min-width: @desktop-width) {
       fill: @white;
       transform: none;
-      top: -5px;
+      top: 0;
     }
   }
 }
 
 .svg-pic--footer {
+  top: -83px;
+  position: absolute;
+
   @media (min-width: @tablet-width) {
     fill: #fff;
     position: absolute;
     top: -154px;
 
     @media (min-width: @desktop-width) {
-      top: -189px;
+      top: -197px;
     }
   }
 }
@@ -110,5 +122,17 @@
 
   &:active {
     fill: #e9ebec;
+  }
+}
+
+.svg-pic--hit_ribbon {
+  position: absolute;
+  top: 0;
+  left: 0;
+
+  @media (min-width: @tablet-width) {
+    left: 0;
+    top: -2px;
+    width: 76px;
   }
 }
