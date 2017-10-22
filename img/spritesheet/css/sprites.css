@@ -1,0 +1,167 @@
+
+.icon-editor-contrast:before {
+	width: 3.192em;
+	height: 3.192em;
+	background-position: -0em 0;
+}
+
+.icon-editor-crop:before {
+	width: 4.8em;
+	height: 4.8em;
+	background-position: -3.192em 0;
+}
+
+.icon-editor-fill:before {
+	width: 4.8em;
+	height: 4.8em;
+	background-position: -7.992em 0;
+}
+
+.icon-facebook:before {
+	width: 0.8673em;
+	height: 1.8943999999999999em;
+	background-position: -12.792em 0;
+}
+
+.icon-heart:before {
+	width: 1.2545em;
+	height: 1.199em;
+	background-position: -13.659299999999998em 0;
+}
+
+.icon-mail:before {
+	width: 1.7988em;
+	height: 1.3965999999999998em;
+	background-position: -14.913799999999998em 0;
+}
+
+.icon-map-marker:before {
+	width: 3.5982999999999996em;
+	height: 3.5982999999999996em;
+	background-position: -16.7126em 0;
+}
+
+.icon-menu-burger:before {
+	width: 4.9945em;
+	height: 2.4007em;
+	background-position: -20.310899999999997em 0;
+}
+
+.icon-menu-cross:before {
+	width: 2.3867000000000003em;
+	height: 2.3867000000000003em;
+	background-position: -25.3054em 0;
+}
+
+.icon-no:before {
+	width: 2.6752em;
+	height: 2.6752em;
+	background-position: -27.6921em 0;
+}
+
+.icon-phone:before {
+	width: 1.9697em;
+	height: 1.9696000000000002em;
+	background-position: -30.3673em 0;
+}
+
+.icon-twitter:before {
+	width: 1.75em;
+	height: 1.4663em;
+	background-position: -32.337em 0;
+}
+
+.icon-yes:before {
+	width: 2.1698em;
+	height: 1.609em;
+	background-position: -34.087em 0;
+}
+
+.icon-youtube:before {
+	width: 1.464em;
+	height: 1.3960000000000001em;
+	background-position: -36.2568em 0;
+}
+
+.logo-android:before {
+	width: 4.2084em;
+	height: 4.7040999999999995em;
+	background-position: -37.7208em 0;
+}
+
+.logo-apple:before {
+	width: 4.621em;
+	height: 5.6753em;
+	background-position: -41.929199999999994em 0;
+}
+
+.logo-microsoft:before {
+	width: 4.3922em;
+	height: 4.199199999999999em;
+	background-position: -46.5502em 0;
+}
+
+.icon-editor-contrast,
+.icon-editor-crop,
+.icon-editor-fill,
+.icon-facebook,
+.icon-heart,
+.icon-mail,
+.icon-map-marker,
+.icon-menu-burger,
+.icon-menu-cross,
+.icon-no,
+.icon-phone,
+.icon-twitter,
+.icon-yes,
+.icon-youtube,
+.logo-android,
+.logo-apple,
+.logo-microsoft {
+	font-size:10px;
+}
+
+.no-svg .icon-editor-contrast:before,
+.no-svg .icon-editor-crop:before,
+.no-svg .icon-editor-fill:before,
+.no-svg .icon-facebook:before,
+.no-svg .icon-heart:before,
+.no-svg .icon-mail:before,
+.no-svg .icon-map-marker:before,
+.no-svg .icon-menu-burger:before,
+.no-svg .icon-menu-cross:before,
+.no-svg .icon-no:before,
+.no-svg .icon-phone:before,
+.no-svg .icon-twitter:before,
+.no-svg .icon-yes:before,
+.no-svg .icon-youtube:before,
+.no-svg .logo-android:before,
+.no-svg .logo-apple:before,
+.no-svg .logo-microsoft:before {
+	background-image: url("../sprites/png-sprite.png");
+}
+
+.icon-editor-contrast:before,
+.icon-editor-crop:before,
+.icon-editor-fill:before,
+.icon-facebook:before,
+.icon-heart:before,
+.icon-mail:before,
+.icon-map-marker:before,
+.icon-menu-burger:before,
+.icon-menu-cross:before,
+.icon-no:before,
+.icon-phone:before,
+.icon-twitter:before,
+.icon-yes:before,
+.icon-youtube:before,
+.logo-android:before,
+.logo-apple:before,
+.logo-microsoft:before {
+	content:' ';
+	vertical-align:middle;
+	display: inline-block;
+	background-image: url("../sprites/svg-sprite.svg");
+	background-repeat: no-repeat;
+	background-size: 50.9424em 5.6753em;
+}
