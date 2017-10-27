@@ -10,8 +10,11 @@
 }
 
 .index {
-  min-height: 391px;
-  padding-bottom: 0;
+  padding-bottom: 19px;
+  min-height: 374px;
+  @media (min-width: @tablet-width) {
+    padding-bottom: 0;
+  }
 }
 
 .promo-section::before {
@@ -56,9 +59,9 @@
     content: "";
     background-image: url("../img/iphone-hand-desktop@1x.png");
     position: absolute;
-    width: 1000px;
+    width: 888px;
     height: 642px;
-    left: 146px;
+    left: 0;
     top: 96px;
   }
 

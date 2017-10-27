@@ -1,7 +1,7 @@
 .main-nav {
   align-items: flex-start;
   position: absolute;
-  top: 72px;
+  top: 66px;
   left: 0;
   width: 100%;
   background-color: @nav-menu-background;
@@ -9,12 +9,13 @@
   font-weight: bold;
   font-size: 18px;
   line-height: 32px;
-  display: none;
+  display: block;
   z-index: 2;
   border-right: none;
 
   @media (min-width: @tablet-width) {
-    display: none;
+    display: block;
+    top:72px;
   }
 
   @media (min-width: @desktop-width) {
@@ -84,9 +85,13 @@
     }
   }
 
+  @media (min-width:  @tablet-width) {
+    padding-top: 18px;
+  }
+
   @media (min-width: @desktop-width) {
     flex-direction: row;
-    width: 100%;
+    width: 63%;
     padding-left: 406px;
     flex-grow: 1;
     margin: 0 auto;
@@ -117,4 +122,9 @@
   min-height: 0;
   margin: 0 auto;
   text-align: center;
+}
+
+.main-nav--opened {
+  display: block;
+  margin-top: -5px;
 }

@@ -108,7 +108,7 @@
 
 .blog-post__info {
   padding-top: 11px;
-  padding-left: 26px;
+  padding-left: 0;
 }
 
 img {
@@ -116,6 +116,8 @@ img {
 
   @media (min-width: @tablet-width) {
     width: 100%;
+    padding-top: 11px;
+    padding-left: 26px;
   }
 }
 
@@ -231,4 +233,9 @@ img {
       display: none;
     }
   }
+}
+
+.heart-icon {
+  fill: #d22856;
+  cursor: pointer;
 }

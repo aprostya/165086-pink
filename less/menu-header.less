@@ -26,5 +26,26 @@
 }
 
 .menu-header--active {
-  //background-color: #283645;
+  background-color: #283645;
+
+  @media (min-width: @desktop-width) {
+    background-color: rgba(30, 39, 50, 0.63);
+  }
+}
+
+.hidden-devices {
+  display: none;
+
+  @media (min-width: @desktop-width) {
+    display: block;
+  }
+}
+
+.page-header__logo-link--closed {
+  right: 0;
+  left: auto;
+
+  @media (min-width: @tablet-width) {
+    top: 35px;
+  }
 }

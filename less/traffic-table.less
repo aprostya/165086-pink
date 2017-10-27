@@ -83,7 +83,7 @@
   padding-right: 0;
   padding-left: 0;
   font-size: 18px;
-
+  position: relative;
   .font-mixin(30px; @header-font; 18px; normal);
 
   @media (min-width: @tablet-width) {
@@ -180,4 +180,58 @@
   top: 15px;
   z-index: 2;
   font-weight: normal;
+
+  @media (min-width: @tablet-width) {
+    top: 8px;
+    font-size: 20px;
+  }
+
+  @media (min-width: @desktop-width) {
+    top: 14px;
+  }
+}
+
+.table-icon {
+  position: absolute;
+  right: 0;
+  margin: 0 auto;
+  top: 12px;
+
+  @media (min-width: @tablet-width) {
+    left: 0;
+    right: 0;
+    margin: 0 auto;
+  }
+}
+
+.table-icon--yes {
+  fill: #3dc644;
+}
+
+.table-icon--no {
+  fill: #f25b26;
+}
+
+.traffic-table__cell--mobile-first-row::after {
+  content: "Розовый фильтр";
+
+  @media (min-width: @tablet-width) {
+    content: " ";
+  }
+}
+
+.traffic-table__cell--mobile-second-row::after {
+  content: "Смайлики";
+
+  @media (min-width: @tablet-width) {
+    content: " ";
+  }
+}
+
+.traffic-table__cell--mobile-third-row::after {
+  content: "Комментарии";
+
+  @media (min-width: @tablet-width) {
+    content: " ";
+  }
 }
