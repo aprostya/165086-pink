@@ -67,11 +67,15 @@
   height: 24px;
   position: absolute;
   top: -12px;
-  left: -16px;
+  left: -21px;
   transform: translate(50%, 50%);
   background-repeat: no-repeat;
   background-size: contain;
-  background-image: url("../img/icon-checkbox-yes.svg");
+  background-image: url('../img/tick.webp');
+
+  @media (min-width: @tablet-width) {
+    left: -4px;
+  }
 }
 
 .checkbox-group {
