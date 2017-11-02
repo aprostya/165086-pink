@@ -15,6 +15,13 @@
   @media (min-width: @tablet-width) {
     padding-bottom: 0;
   }
+  @media (min-width: @big-desktop) {
+    width: 100%;
+  }
+
+  @media (min-width: @super-big-desktop) {
+    width: 96%;
+  }
 }
 
 .promo-section::before {
@@ -61,15 +68,25 @@
     position: absolute;
     width: 888px;
     height: 642px;
-    left: 0;
+    left: 142px;
     top: 96px;
   }
 
   @media (min-width: @desktop-width) and (min-resolution: @retina-dpi), (min-width: @desktop-width) and (min-resolution: @retina-dppx) {
     content: "";
     background-image: url("../img/iphone-hand-desktop@2x.png");
-    top: 123px;
-    left: -40px;
+    top: 196px;
+    left: 142px;
+  }
+
+  @media (min-width: @big-desktop) {
+    left: 550px;
+    top: 88px;
+  }
+
+  @media (min-width: @super-big-desktop) {
+    left: 794px;
+    top: 88px;
   }
 }
 
@@ -100,8 +117,12 @@
 .index-wrapper {
   @media (min-width: @desktop-width) {
     max-width: 548px;
-    margin-left: 136px;
+    margin-left: 267px;
     text-align: center;
+  }
+
+  @media (min-width:  @big-desktop) {
+    margin: 0 auto;
   }
 }
 
@@ -116,3 +137,39 @@
     display: inline;
   }
 }
+
+.promo-section__logo-container {
+  margin: 0 auto;
+}
+
+//.promo-section__logo-container::before {
+//  content: " ";
+//  background-image: url("../img/iphone-hand-mobile@1x.png");
+//  position: absolute;
+//  width: 262px;
+//  height: 308px;
+//  top: 112px;
+//  background-repeat: no-repeat;
+//
+//  @media (min-resolution: @retina-dpi), (min-resolution: @retina-dppx) {
+//    background-image: url("../img/iphone-hand-mobile@2x.png");
+//    position: absolute;
+//    width: 262px;
+//    height: 308px;
+//    top: 112px;
+//    left: 10px;
+//    background-repeat: no-repeat;
+//    background-size: contain;
+//  }
+//
+//  @media (min-width: @tablet-width) {
+//    padding-bottom: 0;
+//    content: "";
+//    background-image: url("../img/iphone-hand-tablet@1x.png");
+//    position: absolute;
+//    width: 656px;
+//    height: 556px;
+//    top: 84px;
+//    left: -14px;
+//  }
+//}

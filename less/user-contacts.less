@@ -10,6 +10,12 @@
   width: 90%;
   padding-left: 20px;
 
+  @media (min-width: @tablet-width) {
+    width: 100%;
+    margin-right: auto;
+    padding-left: 20px;
+  }
+
   @media (min-width: @desktop-width) {
     margin-left: 17px;
     margin-top: 5px;
@@ -25,8 +31,14 @@
       height: 0;
       width: auto;
       padding: 0;
-      margin: 0;
+      margin-bottom: 0;
     }
+  }
+}
+
+label .phone_number {
+  @media (min-width: @desktop-width) {
+    margin-right: auto;
   }
 }
 
@@ -71,7 +83,7 @@
   padding-left: 21px;
   padding-top: 2px;
   padding-right: 37px;
-  border: 1px solid #e5e5e5;
+  border: 2px solid #e5e5e5;
 
   &:hover {
     border-color: #000000;
@@ -88,13 +100,13 @@
 
   @media (min-width: @tablet-width) {
     order: 1;
-    width: 84%;
+    width: 85%;
     padding-left: 0;
     padding-right: 0;
   }
 
   @media (min-width: @desktop-width) {
-    width: 83%;
+    width: 82%;
     padding-left: 0;
     padding-bottom: 4px;
   }

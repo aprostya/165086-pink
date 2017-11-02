@@ -117,7 +117,6 @@ img {
   @media (min-width: @tablet-width) {
     width: 100%;
     padding-top: 11px;
-    padding-left: 26px;
   }
 }
 
@@ -201,6 +200,10 @@ img {
   @media (min-width: @tablet-width) {
     padding-bottom: 10px;
   }
+
+  @media (min-width: @desktop-width) {
+    padding-bottom: 19px;
+  }
 }
 
 .blog-header {
@@ -220,6 +223,9 @@ img {
     margin-top: auto;
     padding-left: 28px;
     padding-top: 11px;
+    display: flex;
+    flex-direction: row;
+    width: 77%;
   }
 }
 
@@ -238,4 +244,9 @@ img {
 .heart-icon {
   fill: #d22856;
   cursor: pointer;
+
+  @media (min-width: @tablet-width) {
+    order: 2;
+    margin-left: auto;
+  }
 }

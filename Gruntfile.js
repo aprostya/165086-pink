@@ -1,18 +1,14 @@
 "use strict";
 
 module.exports = function (grunt) {
-  grunt.loadNpmTasks("grunt-contrib-less");
-  grunt.loadNpmTasks("grunt-browser-sync");
-  grunt.loadNpmTasks("grunt-contrib-watch");
-  grunt.loadNpmTasks("grunt-postcss");
-  grunt.loadNpmTasks('grunt-svg-sprite');
-  grunt.loadNpmTasks('grunt-contrib-uglify');
-  grunt.loadNpmTasks('grunt-contrib-concat');
+
+  require("load-grunt-tasks")(grunt);
+
   grunt.initConfig({
       less: {
         style: {
           files: {
-            "css/style.css": "less/style.less"
+            "build/css/style.css": "less/style.less"
           }
         }
       },
@@ -24,7 +20,38 @@ module.exports = function (grunt) {
               require("autoprefixer")()
             ]
           },
-          src: "css/*.css"
+          src: "build/css/*.css"
+        }
+      },
+
+      clean: {
+        build: ["build"]
+      },
+
+      csso: {
+        style: {
+          options: {
+            report: "gzip"
+          },
+          files: {
+            "build/css/style.min.css":
+              ["css/style.css"]
+          }
+        }
+      },
+
+      copy: {
+        build: {
+          files: [{
+            expand: true,
+            src: [
+              "fonts/**/*{woff,woff2}",
+              "img/**",
+              "js/**",
+              "**/*.html"
+            ],
+            dest: "build"
+          }]
         }
       },
 
@@ -32,20 +59,54 @@ module.exports = function (grunt) {
         server: {
           bsFiles: {
             src: [
-              "*.html",
-              "css/*.css"
+              "build/*.html",
+              "build/css/*.css"
             ]
-          },
+          }
+          ,
           options: {
-            server: ".",
-            watchTask: true,
-            notify: false,
-            open: true,
-            cors: true,
-            ui: false
+            server: "build/",
+            watchTask:
+              true,
+            notify:
+              false,
+            open:
+              true,
+            cors:
+              true,
+            ui:
+              false
           }
         }
       },
+
+      imagemin: {
+        images: {
+          options: {
+            optimizationLevel: 3,
+            progressive: true
+          },
+          files: [{
+            expand: true,
+            src: ["img/**/*.{png,jpg,svg}"]
+          }]
+        }
+      },
+
+      // posthtml: {
+      //   options: {
+      //     use: [
+      //       require("posthtml-include")()
+      //     ]
+      //   },
+      html: {
+        files: [{
+          expand: true,
+          src: ["*.html"],
+          dest: "build"
+        }]
+      },
+
       svg_sprite: [{
         expand: true,
         src: ['img/svg/*.svg'],
@@ -60,13 +121,13 @@ module.exports = function (grunt) {
         }
       }],
 
-      watch: {
-        style: {
-          files: ["less/**/*.less"],
-          tasks:
-            ["less", "postcss"]
-        }
-      },
+      watch:
+        {
+          style: {
+            files: ["less/**/*.less"],
+            tasks: ["less", "postcss", "csso"]
+          }
+        },
 
       uglify: {
         build: {
@@ -84,7 +145,7 @@ module.exports = function (grunt) {
             'js/controls.js', // This specific file
           ],
           dest:
-            'dist/built.js',
+            'dist/build.js',
         }
       }
     }
@@ -93,4 +154,11 @@ module.exports = function (grunt) {
   grunt.registerTask("serve", ["browserSync", "watch"]);
   grunt.registerTask('default', ["uglify"]);
   grunt.registerTask('default', ['concat', 'uglify']);
+  grunt.registerInitTask("build", [
+    "clean",
+    "copy",
+    "less",
+    "postcss",
+    "csso",
+  ]);
 };

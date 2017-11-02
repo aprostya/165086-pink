@@ -1,10 +1,10 @@
 .controls {
   @media (min-width: @tablet-width) {
-    padding-bottom: 33px;
+    padding-bottom: 0;
   }
 
   @media (min-width: @desktop-width) {
-    padding-bottom: 36px;
+    padding-bottom: 0;
   }
 }
 
@@ -26,5 +26,31 @@
 
   @media (min-width: @desktop-width) {
     display: block;
+  }
+}
+
+.image-editor__tools--fill {
+  position: absolute;
+}
+
+.image-editor__icon-crop {
+  @media (min-width: @tablet-width) {
+    position: absolute;
+  }
+}
+
+.range-controls__separate {
+  position: absolute;
+
+  @media (min-width: @tablet-width) {
+    margin-left: 45px;
+    color: #dddfe0;
+    opacity: 0.3;
+    position: static;
+
+    @media (min-width: @desktop-width) {
+      width: 415px;
+      margin-left: 85px;
+    }
   }
 }

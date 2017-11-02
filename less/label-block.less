@@ -16,20 +16,59 @@
   }
 }
 
-.label-block--mail {
+.label-block__icon {
+  display: none;
+
+  @media (min-width: @tablet-width) {
+    display: block;
+    background-color: #e5e5e5;
+    width: 62px;
+    height: 69px;
+    position: relative;
+  }
+
   @media (min-width: @desktop-width) {
-    // margin: 0;
-    // height: 0;
-    // padding:0;
-    // width: 0;
+    display: block;
+    width: 56px;
+    height: 62px;
   }
 }
 
-.label-block--phone {
-  @media (min-width: @desktop-width) {
-    // margin: 0;
-    // height: 0;
-    // padding:0;
-    // width: 0;
+.label-block--mail {
+  @media (min-width: @tablet-width) {
+    display: flex;
+    flex-wrap: wrap;
+    flex-direction: row-reverse;
+    margin-right: 10px;
+    padding-left: 0;
   }
+
+}
+
+.label-block--phone {
+  @media (min-width: @tablet-width) {
+    display: flex;
+    flex-wrap: wrap;
+    flex-direction: row-reverse;
+    margin-right: 10px;
+    padding-left: 0;
+  }
+}
+
+.label-block__icon-phone {
+  position: absolute;
+  width: 21px;
+  height: 24px;
+  top: 17px;
+  left: 15px;
+  right: 0;
+}
+
+.label-block__icon-mail {
+  position: absolute;
+  width: 20px;
+  height: 24px;
+  top: 21px;
+  left: 17px;
+  right: 0;
 }
