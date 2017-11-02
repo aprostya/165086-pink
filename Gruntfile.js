@@ -48,7 +48,8 @@ module.exports = function (grunt) {
               "fonts/**/*{woff,woff2}",
               "img/**",
               "js/**",
-              "**/*.html"
+              "**/*.html",
+              "**/*.css"
             ],
             dest: "build"
           }]

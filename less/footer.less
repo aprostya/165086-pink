@@ -236,6 +236,9 @@ address {
     background: url("../img/figure_footer.svg") no-repeat;
     z-index: 100;
     top: 0;
+    @media (min-width: @tablet-width) and (min-resolution: @retina-dpi), (min-width: @tablet-width) and (min-resolution: @retina-dppx) {
+      top: -2px;
+    }
   }
   img {
     min-width: 100%;
