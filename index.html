@@ -3,16 +3,43 @@
 <head>
   <title>Pink site</title>
   <meta charset="UTF-8">
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/postscribe/2.0.8/postscribe.min.js"></script>
   <script src="js/picturefill.js"></script>
   <script src="js/script.min.js"></script>
   <script src="js/svg4everybody.js"></script>
   <script src="js/svg4everybody.legacy.js"></script>
   <script src="js/svg4everybody.min.js"></script>
   <script src="js/svg4everybody.legacy.min.js"></script>
-  <script async="true" src="js/menu.js"></script>
   <link rel="stylesheet" type="text/css" href="css/style.css">
   <meta name="viewport" content="width=device-width, initial-scale=1">
   <link rel="stylesheet" href="css/normalize.css">
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/postscribe/2.0.8/postscribe.min.js"></script>
+  <script src="https://api-maps.yandex.ru/2.1/?lang=ru_RU" type="text/javascript">
+  </script>
+  <script type="text/javascript">
+    ymaps.ready(init);
+    var myMap,
+      myPlacemark;
+
+    function init(){
+      myMap = new ymaps.Map("map", {
+        center: [59.938518, 30.323342],
+        zoom: 19
+      });
+
+      myPlacemark = new ymaps.Placemark([59.938518, 30.323342], {
+        hintContent: 'Наш офис!!',
+        balloonContent: 'Вам сюда!'
+      }, {
+        iconLayout: 'default#image',
+        iconImageHref: 'img/icon-map-marker.svg',
+        iconImageSize: [35.983,35.983],
+        iconImageOffset: [-5, -38]
+      }),
+
+      myMap.geoObjects.add(myPlacemark);
+    }
+  </script>
 </head>
 <body>
 <svg style="display:none">
@@ -189,9 +216,9 @@
           </svg>
           </a>
         </li>
-        <li class="main-nav__items"><a>Главная</a></li>
-        <li class="main-nav__items"><a href="#">Фотографии</a></li>
-        <li class="main-nav__items"><a href="#">Конкурс</a></li>
+        <li class="main-nav__items main-nav__items--active"><a>Главная</a></li>
+        <li class="main-nav__items"><a href="photo.html">Фотографии</a></li>
+        <li class="main-nav__items"><a href="form.html">Конкурс</a></li>
         <li class="main-nav__items"><a href="#">HTML Academy</a></li>
       </ul>
       <a href="#" class="main-nav__toggle main-nav__toggle--close"></a>
@@ -527,6 +554,9 @@
           , 19/8</a>
         </address>
         <div class="map-block_map-item">
+          <div id="map" style="width:100%;height:100%; z-index: 1">
+          </div>
+          <!--<script class="map-block_map-item map-block__map-item&#45;&#45;script" type="text/javascript" charset="utf-8" async src="https://api-maps.yandex.ru/services/constructor/1.0/js/?um=constructor%3A5165c2bec73e8fab6067edd0acf584279cea2c2a878ce625f767f120edb89d9f&amp;width=100%25&amp;lang=ru_RU&amp;scroll=true"></script>-->
         </div>
       </div>
     </div>
@@ -636,7 +666,7 @@
       </div>
     </section>
   </div>
-  </div>
 </footer>
 </body>
+<script async="true" src="js/menu.js"></script>
 </html>

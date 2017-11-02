@@ -63,11 +63,20 @@
     top: 36px;
     left: 20px;
     right: 20px;
-
-    &:hover {
-      background-color: #d22856;
-    }
+    cursor: pointer;
   }
+}
+
+a {
+  cursor: pointer;
+}
+
+.main-nav__items--active {
+  cursor: pointer;
+}
+
+.main-nav__items--active:hover::after {
+  background-color: #d22856;
 }
 
 .main-nav .site-list {

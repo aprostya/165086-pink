@@ -20,9 +20,9 @@ link_cross.addEventListener("click", function (cross) {
   link_burger.classList.remove("hidden-devices");
   link_cross.classList.add("hidden-devices");
 });
-
-main_nav_items.addEventListener("click", function (menuClick) {
-  menuClick.preventDefault();
-  main_nav_items.classList.add("main-nav__items--active");
-});
-
+//
+// main_nav_items.addEventListener("click", function (menuClick) {
+//   menuClick.preventDefault();
+//   main_nav_items.classList.add("main-nav__items--active");
+// });
+//
